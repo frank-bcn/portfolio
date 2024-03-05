@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="sectionContainer">
+    <div class="menu">
+      <span class="headlineText headline">{{
+        ls.getCurrentLanguage()?.headlineSkill
+      }}</span>
+      <button
+        class="btn btnSkill"
+        (click)="switchSkill('frontend')"
+        [ngClass]="{ active: currentSkill === 'frontend' }"
+      >
+        {{ ls.getCurrentLanguage()?.btnFrontend }}
+      </button>
+      <button
+        class="btn btnSkill"
+        (click)="switchSkill('backend')"
+        [ngClass]="{ active: currentSkill === 'backend' }"
+      >
+        {{ ls.getCurrentLanguage()?.btnBackend }}
+      </button>
+      <button
+        class="btn btnSkill"
+        (click)="switchSkill('extra')"
+        [ngClass]="{ active: currentSkill === 'extra' }"
+      >
+        {{ ls.getCurrentLanguage()?.btnExtra }}
+      </button>
+    </div>
+    <div class="section" [@slideAnimation]="currentSkill">
+      <div *ngIf="currentSkill === 'frontend'" class="sliderContainer">
+        <app-frontend></app-frontend>
+      </div>
+      <div *ngIf="currentSkill === 'backend'" class="sliderContainer">
+        <app-backend></app-backend>
+      </div>
+      <div *ngIf="currentSkill === 'extra'" class="sliderContainer">
+        <app-extra></app-extra>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,167 @@
+:host {
+    height: 100%;
+    width: 100%;
+    background-color: #fffcf3;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    background-color: #fffcf3;
+
+    .contactContainer {
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 12px;
+        z-index: 1;
+        box-shadow: 0px 10px 15px rgba(#191919, 0.6);
+        background-color: #fffcf3;
+
+        .contactDataContainer {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            margin: 1%;
+            border-right: 2px solid #ff9900;
+
+            .headlineTextContakt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: clamp(12px, 5vw, 58px);
+                font-weight: 800;
+                font-family: "syne";
+                margin: 3% 0; 
+                color: #333333;
+            }
+
+            .contactInformationContainer {
+                display: flex;
+                width: calc(100% - 150px);
+                flex: 1;
+                border-radius: 12px;
+                margin: 3% 0;
+                margin-left: 75px;
+                margin-right: 75px;
+                box-shadow: 0px 10px 15px rgba(#191919, 0.6);
+
+                .map {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+
+                    .legend {
+                        display: flex;
+                        height: auto;
+                        width: 80%;
+                    }
+                }
+
+                .infoContainer {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 40%;
+                    border-radius: 12px;
+                    margin: 2%;
+                    box-shadow:
+                    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+
+                    .information {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        
+                        .headlineInformation {
+                            border-bottom: 2px solid #ff9900;
+                            font-family: "overpass";
+                            height: fit-content;
+                            color: #333333;
+                            font-weight: 700;
+                        }
+
+                        .contactInformation {
+                            display: flex;
+                        }
+                    }
+
+                    .address {
+                        display: flex;
+                        justify-content: center;
+                        font-family: "poppins";
+                        color: #333333;
+                        font-weight: 500;
+                      }
+                }
+            }
+
+            .socialMedia {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+                width: calc(100% - 150px);
+                margin-left: 75px;
+                margin-right: 75px;
+
+                a {
+                    text-decoration: none;
+                    color: #333333;
+                    font-weight: 700;
+                    width: 50%;
+                }
+            }
+        }
+
+        .contactSendContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+
+            .formSection {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .placeholder {
+                    display: flex;
+                    font-family: Overpass;
+                    margin-left: 75px;
+                }
+
+                textarea {
+                    display: flex;
+                    box-sizing: border-box;
+                    resize: none;
+                    margin-left: 75px;
+                    margin-right: 75px;
+                    height: 250px;
+                }
+
+                .fields {
+                    display: flex;
+                    box-sizing: border-box;
+                    margin-left: 75px;
+                    margin-right: 75px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    font-size: 18px;
+                    padding: 20px 10px 20px 5px;
+                    margin-bottom: 50px;
+                    border-radius: 9px;
+                    box-shadow:
+                        inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                        inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+                }
+            }
+        }
+    }
+}

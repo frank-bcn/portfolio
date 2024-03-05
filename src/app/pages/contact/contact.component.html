@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="contactContainer">
+    <div class="contactDataContainer">
+      <div class="headlineTextContakt">
+        {{ ls.getCurrentLanguage()?.headlineContact }}
+      </div>
+      <div class="contactInformationContainer">
+        <div class="map">
+          <img src="/assets/ images/etc_images/map.png"class="legend">
+        </div>
+        <div class="infoContainer">
+          <span class="information">
+            <p class="headlineInformation">Frank Sinnigen</p>
+          </span>
+          <div class="contactInformation">
+            <address>
+              <p class="address">{{ ls.getCurrentLanguage()?.address }}</p>
+              <p class="address">{{ ls.getCurrentLanguage()?.email }}</p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="socialMedia">
+        <a
+          href="https://www.linkedin.com/in/frank-sinnigen/"
+          target="_blank"
+          class="btn btnSocial"
+          >LinkedIn
+          <img src="/assets/ images/etc_images/linkedIn.png" />
+        </a>
+
+        <a
+          href="https://github.com/frank-bcn"
+          target="_blank"
+          class="btn btnSocial"
+        >
+          GitHub
+          <img src="/assets/ images/skills_images/github.png" />
+        </a>
+      </div>
+    </div>
+    <form class="contactSendContainer" (submit)="sendMail()">
+      <div class="formSection">
+        <span class="placeholder">{{
+          ls.getCurrentLanguage()?.placeholderName
+        }}</span>
+        <input required name="name" type="text" class="fields" />
+        <span class="placeholder">{{
+          ls.getCurrentLanguage()?.placeholderEmail
+        }}</span>
+        <input required name="email" type="email" class="fields" />
+        <span class="placeholder">{{
+          ls.getCurrentLanguage()?.placeholderMessage
+        }}</span>
+        <textarea required name="message" class="fields message"></textarea>
+        <button class="btn btnContact">{{ls.getCurrentLanguage()?.send}}</button>
+      </div>
+    </form>
+  </div>
+</div>

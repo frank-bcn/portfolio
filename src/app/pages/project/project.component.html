@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="sectionContainer">
+      <div class="menu">
+        <span class="headlineText headline">{{
+          ls.getCurrentLanguage()?.headlineProject
+        }}</span>
+  
+        <button
+          class="btn btnSkill"
+          (click)="switchProject('project1')"
+          [ngClass]="{ active: currentProject === 'project1' }"
+        >
+          {{ ls.getCurrentLanguage()?.btnProject1 }}
+        </button>
+        <button
+          class="btn btnSkill"
+          (click)="switchProject('project2')"
+          [ngClass]="{ active: currentProject === 'project2' }"
+        >
+          {{ ls.getCurrentLanguage()?.btnProject2}}
+        </button>
+        <button
+          class="btn btnSkill"
+          (click)="switchProject('project3')"
+          [ngClass]="{ active: currentProject === 'project3' }"
+        >
+          {{ ls.getCurrentLanguage()?.btnProject3 }}
+        </button>
+      </div>
+      <div class="section" [@slideAnimation]="currentProject">
+        <div *ngIf="currentProject === 'project1'" class="sliderContainer">
+          <p class="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut vel
+            minima cupiditate odio harum cum excepturi saepe earum! Eius aut neque
+            minima! Iste perferendis consequuntur assumenda ad corrupti id. Modi?
+          </p>
+        </div>
+        <div *ngIf="currentProject === 'project2'" class="sliderContainer">
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+            illo dolorem cum sint alias quis modi corrupti illum quas consectetur
+            sapiente? Nostrum quasi soluta corporis, adipisci itaque ratione? Aut,
+            iure.
+          </p>
+        </div>
+  
+        <div *ngIf="currentProject === 'project3'" class="sliderContainer">
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut
+            facilis autem enim ex nihil? Optio modi laudantium quae voluptatibus,
+            recusandae voluptate fugit delectus magni, cum veniam nihil voluptatem
+            ab.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

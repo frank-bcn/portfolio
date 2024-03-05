@@ -1,1 +1,169 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  display: flex;
+  background-color: #fffcf3;
+  margin: 0px;
+  font-family: Syne;
+  overscroll-behavior: none;
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding: 15px;
+  margin: 3%;
+  border-radius: 9px;
+  transition: 300ms ease;
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow:
+    inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+    inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+    2px 2px 8px rgba(25, 25, 25, 0.6),
+    -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+  &:hover,
+  &.active {
+    box-shadow:
+      inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+      inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+  }
+}
+
+.btnStart {
+  width: 300px;
+}
+
+.btnAbout {
+  width: 300px;
+}
+
+.btnSkill {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.btnSocial {
+  display: flex;
+  height: 22%;
+  justify-content: space-between;
+
+  img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+}
+
+.btnContact {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-decoration: none;
+}
+
+:host-context(.page.home) header .footerContainer .btn {
+  display: none;
+}
+
+.headlineText {
+  font-size: clamp(12px, 5vw, 58px);
+  font-weight: 800;
+  font-family: "syne";
+  margin-top: 12%;
+  margin-bottom: 5%;
+  color: #333333;
+}
+
+.sectionContainer {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px rgba(#191919, 0.6);
+  background-color: #fffcf3;
+  overflow: hidden;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fffcf3;
+    z-index: 1;
+    box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
+    border-radius: 0 10px 10px 0 / 0 50% 50% 0;
+
+    .headline {
+      display: flex;
+      margin-left: 150px;
+    }
+  }
+
+  .section {
+    display: flex;
+    width: 60%;
+  }
+}
+
+.sliderContainer {
+  display: flex;
+  background-color: #fffcf3;
+  margin: 20px;
+  border: 10px solid #fffcf3;
+  width: 100%;
+}
+
+.headlineIcon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+
+  img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.content {
+  display: flex;
+  font-size: clamp(12px, 1vw, 38px);
+  font-family: "overpass";
+  color: #333333;
+  font-weight: 500;
+  border-radius: 12px;
+  flex: 1;
+  padding: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
+}
+
+.otherIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}

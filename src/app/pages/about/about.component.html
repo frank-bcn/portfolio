@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="imageContainer">
+    <img src="/assets/ images/etc_images/about.png" />
+  </div>
+  <div class="aboutSection">
+    <span class="headlineText">{{ ls.getCurrentLanguage()?.headlineAbout }}</span>
+    <div class="section">
+      <p>&lt;p&gt;{{ ls.getCurrentLanguage()?.professionalCareerHeadline}} &lt;/p&gt;</p>
+      <span
+        >{{ ls.getCurrentLanguage()?.professionalCareerText}}
+      </span>
+    </div>
+    <div class="section">
+      <p>&lt;p&gt; {{ ls.getCurrentLanguage()?.professionalIntensiveHeadline }} &lt;/p&gt;</p>
+      <span>
+        {{ ls.getCurrentLanguage()?.professionalIntensiveText }}
+      </span>
+    </div>
+    <div class="btnContainer">
+      <button [routerLink]="['/contact']" class="btn btnAbout">{{ ls.getCurrentLanguage()?.btn }}</button>
+    </div>
+  </div>
+</div>
