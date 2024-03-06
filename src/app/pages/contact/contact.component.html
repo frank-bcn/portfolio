@@ -6,7 +6,7 @@
       </div>
       <div class="contactInformationContainer">
         <div class="map">
-          <img src="/assets/ images/etc_images/map.png"class="legend">
+          <img src="/assets/ images/etc_images/map.png" class="legend" />
         </div>
         <div class="infoContainer">
           <span class="information">
@@ -44,16 +44,71 @@
         <span class="placeholder">{{
           ls.getCurrentLanguage()?.placeholderName
         }}</span>
-        <input required name="name" type="text" class="fields" />
+        <input
+          required
+          name="name"
+          type="text"
+          class="fields"
+          [(ngModel)]="name"
+          [ngClass]="{
+            valid: nameValid() && name.trim() !== '',
+            invalid: !nameValid() && name.trim() !== '',
+            'fields-untouched': name.trim() === ''
+          }"
+          pattern="[A-Za-z\s]+"
+          title="Please enter only letters"
+        />
+
         <span class="placeholder">{{
           ls.getCurrentLanguage()?.placeholderEmail
         }}</span>
-        <input required name="email" type="email" class="fields" />
+        <input
+          required
+          name="email"
+          type="email"
+          class="fields"
+          [(ngModel)]="email"
+          [ngClass]="{
+            valid: emailValid() && email.trim() !== '',
+            invalid: !emailValid() && email.trim() !== '',
+            'fields-untouched': email.trim() === ''
+          }"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          title="Please enter a valid email address"
+        />
+
         <span class="placeholder">{{
           ls.getCurrentLanguage()?.placeholderMessage
         }}</span>
-        <textarea required name="message" class="fields message"></textarea>
-        <button class="btn btnContact">{{ls.getCurrentLanguage()?.send}}</button>
+        <textarea
+          required
+          name="message"
+          class="fields message"
+          [(ngModel)]="message"
+          [ngClass]="{
+            valid: messageValid() && message.trim() !== '',
+            invalid: !messageValid() && message.trim() !== '',
+            'fields-untouched': message.trim() === ''
+          }"
+          pattern=".*\S+.*"
+          title="Please enter a message"
+        ></textarea>
+        <button
+          class="btn btnContact"
+          [disabled]="!formValid() || loading"
+          [ngStyle]="{
+            cursor: !formValid() || loading ? 'not-allowed' : 'pointer'
+          }"
+          (click)="sendMail()"
+        >
+          <span *ngIf="!loading && !showSentMessage">{{
+            ls.getCurrentLanguage()?.send
+          }}</span>
+          <span *ngIf="loading"><div class="spinner"></div></span>
+          <span *ngIf="showSentMessage">{{
+            ls.getCurrentLanguage()?.sent
+          }}</span>
+        </button>
       </div>
     </form>
   </div>

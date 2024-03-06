@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -14,6 +14,7 @@ import { BackendComponent } from './pages/backend/backend.component';
 import { ExtraComponent } from './pages/extra/extra.component';
 import { JoinComponent } from './pages/project-join/join.component';
 import { ProjectPolloComponent } from './pages/project-pollo/project-pollo.component';
+import { ProjectPokedexComponent } from './pages/project-pokedex/project-pokedex.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { ProjectPolloComponent } from './pages/project-pollo/project-pollo.compo
     ExtraComponent,
     JoinComponent,
     ProjectPolloComponent,
+    ProjectPokedexComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

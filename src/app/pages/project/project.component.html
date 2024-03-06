@@ -4,7 +4,7 @@
       <span class="headlineText headline">{{
         ls.getCurrentLanguage()?.headline
       }}</span>
-
+      <div class="btnContainerProj">
         <button
           class="btn btnSkill"
           (click)="switchProject('project1')"
@@ -26,7 +26,6 @@
         >
           {{ ls.getCurrentLanguage()?.btnProject3 }}
         </button>
-
         <button
           class="btn btnSkill"
           (click)="switchProject('project4')"
@@ -41,22 +40,26 @@
         >
           {{ ls.getCurrentLanguage()?.btnProject5 }}
         </button>
+      </div>
+      <div class="scrolldown" *ngIf="shouldDisplayScrolldown()">
+        <span class="scrolldownContainer">&#10170;</span><!--&#x2193;-->
+      </div>
     </div>
     <div class="section" [@slideAnimation]="currentProject">
       <div *ngIf="currentProject === 'project1'" class="sliderContainer">
-        <app-project-pollo></app-project-pollo>
+        <app-project-pokedex></app-project-pokedex>
       </div>
       <div *ngIf="currentProject === 'project2'" class="sliderContainer">
-        <app-join></app-join>
+        <app-project-pollo></app-project-pollo>
       </div>
-
       <div *ngIf="currentProject === 'project3'" class="sliderContainer">
-        <p class="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut
-          facilis autem enim ex nihil? Optio modi laudantium quae voluptatibus,
-          recusandae voluptate fugit delectus magni, cum veniam nihil voluptatem
-          ab.
-        </p>
+        <app-project-join></app-project-join>
+      </div>
+      <div *ngIf="currentProject === 'project4'" class="sliderContainer">
+        <!--New App -->
+      </div>
+      <div *ngIf="currentProject === 'project5'" class="sliderContainer">
+        <!--New App -->
       </div>
     </div>
   </div>

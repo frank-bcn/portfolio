@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 
 @Component({
-  selector: 'app-project-join',
-  templateUrl: './join.component.html',
-  styleUrl: './join.component.scss'
+  selector: 'app-project-pokedex',
+  templateUrl: './project-pokedex.component.html',
+  styleUrl: './project-pokedex.component.scss'
 })
-export class JoinComponent {
+export class ProjectPokedexComponent {
 
   constructor(public ls: LanguageService){}
 

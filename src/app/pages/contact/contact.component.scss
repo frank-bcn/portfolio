@@ -35,7 +35,7 @@
                 font-size: clamp(12px, 5vw, 58px);
                 font-weight: 800;
                 font-family: "syne";
-                margin: 3% 0; 
+                margin: 3% 0;
                 color: #333333;
             }
 
@@ -70,14 +70,14 @@
                     border-radius: 12px;
                     margin: 2%;
                     box-shadow:
-                    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
-                    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+                        inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                        inset -2px -2px 8px rgba(245, 245, 245, 0.1);
 
                     .information {
                         display: flex;
                         justify-content: center;
                         width: 100%;
-                        
+
                         .headlineInformation {
                             border-bottom: 2px solid #ff9900;
                             font-family: "overpass";
@@ -97,7 +97,7 @@
                         font-family: "overpass";
                         color: #333333;
                         font-weight: 500;
-                      }
+                    }
                 }
             }
 
@@ -124,12 +124,13 @@
             justify-content: center;
             align-items: center;
             width: 50%;
-            margin: 1%;
+            margin: 0 0 0 0;
 
             .formSection {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                margin: 100px 0 100px 0;
 
                 .placeholder {
                     display: flex;
@@ -143,15 +144,16 @@
                     resize: none;
                     margin-left: 75px;
                     margin-right: 75px;
-                    height: 250px;
+                    min-height: 250px;
                 }
 
                 .fields {
                     display: flex;
+                    border: 1px solid;
+                    flex: 1;
                     box-sizing: border-box;
                     margin-left: 75px;
                     margin-right: 75px;
-                    border: none;
                     outline: none;
                     background: none;
                     font-size: 18px;
@@ -162,7 +164,39 @@
                         inset 2px 2px 8px rgba(25, 25, 25, 0.6),
                         inset -2px -2px 8px rgba(245, 245, 245, 0.1);
                 }
+
+                input:-webkit-autofill,
+                textarea:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px #fffcf3 inset !important;
+                    -webkit-text-fill-color: #333333 !important;
+                }
+
+                .fields-untouched {
+                    border-color: transparent;
+                }
+
+                .valid {
+                    border-color: green !important;
+                }
+
+                .invalid {
+                    border-color: red !important;
+                }
             }
         }
     }
 }
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

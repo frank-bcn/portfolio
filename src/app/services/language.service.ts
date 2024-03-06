@@ -53,21 +53,22 @@ export class LanguageService {
 
       /*Projects*/
       headline: 'Projectos',
-      btnProject1: 'El pollo loco',
-      btnProject2: 'Join',
-      btnProject3: 'Project 3',
+      btnProject1: 'Pokedex',
+      btnProject2: 'El pollo loco',
+      btnProject3: 'Join',
       btnProject4: 'Project 4',
       btnProject5: 'Project 5',
-      headlineProject1: 'El pollo loco',
-      headlineProject2: 'Join',
-      headlineProject3: '',
+
+      headlineProject1: 'Pokedex',
+      headlineProject2: 'El pollo loco',
+      headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: 'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
+      descriptionProject1: '',
 
-      descriptionProject2: 'Un gestor de tareas inspirado en el sistema Kanban. Crea y organiza tareas utilizando funciones de arrastrar y soltar, asigna usuarios y categorías.',
+      descriptionProject2: 'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
 
-      descriptionProject3: '',
+      descriptionProject3: 'Un gestor de tareas inspirado en el sistema Kanban. Crea y organiza tareas utilizando funciones de arrastrar y soltar, asigna usuarios y categorías.',
 
       descriptionProject4: '',
 
@@ -81,6 +82,7 @@ export class LanguageService {
       placeholderEmail: 'Su dirección de correo electrónico',
       placeholderMessage: 'Su mensaje',
       send:'enviar',
+      sent:'enviado...',
     },
     {
       /***********************************/
@@ -127,21 +129,22 @@ export class LanguageService {
 
       /*Projects*/
       headline: 'Projects',
-      btnProject1: 'El pollo loco',
-      btnProject2: 'Join',
-      btnProject3: 'Project 3',
+      btnProject1: 'Pokedex',
+      btnProject2: 'El pollo loco',
+      btnProject3: 'Join',
       btnProject4: 'Project 4',
       btnProject5: 'Project 5',
-      headlineProject1: 'El pollo loco',
-      headlineProject2: 'Join',
-      headlineProject3: '',
+
+      headlineProject1: 'Pokedex',
+      headlineProject2: 'El pollo loco',
+      headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: 'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
+      descriptionProject1: '',
 
-      descriptionProject2: 'Task manager inspired by the Kanban System. Create and organize tasks using darg and drop funktion, assign users and categories.',
+      descriptionProject2: 'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
 
-      descriptionProject3: '',
+      descriptionProject3: 'Task manager inspired by the Kanban System. Create and organize tasks using darg and drop funktion, assign users and categories.',
 
       descriptionProject4: '',
 
@@ -155,6 +158,7 @@ export class LanguageService {
       placeholderEmail: 'Your email address',
       placeholderMessage: 'Your message',
       send:'Send',
+      sent:'Sent...',
     },
     {
       /**********************************/
@@ -201,21 +205,22 @@ export class LanguageService {
 
       /*Projects*/
       headline: 'Projekte',
-      btnProject1: 'El pollo loco',
-      btnProject2: 'Join',
-      btnProject3: 'Project 3',
+      btnProject1: 'Pokedex',
+      btnProject2: 'El pollo loco',
+      btnProject3: 'Join',
       btnProject4: 'Project 4',
       btnProject5: 'Project 5',
-      headlineProject1: 'El pollo loco',
-      headlineProject2: 'Join',
-      headlineProject3: '',
+
+      headlineProject1: 'Pokedex',
+      headlineProject2: 'El pollo loco',
+      headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: 'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
+      descriptionProject1: '',
 
-      descriptionProject2: 'Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
+      descriptionProject2: 'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
 
-      descriptionProject3: '',
+      descriptionProject3: 'Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
 
       descriptionProject4: '',
 
@@ -229,6 +234,7 @@ export class LanguageService {
       placeholderEmail: 'Ihre Email Adresse',
       placeholderMessage: 'Ihre Nachricht',
       send:'Senden',
+      sent:'Gesendet...',
     },
   ];
 
