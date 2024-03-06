@@ -17,6 +17,14 @@ html {
   display: none;
 }
 
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px 100px 0px;
+  flex: 1;
+  overflow-y: scroll;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -77,6 +85,17 @@ html {
   text-decoration: none;
 }
 
+.btnProject {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+
+  img {
+    height: 32px;
+  }
+}
+
 :host-context(.page.home) header .footerContainer .btn {
   display: none;
 }
@@ -85,8 +104,6 @@ html {
   font-size: clamp(12px, 5vw, 58px);
   font-weight: 800;
   font-family: "syne";
-  margin-top: 12%;
-  margin-bottom: 5%;
   color: #333333;
 }
 
@@ -95,7 +112,7 @@ html {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0px 10px 15px rgba(#191919, 0.6);
@@ -113,7 +130,9 @@ html {
 
     .headline {
       display: flex;
-      margin-left: 150px;
+      justify-content: center;
+      align-items: center;
+      height: 25%;
     }
   }
 
@@ -155,6 +174,20 @@ html {
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
+}
+
+.contentProject {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(12px, 1vw, 38px);
+  font-family: "overpass";
+  color: #333333;
+  font-weight: 500;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow:
+    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
 }
 
 .otherIcon {

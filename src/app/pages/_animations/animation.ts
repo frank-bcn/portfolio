@@ -160,7 +160,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
+          height:'90%',
           width: '100%',
         }),
       ],
@@ -184,7 +184,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
+          height:'90%',
           width: '100%',
         }),
       ],

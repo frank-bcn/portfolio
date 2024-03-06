@@ -52,10 +52,26 @@ export class LanguageService {
       'Durante mi formación, adquirí competencias valiosas que me permiten interactuar sin problemas con APIs. Estas habilidades me capacitan para aprovechar interfaces e integrar datos de manera efectiva desde diversas fuentes. Además, tengo un conocimiento profundo en el uso de Git para una gestión eficiente de versiones, junto con la aplicación de métodos Scrum para una colaboración estructurada y ágil. Además, profundicé mis habilidades en la plataforma GitHub para gestionar y desarrollar proyectos de código colaborativo con éxito. Por último, también cuento con una amplia experiencia en Docker, lo que me permite empaquetar y desplegar aplicaciones en contenedores ligeros, mejorando la escalabilidad y portabilidad de mis proyectos de desarrollo.',
 
       /*Projects*/
-      headlineProject: 'Projectos',
+      headline: 'Projectos',
       btnProject1: 'El pollo loco',
       btnProject2: 'Join',
       btnProject3: 'Project 3',
+      btnProject4: 'Project 4',
+      btnProject5: 'Project 5',
+      headlineProject1: 'El pollo loco',
+      headlineProject2: 'Join',
+      headlineProject3: '',
+      headlineProject4: '',
+      headlineProject5: '',
+      descriptionProject1: 'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
+
+      descriptionProject2: 'Un gestor de tareas inspirado en el sistema Kanban. Crea y organiza tareas utilizando funciones de arrastrar y soltar, asigna usuarios y categorías.',
+
+      descriptionProject3: '',
+
+      descriptionProject4: '',
+
+      descriptionProject5: '',
 
       /*contact*/
       headlineContact: 'Contacto',
@@ -110,10 +126,26 @@ export class LanguageService {
         'During my education, I gained valuable competencies that enable me to seamlessly interact with APIs. These skills empower me to tap into interfaces and effectively integrate data from various sources. Additionally, I have profound knowledge in using Git for efficient version management, along with the application of Scrum methods for structured and agile collaboration. Furthermore, I deepened my skills on the GitHub platform to successfully manage and develop collaborative code projects. Lastly, I also possess extensive experience with Docker, allowing me to package and deploy applications in lightweight containers, enhancing the scalability and portability of my development projects.',
 
       /*Projects*/
-      headlineProject: 'Projects',
+      headline: 'Projects',
       btnProject1: 'El pollo loco',
       btnProject2: 'Join',
       btnProject3: 'Project 3',
+      btnProject4: 'Project 4',
+      btnProject5: 'Project 5',
+      headlineProject1: 'El pollo loco',
+      headlineProject2: 'Join',
+      headlineProject3: '',
+      headlineProject4: '',
+      headlineProject5: '',
+      descriptionProject1: 'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
+
+      descriptionProject2: 'Task manager inspired by the Kanban System. Create and organize tasks using darg and drop funktion, assign users and categories.',
+
+      descriptionProject3: '',
+
+      descriptionProject4: '',
+
+      descriptionProject5: '',
 
       /*contact*/
       headlineContact: 'Contact',
@@ -168,10 +200,26 @@ export class LanguageService {
         'In meiner Ausbildung habe ich wertvolle Kompetenzen erworben, die es mir ermöglichen, nahtlos mit APIs zu interagieren. Diese Fähigkeiten befähigen mich, Schnittstellen anzuzapfen und Daten effektiv aus verschiedenen Quellen zu integrieren. Zudem habe ich fundierte Kenntnisse in der Verwendung von Git für effizientes Versionsmanagement sowie die Anwendung von Scrum-Methoden zur strukturierten und agilen Zusammenarbeit erworben. Darüber hinaus konnte ich meine Fähigkeiten auf der GitHub-Plattform vertiefen, um gemeinsame Codeprojekte erfolgreich zu verwalten und zu entwickeln. Nicht zuletzt verfüge ich auch über umfangreiche Erfahrungen mit Docker, wodurch ich in der Lage bin, Anwendungen in leichtgewichtigen Containern zu verpacken und bereitzustellen, was die Skalierbarkeit und Portabilität meiner Entwicklungsprojekte weiter optimiert.',
 
       /*Projects*/
-      headlineProject: 'Projekte',
+      headline: 'Projekte',
       btnProject1: 'El pollo loco',
       btnProject2: 'Join',
       btnProject3: 'Project 3',
+      btnProject4: 'Project 4',
+      btnProject5: 'Project 5',
+      headlineProject1: 'El pollo loco',
+      headlineProject2: 'Join',
+      headlineProject3: '',
+      headlineProject4: '',
+      headlineProject5: '',
+      descriptionProject1: 'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
+
+      descriptionProject2: 'Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
+
+      descriptionProject3: '',
+
+      descriptionProject4: '',
+
+      descriptionProject5: '',
 
       /*contact*/
       headlineContact: 'Kontakt',

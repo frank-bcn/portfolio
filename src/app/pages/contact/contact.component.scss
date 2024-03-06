@@ -14,7 +14,7 @@
         margin-left: 100px;
         margin-right: 100px;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 32px;
         width: 100%;
         border-radius: 12px;
         z-index: 1;
@@ -94,7 +94,7 @@
                     .address {
                         display: flex;
                         justify-content: center;
-                        font-family: "poppins";
+                        font-family: "overpass";
                         color: #333333;
                         font-weight: 500;
                       }
@@ -111,9 +111,9 @@
                 margin-right: 75px;
 
                 a {
+                    font-weight: 700;
                     text-decoration: none;
                     color: #333333;
-                    font-weight: 700;
                     width: 50%;
                 }
             }
@@ -124,6 +124,7 @@
             justify-content: center;
             align-items: center;
             width: 50%;
+            margin: 1%;
 
             .formSection {
                 display: flex;

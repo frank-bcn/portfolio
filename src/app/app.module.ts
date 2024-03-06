@@ -12,6 +12,8 @@ import { StartPageComponent } from './pages/start-page/start-page.component';
 import { FrontendComponent } from './pages/frontend/frontend.component';
 import { BackendComponent } from './pages/backend/backend.component';
 import { ExtraComponent } from './pages/extra/extra.component';
+import { JoinComponent } from './pages/project-join/join.component';
+import { ProjectPolloComponent } from './pages/project-pollo/project-pollo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ExtraComponent } from './pages/extra/extra.component';
     FrontendComponent,
     BackendComponent,
     ExtraComponent,
+    JoinComponent,
+    ProjectPolloComponent,
   ],
   imports: [
     BrowserModule,
