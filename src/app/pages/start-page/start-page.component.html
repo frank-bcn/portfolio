@@ -12,10 +12,12 @@
                 <div class="bar">Full-Stack Developer</div>
               </div>
             </div>
-          </div>   
+          </div>
+          <p>&lt;p&gt; {{ ls.language()?.slogan }} &lt;/p&gt;</p>
+          <button [routerLink]="['/about']" class="btn btnStart">
+            {{ ls.language()?.btnText }}
+          </button>
         </div>
-        <p> &lt;p&gt; {{ ls.getCurrentLanguage()?.slogan }} &lt;/p&gt;</p>
-        <button [routerLink]="['/about']" class="btn btnStart">{{ ls.getCurrentLanguage()?.btnText }}</button>
       </section>
     </div>
   </div>

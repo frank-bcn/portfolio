@@ -2,7 +2,7 @@
   <div class="sectionContainer">
     <div class="menu"> 
       <span class="headlineText headline">{{
-        ls.getCurrentLanguage()?.headlineSkill
+        ls.language()?.headlineSkill
       }}</span>
       <div class="linkContainer"> 
         <button
@@ -10,21 +10,21 @@
           (click)="switchSkill('frontend')"
           [ngClass]="{ active: currentSkill === 'frontend' }"
         >
-          {{ ls.getCurrentLanguage()?.btnFrontend }}
+          {{ ls.language()?.btnFrontend }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchSkill('backend')"
           [ngClass]="{ active: currentSkill === 'backend' }"
         >
-          {{ ls.getCurrentLanguage()?.btnBackend }}
+          {{ ls.language()?.btnBackend }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchSkill('extra')"
           [ngClass]="{ active: currentSkill === 'extra' }"
         >
-          {{ ls.getCurrentLanguage()?.btnExtra }}
+          {{ ls.language()?.btnExtra }}
         </button>
       </div>
     </div>

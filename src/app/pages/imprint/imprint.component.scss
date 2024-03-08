@@ -1,0 +1,77 @@
+:host {
+    height: 100%;
+    width: 100%;
+    background-color: #fffcf3;
+    z-index: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcf3;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    width: calc(100% - 40%);
+  
+    .containerProfile {
+      display: flex;
+      align-items: center;
+    }
+  
+    .containerText {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 2vh;
+    }
+  
+    h1 {
+      display: flex;
+      font-size: 3vh;
+    }
+  
+    h2 {
+      display: flex;
+      font-size: 2vh;
+    }
+  
+    .text {
+      display: flex;
+      margin-left: 10px;
+      font-size: 2vh;
+      margin-bottom: 10px;
+    }
+  
+    .textImpressum {
+      display: flex;
+      margin-right: 10px;
+      font-size: 15px;
+    }
+  
+    a {
+      display: flex;
+      margin-left: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      margin-left: 5%;
+  
+      h1, h2, .text, .textImpressum, a {
+        font-size: 15px;
+      }
+    }
+  
+    @media (max-width: 570px) {
+      h1 {
+        font-size: 15px;
+      }
+  
+      h2 {
+        font-size: 12px;
+      }
+  
+      .text, .textImpressum, a {
+        font-size: 12px;
+      }
+    }
+  } 

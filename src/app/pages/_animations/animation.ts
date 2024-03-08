@@ -2,6 +2,7 @@ import { trigger, transition, style, query, animate, group } from '@angular/anim
 
 export const animation = trigger('slideAnimation', [
 
+  /*      Skill animation        */ 
   transition('frontend => backend', [
     style({ position: 'relative' }),
     query(
@@ -151,7 +152,7 @@ export const animation = trigger('slideAnimation', [
       }),
     ]),
   ]),
-
+/*      Project animation        */ 
   transition('project1 => project2', [
     style({ position: 'relative' }),
     query(
@@ -160,8 +161,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'90%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }
@@ -184,8 +185,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'90%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }
@@ -212,8 +213,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }
@@ -236,8 +237,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }
@@ -260,8 +261,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }
@@ -288,8 +289,8 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           top: 0,
-          height:'100%',
-          width: '100%',
+          height:'92%',
+          width: '93%',
         }),
       ],
       { optional: true }

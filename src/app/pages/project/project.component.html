@@ -2,7 +2,7 @@
   <div class="sectionContainer">
     <div class="menu">
       <span class="headlineText headline">{{
-        ls.getCurrentLanguage()?.headline
+        ls.language()?.headline
       }}</span>
       <div class="btnContainerProj">
         <button
@@ -10,35 +10,35 @@
           (click)="switchProject('project1')"
           [ngClass]="{ active: currentProject === 'project1' }"
         >
-          {{ ls.getCurrentLanguage()?.btnProject1 }}
+          {{ ls.language()?.btnProject1 }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchProject('project2')"
           [ngClass]="{ active: currentProject === 'project2' }"
         >
-          {{ ls.getCurrentLanguage()?.btnProject2 }}
+          {{ ls.language()?.btnProject2 }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchProject('project3')"
           [ngClass]="{ active: currentProject === 'project3' }"
         >
-          {{ ls.getCurrentLanguage()?.btnProject3 }}
+          {{ ls.language()?.btnProject3 }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchProject('project4')"
           [ngClass]="{ active: currentProject === 'project4' }"
         >
-          {{ ls.getCurrentLanguage()?.btnProject4 }}
+          {{ ls.language()?.btnProject4 }}
         </button>
         <button
           class="btn btnSkill"
           (click)="switchProject('project5')"
           [ngClass]="{ active: currentProject === 'project5' }"
         >
-          {{ ls.getCurrentLanguage()?.btnProject5 }}
+          {{ ls.language()?.btnProject5 }}
         </button>
       </div>
       <div class="scrolldown" *ngIf="shouldDisplayScrolldown()">

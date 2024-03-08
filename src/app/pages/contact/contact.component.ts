@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { Router } from '@angular/router';
+import { slideInAnimation } from '../_animations';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
+  animations: [slideInAnimation],
 })
 export class ContactComponent {
   name: string = '';
@@ -13,7 +17,7 @@ export class ContactComponent {
   loading: boolean = false;
   showSentMessage: boolean = false;
 
-  constructor(public ls: LanguageService) {}
+  constructor(private router: Router, public ls: LanguageService) {}
 
   /**
    * Asynchronously sends an email by preparing form data and using the sendFormData function.

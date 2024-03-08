@@ -78,11 +78,25 @@ export class LanguageService {
       headlineContact: 'Contacto',
       email: 'info@frank-sinnigen.de',
       address: 'área metropolitana de barcelona',
+      imprint :'Aviso Legal y Protección de Datos',
       placeholderName: 'Nombre completo',
       placeholderEmail: 'Su dirección de correo electrónico',
       placeholderMessage: 'Su mensaje',
       send:'enviar',
       sent:'enviado...',
+
+      /*imprint*/
+      headlineImprint: 'Aviso legal & Protección de datos',
+      headlineName: 'Nombre',
+      headlineAddress: 'Dirección',
+      headlineWeb:'Sitio web',
+      headlineResponsible: 'Responsable del contenido',
+      headlineDisclaimer: 'Exención de responsabilidad',
+      disclaimerText: 'El contenido de esta página web ha sido revisado cuidadosamente y creado con el mejor conocimiento. Sin embargo, no se asume ninguna garantía respecto a la precisión, integridad y actualidad del contenido. Se excluye cualquier responsabilidad por daños que surjan directa o indirectamente del uso de esta página web, a menos que se base en intención o negligencia grave.',
+      headlineCopyright:'Derechos de autor',
+      copyrightText:'Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.',
+      headlineSources:'Fuentes',
+      souresText: 'Este aviso legal fue creado con la ayuda de',
     },
     {
       /***********************************/
@@ -154,11 +168,25 @@ export class LanguageService {
       headlineContact: 'Contact',
       email: 'info@frank-sinnigen.de',
       address: 'Barcelona metropolitan area ',
+      imprint :'Imprint & Data Protection',
       placeholderName: 'Your Name',
       placeholderEmail: 'Your email address',
       placeholderMessage: 'Your message',
       send:'Send',
       sent:'Sent...',
+
+       /*imprint*/
+       headlineImprint: 'Imprint & Data Protection',
+       headlineName: 'Name',
+       headlineAddress: 'Address',
+       headlineWeb:'Website',
+       headlineResponsible: 'Responsible for the content',
+       headlineDisclaimer: 'Disclaimer',
+       disclaimerText: 'The contents of this website have been carefully examined and created to the best of our knowledge. However, no guarantee is assumed for the accuracy, completeness, and timeliness of the content. Any liability for damages arising directly or indirectly from the use of this website is excluded, unless based on intent or gross negligence.',
+       headlineCopyright:'Copyright',
+       copyrightText:'All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.',
+       headlineSources:'Sources',
+       souresText: 'This imprint was created with the help of.',
     },
     {
       /**********************************/
@@ -230,11 +258,25 @@ export class LanguageService {
       headlineContact: 'Kontakt',
       email: 'info@frank-sinnigen.de',
       address: 'Metropolregion Barcelona',
+      imprint :'Impressum & Datenschutz',
       placeholderName: 'Ihr Vor und Nachname',
       placeholderEmail: 'Ihre Email Adresse',
       placeholderMessage: 'Ihre Nachricht',
       send:'Senden',
       sent:'Gesendet...',
+
+      /*imprint*/
+      headlineImprint: 'Impressum & Datenschutz',
+      headlineName: 'Name',
+      headlineAddress: 'Adresse',
+      headlineWeb:'Webseite',
+      headlineResponsible: 'Verantwortlich für den Inhalt',
+      headlineDisclaimer: 'Haftungsausschluss',
+      disclaimerText: 'Die Inhalte dieser Website wurden sorgfältig geprüft und nach bestem Wissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Jegliche Haftung für Schäden, die direkt oder indirekt aus der Nutzung dieser Website entstehen, wird ausgeschlossen, soweit dies nicht auf Vorsatz oder grober Fahrlässigkeit beruht.',
+      headlineCopyright:'Urheberrecht',
+      copyrightText:'Alle Inhalte dieser Website, insbesondere Texte, Bilder, Grafiken und Layout,sind urheberrechtlich geschützt. Die Verwendung, Vervielfältigung oder Verbreitung ohne ausdrückliche Zustimmung ist nicht gestattet.',
+      headlineSources:'Quellen',
+      souresText: 'Dieses Impressum wurde erstellt mit Hilfe von',
     },
   ];
 
@@ -244,7 +286,7 @@ export class LanguageService {
     this.selectedValue = value;
   }
 
-  getCurrentLanguage() {
+  language() {
     return this.languages.find((lang) => lang.code === this.selectedValue);
   }
 }

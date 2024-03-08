@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectComponent } from './pages/project/project.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'start', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent, data: { animation: 'skills' } },
   { path: 'projects', component: ProjectComponent, data: { animation: 'projects' } },
   { path: 'contact', component: ContactComponent, data: { animation: 'contact' } },
+  { path: 'imprint', component: ImprintComponent, data: { animation: 'imprint' } },
 ];
 
 @NgModule({

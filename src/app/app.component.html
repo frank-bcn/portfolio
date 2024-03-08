@@ -23,14 +23,14 @@
     <router-outlet #outlet="outlet"> </router-outlet>
   </div>
   <footer [class.footerWithShadow]="!isStartPage()">
-    <div class="headerContainer">
+    <div class="footerContainer">
       <button
         *ngIf="!isStartPage()"
         [routerLink]="['/about']"
         routerLinkActive="active"
         class="btn"
       >
-        {{ ls.getCurrentLanguage()?.btnAbout }}
+        {{ ls.language()?.btnAbout }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -38,7 +38,7 @@
         routerLinkActive="active"
         class="btn"
       >
-        {{ ls.getCurrentLanguage()?.btnSkills }}
+        {{ ls.language()?.btnSkills }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -46,7 +46,7 @@
         routerLinkActive="active"
         class="btn"
       >
-        {{ ls.getCurrentLanguage()?.btnProjects }}
+        {{ ls.language()?.btnProjects }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -54,7 +54,7 @@
         routerLinkActive="active"
         class="btn"
       >
-        {{ ls.getCurrentLanguage()?.btnConatct }}
+        {{ ls.language()?.btnConatct }}
       </button>
     </div>
   </footer>

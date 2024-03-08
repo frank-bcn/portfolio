@@ -15,6 +15,7 @@ import { ExtraComponent } from './pages/extra/extra.component';
 import { JoinComponent } from './pages/project-join/join.component';
 import { ProjectPolloComponent } from './pages/project-pollo/project-pollo.component';
 import { ProjectPokedexComponent } from './pages/project-pokedex/project-pokedex.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProjectPokedexComponent } from './pages/project-pokedex/project-pokedex
     JoinComponent,
     ProjectPolloComponent,
     ProjectPokedexComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,

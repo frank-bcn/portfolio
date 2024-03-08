@@ -3,21 +3,21 @@
     <img src="/assets/ images/etc_images/about.png" />
   </div>
   <div class="aboutSection">
-    <span class="headlineText">{{ ls.getCurrentLanguage()?.headlineAbout }}</span>
+    <span class="headlineText">{{ ls.language()?.headlineAbout }}</span>
     <div class="section">
-      <p>&lt;p&gt;{{ ls.getCurrentLanguage()?.professionalCareerHeadline}} &lt;/p&gt;</p>
+      <p>&lt;p&gt;{{ ls.language()?.professionalCareerHeadline}} &lt;/p&gt;</p>
       <span
-        >{{ ls.getCurrentLanguage()?.professionalCareerText}}
+        >{{ ls.language()?.professionalCareerText}}
       </span>
     </div>
     <div class="section">
-      <p>&lt;p&gt; {{ ls.getCurrentLanguage()?.professionalIntensiveHeadline }} &lt;/p&gt;</p>
+      <p>&lt;p&gt; {{ ls.language()?.professionalIntensiveHeadline }} &lt;/p&gt;</p>
       <span>
-        {{ ls.getCurrentLanguage()?.professionalIntensiveText }}
+        {{ ls.language()?.professionalIntensiveText }}
       </span>
     </div>
     <div class="btnContainer">
-      <button [routerLink]="['/contact']" class="btn btnAbout">{{ ls.getCurrentLanguage()?.btn }}</button>
+      <button [routerLink]="['/contact']" class="btn btnAbout">{{ ls.language()?.btn }}</button>
     </div>
   </div>
 </div>

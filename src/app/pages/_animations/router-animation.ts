@@ -353,4 +353,138 @@ import {
       ]),
     ]),
 
+    transition('* => imprint', [
+      style({ position: 'relative' }),
+      query(
+        ':enter, :leave',
+        [
+          style({
+            position: 'absolute',
+            top: 0,
+            height:'100%',
+            width: '100%',
+          }),
+        ],
+        { optional: true }
+      ),
+      group([
+        query(':enter', [style({ left: '100%' })], { optional: true }),
+        
+      ]),
+      group([
+        query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        
+      ]),
+    ]),
+
+    transition('imprint => contact', [
+      style({ position: 'relative' }),
+      query(
+        ':enter, :leave',
+        [
+          style({
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+          }),
+        ],
+        { optional: true }
+      ),
+      group([
+        query(':enter', [style({ left: '-100%' })], { optional: true }),
+        query(':leave', [style({ left: '0%' })], { optional: true }),
+      ]),
+      group([
+        query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+
+    transition('imprint => projects', [
+      style({ position: 'relative' }),
+      query(
+        ':enter, :leave',
+        [
+          style({
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+          }),
+        ],
+        { optional: true }
+      ),
+      group([
+        query(':enter', [style({ left: '-100%' })], { optional: true }),
+        query(':leave', [style({ left: '0%' })], { optional: true }),
+      ]),
+      group([
+        query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+
+    transition('imprint => skills', [
+      style({ position: 'relative' }),
+      query(
+        ':enter, :leave',
+        [
+          style({
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+          }),
+        ],
+        { optional: true }
+      ),
+      group([
+        query(':enter', [style({ left: '-100%' })], { optional: true }),
+        query(':leave', [style({ left: '0%' })], { optional: true }),
+      ]),
+      group([
+        query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+
+    transition('imprint => about', [
+      style({ position: 'relative' }),
+      query(
+        ':enter, :leave',
+        [
+          style({
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+          }),
+        ],
+        { optional: true }
+      ),
+      group([
+        query(':enter', [style({ left: '-100%' })], { optional: true }),
+        query(':leave', [style({ left: '0%' })], { optional: true }),
+      ]),
+      group([
+        query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+
   ]);

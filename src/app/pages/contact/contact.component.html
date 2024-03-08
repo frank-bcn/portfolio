@@ -2,7 +2,7 @@
   <div class="contactContainer">
     <div class="contactDataContainer">
       <div class="headlineTextContakt">
-        {{ ls.getCurrentLanguage()?.headlineContact }}
+        {{ ls.language()?.headlineContact }}
       </div>
       <div class="contactInformationContainer">
         <div class="map">
@@ -14,8 +14,9 @@
           </span>
           <div class="contactInformation">
             <address>
-              <p class="address">{{ ls.getCurrentLanguage()?.address }}</p>
-              <p class="address">{{ ls.getCurrentLanguage()?.email }}</p>
+              <p class="address">{{ ls.language()?.address }}</p>
+              <p class="address">{{ ls.language()?.email }}</p>
+              <p [routerLink]="['/imprint']" class="address imprint">{{ls.language()?.imprint}}</p>
             </address>
           </div>
         </div>
@@ -42,7 +43,7 @@
     <form class="contactSendContainer" (submit)="sendMail()">
       <div class="formSection">
         <span class="placeholder">{{
-          ls.getCurrentLanguage()?.placeholderName
+          ls.language()?.placeholderName
         }}</span>
         <input
           required
@@ -60,7 +61,7 @@
         />
 
         <span class="placeholder">{{
-          ls.getCurrentLanguage()?.placeholderEmail
+          ls.language()?.placeholderEmail
         }}</span>
         <input
           required
@@ -78,7 +79,7 @@
         />
 
         <span class="placeholder">{{
-          ls.getCurrentLanguage()?.placeholderMessage
+          ls.language()?.placeholderMessage
         }}</span>
         <textarea
           required
@@ -102,11 +103,11 @@
           (click)="sendMail()"
         >
           <span *ngIf="!loading && !showSentMessage">{{
-            ls.getCurrentLanguage()?.send
+            ls.language()?.send
           }}</span>
           <span *ngIf="loading"><div class="spinner"></div></span>
           <span *ngIf="showSentMessage">{{
-            ls.getCurrentLanguage()?.sent
+            ls.language()?.sent
           }}</span>
         </button>
       </div>
