@@ -1,8 +1,11 @@
 .page {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     .languageContainer {
         display: flex;
@@ -21,8 +24,8 @@
     .contentPage {
         display: flex;
         flex-direction: column;
-        flex: 1;
         overflow: hidden;
+        height: calc(100% - 100px);
     }
 
     footer {
@@ -34,20 +37,15 @@
         z-index: 1;
     }
 
-    .footerWithShadow {
-        box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
-      }
-
     .footerContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
         padding-left: 200px;
         padding-right: 200px;
-        height: 70px;
+        height: 100px;
+        box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
     }
 }
 
@@ -58,10 +56,9 @@
         justify-content: space-between;
         align-items: center;
         width: calc(100% - 6%);
-        margin-left: 3% !important;
-        margin-right: 3% !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        margin: 0 0 0 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         height: 70px;
     }
 }

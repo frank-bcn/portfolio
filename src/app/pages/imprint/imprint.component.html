@@ -1,44 +1,57 @@
 <div class="container">
-  <h1>{{ls.language()?.imprint}}</h1>
-  <div class="containerProfile">
-    <div class="containerText"><b>{{ls.language()?.headlineName}}:</b></div>
-    <span class="text">Frank Sinnigen</span>
+  <div class="containerImprint">
+    <div class="imprintContent">
+      <h1>{{ ls.language()?.imprint }}</h1>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ ls.language()?.headlineName }}:</b>
+        </div>
+        <span class="text">Frank Sinnigen</span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ ls.language()?.headlineAddress }}:</b>
+        </div>
+        <span class="text">Federico Garcia Lorca 16,1-4</span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText"><b>E-Mail:</b></div>
+        <span class="text" [innerHTML]="getEmailLink()"></span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ ls.language()?.headlineWeb }}:</b>
+        </div>
+        <span class="text"
+          ><a
+            href="https://frank-sinnigen.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://frank-sinnigen.de</a
+          ></span
+        >
+      </div>
+      <h1>{{ ls.language()?.headlineResponsible }}:</h1>
+      <div class="responsibility">
+        <span class="textImpressum">Frank Sinnigen</span><br />
+        <span class="textImpressum">Federico Garcia Lorca 16, 1-4</span><br />
+        <span class="textImpressum">08042 Barcelona</span><br />
+        <span class="textImpressum" [innerHTML]="getEmailLink()"></span>
+      </div>
+      <h1>{{ ls.language()?.headlineDisclaimer }}:</h1>
+      <span class="textImpressum">{{ ls.language()?.disclaimerText }}</span>
+      <h1>{{ ls.language()?.headlineCopyright }}</h1>
+      <span class="textImpressum">{{ ls.language()?.copyrightText }}</span>
+      <h1>{{ ls.language()?.headlineSources }}</h1>
+      <span class="textImpressum"
+        >{{ ls.language()?.souresText }}
+        <a
+          href="https://www.e-recht24.de"
+          target="_blank"
+          rel="noopener noreferrer"
+          >www.e-recht24.de</a
+        >.</span
+      >
+    </div>
   </div>
-  <div class="containerProfile">
-    <div class="containerText"><b>{{ls.language()?.headlineAddress}}:</b></div>
-    <span class="text">Federico Garcia Lorca 16,1-4</span>
-  </div>
-  <div class="containerProfile">
-    <div class="containerText"><b>E-Mail:</b></div>
-    <span class="text" [innerHTML]="getEmailLink()"></span>
-  </div>
-  <div class="containerProfile">
-    <div class="containerText"><b>{{ls.language()?.headlineWeb}}:</b></div>
-    <span class="text"
-      ><a
-        href="https://frank-sinnigen.de"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://frank-sinnigen.de</a
-      ></span
-    >
-  </div>
-  <h1>{{ls.language()?.headlineResponsible}}:</h1>
-  <div class="responsibility">
-    <span class="textImpressum">Frank Sinnigen</span><br />
-    <span class="textImpressum">Federico Garcia Lorca 16, 1-4</span><br />
-    <span class="textImpressum">08042 Barcelona</span><br />
-    <span class="textImpressum" [innerHTML]="getEmailLink()"></span>
-  </div>
-  <h1>{{ls.language()?.headlineDisclaimer}}:</h1>
-  <span class="textImpressum">{{ls.language()?.disclaimerText}}</span>
-  <h1>{{ls.language()?.headlineCopyright}}</h1>
-  <span class="textImpressum">{{ls.language()?.copyrightText}}</span>
-  <h1>{{ls.language()?.headlineSources}}</h1>
-  <span class="textImpressum"
-    >{{ls.language()?.souresText}}
-    <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer"
-      >www.e-recht24.de</a
-    >.</span
-  >
 </div>

@@ -11,32 +11,68 @@
     .btnContainerProj {
         display: flex;
         flex-direction: column;
-        margin: 10% 0 3% 0;
+        justify-content: center;
+        flex: 1;
+        margin: 0 3% 10% 3%;
         overflow-y: scroll;
+        border-radius: 12px;
+        box-shadow: inset 2px 2px 8px rgba(25, 25, 25, 0.6), inset -2px -2px 8px rgba(245, 245, 245, 0.1);
     }
 
-    .scrolldown {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 10%;
-        margin: 0 0 17% 0;
+    .btnContainerProj::-webkit-scrollbar {
+        display: block;
+        width: 6px;
+    }
+    
+    .btnContainerProj::-webkit-scrollbar-thumb {
+        background-color: #ff9900;
+        border-radius: 6px;
+    }
+}
 
-        .scrolldownContainer {
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-            width: 100px;
-            animation: scrollAnimation 1.5s infinite alternate;
+/*************************************************************/
+/***********************   query's   *************************/
+/*************************************************************/
+
+@media screen and (max-width: 1050px) {
+
+    .sectionContainer {
+        flex-direction: column;
+        margin: 3%;
+        width: 100% !important;
+        z-index: 1;
+
+        .menu {
+            width: 100%;
+            height: 35% !important;
+            border-radius: 12px !important;
+
+            .headline {
+                margin: 1% 0 1% 0;
+            }
+
+            .linkContainer {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 0 0px;
+                flex: 1;
+                overflow-y: scroll;
+            }
         }
-        
-        @keyframes scrollAnimation {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(10px) rotate(90deg);
-            }
-        }        
+
+        .menuProject {
+            display: flex;
+            height: 40%;
+        }
+
+        .section {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btnContainerProj {
+            margin: 0 10% 2% 10%;
+            padding: 13% 0 12px 0;
+        }
     }
 }

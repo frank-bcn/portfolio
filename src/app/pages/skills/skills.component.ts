@@ -6,12 +6,10 @@ import { animation } from '../_animations/animation';
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
-  animations: [
-    animation,
-  ],
+  animations: [animation],
 })
 export class SkillsComponent {
-  currentSkill = 'frontend'; 
+  currentSkill = 'frontend';
 
   constructor(public ls: LanguageService) {}
 

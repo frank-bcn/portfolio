@@ -1,6 +1,6 @@
 <div class="container">
   <div class="contactContainer">
-    <div class="contactDataContainer">
+    <div class="contactDataContainer" [ngClass]="active ? 'slide-in' : 'slide-out'" *ngIf="!active">
       <div class="headlineTextContakt">
         {{ ls.language()?.headlineContact }}
       </div>
@@ -39,9 +39,12 @@
           <img src="/assets/ images/skills_images/github.png" />
         </a>
       </div>
-    </div>
-    <form class="contactSendContainer" (submit)="sendMail()">
-      <div class="formSection">
+      <button class="btn switchButton" (click)="switch()" *ngIf="tapView">
+        {{ active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn }}
+      </button>
+    </div>  
+    <form class="contactSendContainer">
+      <div class="formSection" [ngClass]="active ? 'slide-in' : 'slide-out'" *ngIf="active || !tapView">
         <span class="placeholder">{{
           ls.language()?.placeholderName
         }}</span>
@@ -109,6 +112,9 @@
           <span *ngIf="showSentMessage">{{
             ls.language()?.sent
           }}</span>
+        </button>
+        <button class="btn switchButtonSend" (click)="switch()" *ngIf="tapView">
+          {{ active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn }}
         </button>
       </div>
     </form>

@@ -1,48 +1,43 @@
 <div class="container">
   <div class="sectionContainer">
-    <div class="menu">
-      <span class="headlineText headline">{{
-        ls.language()?.headline
-      }}</span>
+    <div class="menu menuProject">
+      <div class="headlineText headline">{{ ls.language()?.headline }}</div>
       <div class="btnContainerProj">
         <button
-          class="btn btnSkill"
+          class="btn btnProj"
           (click)="switchProject('project1')"
           [ngClass]="{ active: currentProject === 'project1' }"
         >
           {{ ls.language()?.btnProject1 }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnProj"
           (click)="switchProject('project2')"
           [ngClass]="{ active: currentProject === 'project2' }"
         >
           {{ ls.language()?.btnProject2 }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnProj"
           (click)="switchProject('project3')"
           [ngClass]="{ active: currentProject === 'project3' }"
         >
           {{ ls.language()?.btnProject3 }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnProj"
           (click)="switchProject('project4')"
           [ngClass]="{ active: currentProject === 'project4' }"
         >
           {{ ls.language()?.btnProject4 }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnProj"
           (click)="switchProject('project5')"
           [ngClass]="{ active: currentProject === 'project5' }"
         >
           {{ ls.language()?.btnProject5 }}
         </button>
-      </div>
-      <div class="scrolldown" *ngIf="shouldDisplayScrolldown()">
-        <span class="scrolldownContainer">&#10170;</span><!--&#x2193;-->
       </div>
     </div>
     <div class="section" [@slideAnimation]="currentProject">

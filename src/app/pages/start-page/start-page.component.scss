@@ -1,12 +1,12 @@
 :host {
-    height: 100%;
-    width: 100%;
+    flex: 1;
+    width: 100vw;
     background-color: #fffcf3;
 }
 
 .container {
     display: flex;
-    height: 100%;
+    height: calc(100% - 100px);
     width: 100%;
 
     .infoSection {
@@ -37,7 +37,7 @@
                 color: #333333;
                 font-family: Syne;
                 font-weight: 800;
-                margin-bottom: 2%;
+                margin: 0 0 2% 0;
 
                 .textContainer {
                     display: flex;
@@ -50,7 +50,7 @@
 
                         .textbar {
                             display: flex;
-                            margin-top: 3%;
+                            margin: 3% 0 0 0;
                             font-size: clamp(32px, 6vw, 160px);
                             font-weight: 800;
                             color: #333333;
@@ -60,7 +60,7 @@
 
                     .barContainer {
                         display: flex;
-                        margin-top: 6%;
+                        margin: 6% 0 0 0;
                         width: 90%;
                         border-radius: 50px;
                         font-size: clamp(6px, 1.5vw, 16px);
@@ -75,7 +75,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            padding-right: 15px;
+                            padding: 0 15px 0 0;
                             font-family: poppins;
                             width: 90%;
                             height: 25px;
@@ -90,7 +90,7 @@
 
             p {
                 display: flex;
-                margin-top: 7%;
+                margin: 10% 0 7% 0;
                 font-family: poppins;
                 font-size: clamp(6px, 2vw, 16px);
                 font-weight: 600;
@@ -108,15 +108,13 @@
 
         .img {
             display: flex;
-            margin-top: 100px;
+            margin: 100px 0 0 0;
             width: 70%;
             height: 75%;
-            border-radius: 12px;
-            filter: grayscale(100%);
+            filter: grayscale(100%) drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
             transform: perspective(500px) rotateY(-5deg);
-            box-shadow: 0px 10px 15px rgba(#191919, 0.6);
             cursor: default;
-
+        
             &:hover {
                 filter: none;
             }
@@ -124,9 +122,15 @@
     }
 }
 
+/*************************************************************/
+/************************   query's   ************************/
+/*************************************************************/
+
 @media screen and (max-width: 1050px) {
     .container {
         flex-direction: column;  
+        justify-content: center;
+        align-items: center;
     }
     
     .containerImg {
@@ -136,11 +140,10 @@
         height: auto !important;
 
         .img {
-            margin-top: 0px !important;
-            width: 150px !important;
-            height: 200px !important;
-            margin-right: 10%;
-            margin-top: 1% !important;
+            position: relative;
+            margin: 3% 10% 0 0 !important;
+            width: 33% !important;
+            height: 70% !important;
             transform: perspective(500px) rotateY(-10deg) !important;
         }
     }
@@ -152,12 +155,12 @@
         width: 100% !important;
 
         .text {
-            margin-bottom: 16% !important;
+            margin: 0 0 16% 0 !important;
         }
 
         .textbar {
             display: flex;
-            margin-top: 3%;
+            margin: 3% 0 0 0;
             font-size: clamp(32px, 10vw, 160px) !important;
             font-weight: 800;
             color: #333333;
@@ -170,17 +173,7 @@
 
         p {
             font-size: clamp(6px, 2vw, 14px) !important;
+            margin: 6% 0 6% 0 !important;
         }
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .container .containerImg .img {
-        width: 100px !important;
-        height: 150px !important;
-    }
-
-    .infoSection .textbar {
-        font-size: clamp(32px, 12vw, 180px) !important;
     }
 }

@@ -11,10 +11,7 @@
 
     .contactContainer {
         display: flex;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-top: 50px;
-        margin-bottom: 32px;
+        margin: 50px 100px 32px 100px;
         width: 100%;
         border-radius: 12px;
         z-index: 1;
@@ -41,19 +38,17 @@
 
             .contactInformationContainer {
                 display: flex;
-                width: calc(100% - 150px);
+                width: calc(100% - 6%);
                 flex: 1;
                 border-radius: 12px;
-                margin: 3% 0;
-                margin-left: 75px;
-                margin-right: 75px;
+                margin: 3%;
                 box-shadow: 0px 10px 15px rgba(#191919, 0.6);
 
                 .map {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 70%;
+                    width: 48%;
 
                     .legend {
                         display: flex;
@@ -66,7 +61,7 @@
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    width: 40%;
+                    width: 52%;
                     border-radius: 12px;
                     margin: 2%;
                     box-shadow:
@@ -95,8 +90,9 @@
                         display: flex;
                         justify-content: center;
                         font-family: "overpass";
+                        font-size: clamp(12px, 1.3vw, 38px);
                         color: #333333;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
                     .imprint {
                         margin: 20% 0 0 0;
@@ -110,9 +106,9 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 50px;
-                width: calc(100% - 150px);
-                margin-left: 75px;
-                margin-right: 75px;
+                width: calc(100% - 6%);
+                margin: 3% 3% 0 3%;
+                height: 30%;
 
                 a {
                     font-weight: 700;
@@ -148,7 +144,7 @@
                     resize: none;
                     margin-left: 75px;
                     margin-right: 75px;
-                    min-height: 250px;
+                    min-height: 150px;
                 }
 
                 .fields {
@@ -198,9 +194,126 @@
     width: 20px;
     height: 20px;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*************************************************************/
+/************************   query's   ************************/
+/*************************************************************/
+
+@media screen and (max-width: 1050px) {
+    .contactContainer {
+        flex-direction: column;
+        margin: 3% 3% 3% 3% !important;
+
+        .contactDataContainer {
+            position: absolute;
+            z-index: 1;
+            background-color: #fffcf3;
+            width: 94% !important;
+            height: 84%;
+            top: 4%;
+            left: 2%;
+            right: 2%;
+            border: none !important;
+            border-radius: 12px;
+
+            .contactInformationContainer {
+                display: flex;
+                width: calc(100% - 6%);
+                flex: 1;
+                margin: 3% 3% 0 3% !important;
+            }
+        }
+
+        .contactSendContainer {
+            position: absolute;
+            background-color: #fffcf3;
+            border-radius: 12px;
+            width: calc(100% - 6%) !important;
+            height: calc(100% - 20%) !important;
+            top: 7%;
+            left: 3%;
+            right: 3%;
+            bottom: 13%;
+
+            textarea {
+                display: flex;
+                box-sizing: border-box;
+                resize: none;
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+        }
+
+        .formSection {
+            position: absolute;
+            background-color: #fffcf3;
+            flex: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .switchButton {
+            display: block !important;
+            position: absolute;
+            margin: 0 5% 5% 5%;
+            z-index: 2;
+            bottom: 0;
+            width: calc(100% - 10%) !important;
+            justify-content: center;
+            transform: initial !important;
+        }
+
+        .switchButtonSend {
+            display: block !important;
+            position: absolute;
+            margin: 0 5% 0 5%;
+            z-index: 2;
+            top: 100%;
+            width: calc(100% - 10%) !important;
+            justify-content: center;
+            transform: initial !important;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateX(100%);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .slide-in {
+        animation: slideIn 300ms ease-out;
+    }
+
+    .slide-out {
+        animation: slideOut 300ms ease-in;
+    }
+}

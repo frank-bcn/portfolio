@@ -7,6 +7,7 @@ import { LanguageService } from '../../services/language.service';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  
   constructor(public ls: LanguageService) { }
 
 }

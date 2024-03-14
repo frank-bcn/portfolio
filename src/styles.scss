@@ -1,11 +1,12 @@
 body {
   display: flex;
+  position: fixed;
   background-color: #fffcf3;
-  margin: 0px;
+  margin: 0;
   font-family: Syne;
   overscroll-behavior: none;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  width: 100vw;
 }
 
 html {
@@ -15,6 +16,23 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9900;
+  border-radius: 6px;
+}
+
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #ff9900;
 }
 
 .linkContainer {
@@ -59,6 +77,7 @@ html {
 
 .btnAbout {
   width: 300px;
+  margin-top: 16%;
 }
 
 .btnSkill {
@@ -75,7 +94,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 100%;
   }
 }
 
@@ -90,7 +109,9 @@ html {
   justify-content: space-between;
   width: 100%;
   text-decoration: none;
-
+  font-size: clamp(14px, 1.5vw, 24px);
+  padding: 6px 10% 6px 10% !important;
+  
   img {
     height: 32px;
   }
@@ -101,7 +122,14 @@ html {
 }
 
 .headlineText {
-  font-size: clamp(12px, 5vw, 58px);
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  font-family: "syne";
+  color: #333333;
+}
+
+.headlineTextProj {
+  font-size: clamp(22px, 3.5vw, 42px);
   font-weight: 800;
   font-family: "syne";
   color: #333333;
@@ -109,10 +137,7 @@ html {
 
 .sectionContainer {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 32px;
+  margin: 50px 100px 32px 100px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0px 10px 15px rgba(#191919, 0.6);
@@ -126,7 +151,7 @@ html {
     background-color: #fffcf3;
     z-index: 1;
     box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
-    border-radius: 0 10px 10px 0 / 0 50% 50% 0;
+    border-radius: 12px;
 
     .headline {
       display: flex;
@@ -164,22 +189,24 @@ html {
 
 .content {
   display: flex;
-  font-size: clamp(12px, 1vw, 38px);
+  font-size: clamp(14px, 1.5vw, 24px);
   font-family: "overpass";
   color: #333333;
   font-weight: 500;
   border-radius: 12px;
   flex: 1;
   padding: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 2px 0px 8px rgba(25, 25, 25, 0.6);
+  margin: 25px 0 25px 0;
+  box-shadow:
+    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+  overflow: scroll;
 }
 
 .contentProject {
   display: flex;
   flex-direction: column;
-  font-size: clamp(12px, 1vw, 38px);
+  font-size: clamp(12px, 3vw, 38px);
   font-family: "overpass";
   color: #333333;
   font-weight: 500;
@@ -201,12 +228,54 @@ html {
   }
 }
 
-@media screen and (max-width: 1050px) { 
+/*************************************************************/
+/***********************   Tap Query   ***********************/
+/*************************************************************/
+
+@media screen and (max-width: 1050px) {
 
   .btn {
     min-width: 32px;
     padding: 10px;
     margin: 3%;
     border-radius: 9px;
+  }
+
+  .btnAbout {
+    padding: 18px;
+  }
+
+  .btnSkill {
+    margin: 0 10% 0 10%;
+    padding: 10px 0 10px 0;
+  }
+
+  .btnProj {
+    margin: 2% 10% 0 10%;
+    padding: 10px 0 10px 0;
+  }
+
+  .btnContact {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .btnMediaQuerie {
+    padding: 18px;
+  }
+
+  .headlineIcon {
+  
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .otherIcon {
+  
+    img {
+      height: 40px;
+      width: 40px;
+    }
   }
 }

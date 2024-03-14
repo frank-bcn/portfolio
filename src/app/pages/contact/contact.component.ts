@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
-import { Router } from '@angular/router';
 import { slideInAnimation } from '../_animations';
-
 
 @Component({
   selector: 'app-contact',
@@ -10,14 +8,26 @@ import { slideInAnimation } from '../_animations';
   styleUrl: './contact.component.scss',
   animations: [slideInAnimation],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
   name: string = '';
   email: string = '';
   message: string = '';
   loading: boolean = false;
   showSentMessage: boolean = false;
+  tapView: boolean = false;
+  active: boolean = false;
 
-  constructor(private router: Router, public ls: LanguageService) {}
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.checkScreenWidth();
+  }
+
+  constructor(public ls: LanguageService ) {}
+
+  ngOnInit(): void {
+    this.checkScreenWidth();
+  }
 
   /**
    * Asynchronously sends an email by preparing form data and using the sendFormData function.
@@ -125,5 +135,15 @@ export class ContactComponent {
    */
   formValid(): boolean {
     return this.nameValid() && this.emailValid() && this.messageValid();
+  }
+
+  checkScreenWidth(): void {
+    this.tapView = window.innerWidth <= 1050;
+  }
+
+  switch() {
+    if (this.tapView) {
+      this.active = !this.active;
+    }
   }
 }

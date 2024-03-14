@@ -22,13 +22,13 @@
   <div class="contentPage" [@routeAnimation]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"> </router-outlet>
   </div>
-  <footer [class.footerWithShadow]="!isStartPage()">
-    <div class="footerContainer">
+  <footer >
+    <div [class.footerContainer]="!isStartPage()">
       <button
         *ngIf="!isStartPage()"
         [routerLink]="['/about']"
         routerLinkActive="active"
-        class="btn"
+        class="btn btnMediaQuerie"
       >
         {{ ls.language()?.btnAbout }}
       </button>
@@ -36,7 +36,7 @@
         *ngIf="!isStartPage()"
         [routerLink]="['/skills']"
         routerLinkActive="active"
-        class="btn"
+        class="btn btnMediaQuerie"
       >
         {{ ls.language()?.btnSkills }}
       </button>
@@ -44,7 +44,7 @@
         *ngIf="!isStartPage()"
         [routerLink]="['/projects']"
         routerLinkActive="active"
-        class="btn"
+        class="btn btnMediaQuerie"
       >
         {{ ls.language()?.btnProjects }}
       </button>
@@ -52,7 +52,7 @@
         *ngIf="!isStartPage()"
         [routerLink]="['/contact']"
         routerLinkActive="active"
-        class="btn"
+        class="btn btnMediaQuerie"
       >
         {{ ls.language()?.btnConatct }}
       </button>

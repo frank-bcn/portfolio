@@ -1,77 +1,100 @@
 :host {
-    height: 100%;
-    width: 100%;
-    background-color: #fffcf3;
-    z-index: 1;
-  }
-  
-  .container {
+  height: 100%;
+  width: 100%;
+  background-color: #fffcf3;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  background-color: #fffcf3;
+
+  .containerImprint {
     display: flex;
-    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 32px;
+    width: 100%;
+    border-radius: 12px;
+    z-index: 1;
+    box-shadow: 0px 10px 15px rgba(#191919, 0.6);
     background-color: #fffcf3;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 100%;
-    width: calc(100% - 40%);
-  
-    .containerProfile {
+    overflow-y: scroll;
+
+    .imprintContent {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      margin: 3%;
     }
-  
-    .containerText {
-      display: flex;
-      margin-bottom: 10px;
-      font-size: 2vh;
-    }
-  
-    h1 {
-      display: flex;
-      font-size: 3vh;
-    }
-  
-    h2 {
-      display: flex;
-      font-size: 2vh;
-    }
-  
-    .text {
-      display: flex;
-      margin-left: 10px;
-      font-size: 2vh;
-      margin-bottom: 10px;
-    }
-  
-    .textImpressum {
-      display: flex;
-      margin-right: 10px;
-      font-size: 15px;
-    }
-  
-    a {
-      display: flex;
-      margin-left: 10px;
-    }
-  
-    @media (max-width: 768px) {
-      margin-left: 5%;
-  
-      h1, h2, .text, .textImpressum, a {
-        font-size: 15px;
+
+      .containerProfile {
+        display: flex;
+        align-items: center;
       }
-    }
-  
-    @media (max-width: 570px) {
+
+      .containerText {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 2vh;
+      }
+
       h1 {
+        display: flex;
+        font-size: 3vh;
+      }
+
+      h2 {
+        display: flex;
+        font-size: 2vh;
+      }
+
+      .text {
+        display: flex;
+        margin-left: 10px;
+        font-size: 2vh;
+        margin-bottom: 10px;
+      }
+
+      .textImpressum {
+        display: flex;
+        margin-right: 10px;
         font-size: 15px;
       }
-  
-      h2 {
-        font-size: 12px;
-      }
-  
-      .text, .textImpressum, a {
-        font-size: 12px;
+
+      a {
+        display: flex;
+        margin-left: 10px;
       }
     }
-  } 
+  }
+
+/*************************************************************/
+/***********************   Tap Query   ***********************/
+/*************************************************************/
+@media screen and (max-width: 1050px) {
+  .containerImprint {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    width: calc(100% - 6%) !important;
+    height: calc(100% - 10%) !important;
+    overflow-y: scroll;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-color: #fffcf3;
+      margin-left: 3% !important;
+      margin-right: 3%!important;
+      flex: 1;
+      width: calc(100% - 6%) !important;
+    }
+  }
+}
+
+/*************************************************************/
+/*********************    Phone Query    *********************/
+/*************************************************************/
+@media screen and (max-width: 700px) {
+}

@@ -43,13 +43,13 @@ export class LanguageService {
       btnBackend: 'backend',
       btnExtra: 'extra',
       frontendDescription:
-      'A lo largo de mi desarrollo profesional, he adquirido conocimientos extensos en la aplicación del framework Angular. Las habilidades previas en HTML, CSS y JavaScript sirvieron como una base sólida, permitiéndome implementar métodos de entrada reflexivos. Esto no solo me permitió utilizar Angular superficialmente, sino también comprenderlo y desplegarlo eficientemente como un marco profundamente integrado y orientado a objetos.',
+        'A lo largo de mi desarrollo profesional, he adquirido conocimientos extensos en la aplicación del framework Angular. Las habilidades previas en HTML, CSS y JavaScript sirvieron como una base sólida, permitiéndome implementar métodos de entrada reflexivos. Esto no solo me permitió utilizar Angular superficialmente, sino también comprenderlo y desplegarlo eficientemente como un marco profundamente integrado y orientado a objetos.',
 
       backendDescription:
-      'Después de mi formación intensiva en el ámbito del frontend, continué sin problemas mi carrera en el backend. Al principio, confiaba en Firebase para obtener apoyo adicional. Más tarde, amplié mi repertorio para incluir el framework Django y construí un sólido fundamento en conjunción con MySQL.',
+        'Después de mi formación intensiva en el ámbito del frontend, continué sin problemas mi carrera en el backend. Al principio, confiaba en Firebase para obtener apoyo adicional. Más tarde, amplié mi repertorio para incluir el framework Django y construí un sólido fundamento en conjunción con MySQL.',
 
       extraDescription:
-      'Durante mi formación, adquirí competencias valiosas que me permiten interactuar sin problemas con APIs. Estas habilidades me capacitan para aprovechar interfaces e integrar datos de manera efectiva desde diversas fuentes. Además, tengo un conocimiento profundo en el uso de Git para una gestión eficiente de versiones, junto con la aplicación de métodos Scrum para una colaboración estructurada y ágil. Además, profundicé mis habilidades en la plataforma GitHub para gestionar y desarrollar proyectos de código colaborativo con éxito. Por último, también cuento con una amplia experiencia en Docker, lo que me permite empaquetar y desplegar aplicaciones en contenedores ligeros, mejorando la escalabilidad y portabilidad de mis proyectos de desarrollo.',
+        'Durante mi formación, adquirí competencias valiosas que me permiten interactuar sin problemas con APIs. Estas habilidades me capacitan para aprovechar interfaces e integrar datos de manera efectiva desde diversas fuentes. Además, tengo un conocimiento profundo en el uso de Git para una gestión eficiente de versiones, junto con la aplicación de métodos Scrum para una colaboración estructurada y ágil. Además, profundicé mis habilidades en la plataforma GitHub para gestionar y desarrollar proyectos de código colaborativo con éxito. Por último, también cuento con una amplia experiencia en Docker, lo que me permite empaquetar y desplegar aplicaciones en contenedores ligeros, mejorando la escalabilidad y portabilidad de mis proyectos de desarrollo.',
 
       /*Projects*/
       headline: 'Projectos',
@@ -66,9 +66,11 @@ export class LanguageService {
       headlineProject5: '',
       descriptionProject1: '',
 
-      descriptionProject2: 'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
+      descriptionProject2:
+        'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
 
-      descriptionProject3: 'Un gestor de tareas inspirado en el sistema Kanban. Crea y organiza tareas utilizando funciones de arrastrar y soltar, asigna usuarios y categorías.',
+      descriptionProject3:
+        'Un gestor de tareas inspirado en el sistema Kanban. Crea y organiza tareas utilizando funciones de arrastrar y soltar, asigna usuarios y categorías.',
 
       descriptionProject4: '',
 
@@ -78,24 +80,28 @@ export class LanguageService {
       headlineContact: 'Contacto',
       email: 'info@frank-sinnigen.de',
       address: 'área metropolitana de barcelona',
-      imprint :'Aviso Legal y Protección de Datos',
+      imprint: 'Aviso Legal y Protección de Datos',
       placeholderName: 'Nombre completo',
       placeholderEmail: 'Su dirección de correo electrónico',
       placeholderMessage: 'Su mensaje',
-      send:'enviar',
-      sent:'enviado...',
+      send: 'enviar',
+      sent: 'enviado...',
+      changeInfoBtn: 'Volver a la información de contacto',
+      changeSendBtn: 'Ir al formulario de contacto',
 
       /*imprint*/
       headlineImprint: 'Aviso legal & Protección de datos',
       headlineName: 'Nombre',
       headlineAddress: 'Dirección',
-      headlineWeb:'Sitio web',
+      headlineWeb: 'Sitio web',
       headlineResponsible: 'Responsable del contenido',
       headlineDisclaimer: 'Exención de responsabilidad',
-      disclaimerText: 'El contenido de esta página web ha sido revisado cuidadosamente y creado con el mejor conocimiento. Sin embargo, no se asume ninguna garantía respecto a la precisión, integridad y actualidad del contenido. Se excluye cualquier responsabilidad por daños que surjan directa o indirectamente del uso de esta página web, a menos que se base en intención o negligencia grave.',
-      headlineCopyright:'Derechos de autor',
-      copyrightText:'Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.',
-      headlineSources:'Fuentes',
+      disclaimerText:
+        'El contenido de esta página web ha sido revisado cuidadosamente y creado con el mejor conocimiento. Sin embargo, no se asume ninguna garantía respecto a la precisión, integridad y actualidad del contenido. Se excluye cualquier responsabilidad por daños que surjan directa o indirectamente del uso de esta página web, a menos que se base en intención o negligencia grave.',
+      headlineCopyright: 'Derechos de autor',
+      copyrightText:
+        'Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.',
+      headlineSources: 'Fuentes',
       souresText: 'Este aviso legal fue creado con la ayuda de',
     },
     {
@@ -156,9 +162,11 @@ export class LanguageService {
       headlineProject5: '',
       descriptionProject1: '',
 
-      descriptionProject2: 'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
+      descriptionProject2:
+        'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
 
-      descriptionProject3: 'Task manager inspired by the Kanban System. Create and organize tasks using darg and drop funktion, assign users and categories.',
+      descriptionProject3:
+        'Task manager inspired by the Kanban System. Create and organize tasks using darg and drop funktion, assign users and categories.',
 
       descriptionProject4: '',
 
@@ -168,25 +176,29 @@ export class LanguageService {
       headlineContact: 'Contact',
       email: 'info@frank-sinnigen.de',
       address: 'Barcelona metropolitan area ',
-      imprint :'Imprint & Data Protection',
+      imprint: 'Imprint & Data Protection',
       placeholderName: 'Your Name',
       placeholderEmail: 'Your email address',
       placeholderMessage: 'Your message',
-      send:'Send',
-      sent:'Sent...',
+      send: 'Send',
+      sent: 'Sent...',
+      changeInfoBtn: 'back to contact info',
+      changeSendBtn: 'to the contact form',
 
-       /*imprint*/
-       headlineImprint: 'Imprint & Data Protection',
-       headlineName: 'Name',
-       headlineAddress: 'Address',
-       headlineWeb:'Website',
-       headlineResponsible: 'Responsible for the content',
-       headlineDisclaimer: 'Disclaimer',
-       disclaimerText: 'The contents of this website have been carefully examined and created to the best of our knowledge. However, no guarantee is assumed for the accuracy, completeness, and timeliness of the content. Any liability for damages arising directly or indirectly from the use of this website is excluded, unless based on intent or gross negligence.',
-       headlineCopyright:'Copyright',
-       copyrightText:'All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.',
-       headlineSources:'Sources',
-       souresText: 'This imprint was created with the help of.',
+      /*imprint*/
+      headlineImprint: 'Imprint & Data Protection',
+      headlineName: 'Name',
+      headlineAddress: 'Address',
+      headlineWeb: 'Website',
+      headlineResponsible: 'Responsible for the content',
+      headlineDisclaimer: 'Disclaimer',
+      disclaimerText:
+        'The contents of this website have been carefully examined and created to the best of our knowledge. However, no guarantee is assumed for the accuracy, completeness, and timeliness of the content. Any liability for damages arising directly or indirectly from the use of this website is excluded, unless based on intent or gross negligence.',
+      headlineCopyright: 'Copyright',
+      copyrightText:
+        'All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.',
+      headlineSources: 'Sources',
+      souresText: 'This imprint was created with the help of.',
     },
     {
       /**********************************/
@@ -246,9 +258,11 @@ export class LanguageService {
       headlineProject5: '',
       descriptionProject1: '',
 
-      descriptionProject2: 'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
+      descriptionProject2:
+        'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
 
-      descriptionProject3: 'Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
+      descriptionProject3:
+        'Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
 
       descriptionProject4: '',
 
@@ -258,24 +272,28 @@ export class LanguageService {
       headlineContact: 'Kontakt',
       email: 'info@frank-sinnigen.de',
       address: 'Metropolregion Barcelona',
-      imprint :'Impressum & Datenschutz',
+      imprint: 'Impressum & Datenschutz',
       placeholderName: 'Ihr Vor und Nachname',
       placeholderEmail: 'Ihre Email Adresse',
       placeholderMessage: 'Ihre Nachricht',
-      send:'Senden',
-      sent:'Gesendet...',
+      send: 'Senden',
+      sent: 'Gesendet...',
+      changeInfoBtn: 'zurück zu Kontakinfos',
+      changeSendBtn: 'zum kontaktformular',
 
       /*imprint*/
       headlineImprint: 'Impressum & Datenschutz',
       headlineName: 'Name',
       headlineAddress: 'Adresse',
-      headlineWeb:'Webseite',
+      headlineWeb: 'Webseite',
       headlineResponsible: 'Verantwortlich für den Inhalt',
       headlineDisclaimer: 'Haftungsausschluss',
-      disclaimerText: 'Die Inhalte dieser Website wurden sorgfältig geprüft und nach bestem Wissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Jegliche Haftung für Schäden, die direkt oder indirekt aus der Nutzung dieser Website entstehen, wird ausgeschlossen, soweit dies nicht auf Vorsatz oder grober Fahrlässigkeit beruht.',
-      headlineCopyright:'Urheberrecht',
-      copyrightText:'Alle Inhalte dieser Website, insbesondere Texte, Bilder, Grafiken und Layout,sind urheberrechtlich geschützt. Die Verwendung, Vervielfältigung oder Verbreitung ohne ausdrückliche Zustimmung ist nicht gestattet.',
-      headlineSources:'Quellen',
+      disclaimerText:
+        'Die Inhalte dieser Website wurden sorgfältig geprüft und nach bestem Wissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Jegliche Haftung für Schäden, die direkt oder indirekt aus der Nutzung dieser Website entstehen, wird ausgeschlossen, soweit dies nicht auf Vorsatz oder grober Fahrlässigkeit beruht.',
+      headlineCopyright: 'Urheberrecht',
+      copyrightText:
+        'Alle Inhalte dieser Website, insbesondere Texte, Bilder, Grafiken und Layout,sind urheberrechtlich geschützt. Die Verwendung, Vervielfältigung oder Verbreitung ohne ausdrückliche Zustimmung ist nicht gestattet.',
+      headlineSources: 'Quellen',
       souresText: 'Dieses Impressum wurde erstellt mit Hilfe von',
     },
   ];
