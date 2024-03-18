@@ -13,17 +13,11 @@
         flex-direction: column;
         justify-content: center;
         flex: 1;
-        margin: 0 3% 10% 3%;
+        margin: 0 10% 10% 10%;
         overflow-y: scroll;
         border-radius: 12px;
-        box-shadow: inset 2px 2px 8px rgba(25, 25, 25, 0.6), inset -2px -2px 8px rgba(245, 245, 245, 0.1);
     }
 
-    .btnContainerProj::-webkit-scrollbar {
-        display: block;
-        width: 6px;
-    }
-    
     .btnContainerProj::-webkit-scrollbar-thumb {
         background-color: #ff9900;
         border-radius: 6px;
@@ -35,17 +29,19 @@
 /*************************************************************/
 
 @media screen and (max-width: 1050px) {
-
     .sectionContainer {
         flex-direction: column;
-        margin: 3%;
+        margin: 0;
         width: 100% !important;
-        z-index: 1;
+        border-radius: 0;
+        ::-webkit-scrollbar {
+            display: block;
+        }
 
         .menu {
             width: 100%;
             height: 35% !important;
-            border-radius: 12px !important;
+            border-radius: 0 !important;
 
             .headline {
                 margin: 1% 0 1% 0;
@@ -63,16 +59,63 @@
         .menuProject {
             display: flex;
             height: 40%;
+            margin: -1px 0 3px 0 !important;
+            overflow: hidden;
         }
 
         .section {
             width: 100%;
             height: 100%;
+            z-index: 1;
         }
 
         .btnContainerProj {
-            margin: 0 10% 2% 10%;
-            padding: 13% 0 12px 0;
+            width: calc(100% - 40px) !important;
+            margin: 0 20px 3% 20px;
+            padding: 15% 0 12px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .sectionContainer {
+        .menu {
+            width: 100%;
+            height: 55% !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-height: 940px) and (max-width: 430px) {
+    .sectionContainer {
+        
+        .btnContainerProj {
+            width: calc(100% - 40px) !important;
+            margin: 0 20px 3% 20px;
+        }
+    }
+}
+
+@media screen and (max-height: 670px) and (max-width: 430px) {
+
+    .sectionContainer {
+        .menu {
+            width: 100%;
+            height: 75% !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-height: 740px) and (max-width: 360px) {
+
+    .sectionContainer {
+        .menu {
+            width: 100%;
+            height: 75% !important;
+            border-radius: 0 !important;
         }
     }
 }

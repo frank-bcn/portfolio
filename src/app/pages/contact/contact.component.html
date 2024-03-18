@@ -1,6 +1,10 @@
 <div class="container">
   <div class="contactContainer">
-    <div class="contactDataContainer" [ngClass]="active ? 'slide-in' : 'slide-out'" *ngIf="!active">
+    <div
+      class="contactDataContainer"
+      [ngClass]="active ? 'slide-in' : 'slide-out'"
+      *ngIf="!active"
+    >
       <div class="headlineTextContakt">
         {{ ls.language()?.headlineContact }}
       </div>
@@ -16,38 +20,46 @@
             <address>
               <p class="address">{{ ls.language()?.address }}</p>
               <p class="address">{{ ls.language()?.email }}</p>
-              <p [routerLink]="['/imprint']" class="address imprint">{{ls.language()?.imprint}}</p>
+              <p [routerLink]="['/imprint']" class="address imprint">
+                {{ ls.language()?.imprint }}
+              </p>
             </address>
           </div>
         </div>
       </div>
       <div class="socialMedia">
-        <a
-          href="https://www.linkedin.com/in/frank-sinnigen/"
-          target="_blank"
-          class="btn btnSocial"
-          >LinkedIn
-          <img src="/assets/ images/etc_images/linkedIn.png" />
-        </a>
+        <div class="socialContainer">
+          <a
+            href="https://www.linkedin.com/in/frank-sinnigen/"
+            target="_blank"
+            class="btn btnSocial"
+            >LinkedIn
+            <img src="/assets/ images/etc_images/linkedIn.png" />
+          </a>
 
-        <a
-          href="https://github.com/frank-bcn"
-          target="_blank"
-          class="btn btnSocial"
-        >
-          GitHub
-          <img src="/assets/ images/skills_images/github.png" />
-        </a>
+          <a
+            href="https://github.com/frank-bcn"
+            target="_blank"
+            class="btn btnSocial"
+          >
+            GitHub
+            <img src="/assets/ images/skills_images/github.png" />
+          </a>
+        </div>
+        <button class="btn switchButton" (click)="switch()" *ngIf="tapView">
+          {{
+            active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
+          }}
+        </button>
       </div>
-      <button class="btn switchButton" (click)="switch()" *ngIf="tapView">
-        {{ active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn }}
-      </button>
-    </div>  
+    </div>
     <form class="contactSendContainer">
-      <div class="formSection" [ngClass]="active ? 'slide-in' : 'slide-out'" *ngIf="active || !tapView">
-        <span class="placeholder">{{
-          ls.language()?.placeholderName
-        }}</span>
+      <div
+        class="formSection"
+        [ngClass]="active ? 'slide-in' : 'slide-out'"
+        *ngIf="active || !tapView"
+      >
+        <span class="placeholder">{{ ls.language()?.placeholderName }}</span>
         <input
           required
           name="name"
@@ -63,9 +75,7 @@
           title="Please enter only letters"
         />
 
-        <span class="placeholder">{{
-          ls.language()?.placeholderEmail
-        }}</span>
+        <span class="placeholder">{{ ls.language()?.placeholderEmail }}</span>
         <input
           required
           name="email"
@@ -81,9 +91,7 @@
           title="Please enter a valid email address"
         />
 
-        <span class="placeholder">{{
-          ls.language()?.placeholderMessage
-        }}</span>
+        <span class="placeholder">{{ ls.language()?.placeholderMessage }}</span>
         <textarea
           required
           name="message"
@@ -98,7 +106,7 @@
           title="Please enter a message"
         ></textarea>
         <button
-          class="btn btnContact"
+          class="btn btnSend"
           [disabled]="!formValid() || loading"
           [ngStyle]="{
             cursor: !formValid() || loading ? 'not-allowed' : 'pointer'
@@ -109,12 +117,12 @@
             ls.language()?.send
           }}</span>
           <span *ngIf="loading"><div class="spinner"></div></span>
-          <span *ngIf="showSentMessage">{{
-            ls.language()?.sent
-          }}</span>
+          <span *ngIf="showSentMessage">{{ ls.language()?.sent }}</span>
         </button>
         <button class="btn switchButtonSend" (click)="switch()" *ngIf="tapView">
-          {{ active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn }}
+          {{
+            active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
+          }}
         </button>
       </div>
     </form>

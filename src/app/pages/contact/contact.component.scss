@@ -103,12 +103,20 @@
 
             .socialMedia {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 gap: 50px;
                 width: calc(100% - 6%);
                 margin: 3% 3% 0 3%;
                 height: 30%;
+
+                .socialContainer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
 
                 a {
                     font-weight: 700;
@@ -124,41 +132,42 @@
             justify-content: center;
             align-items: center;
             width: 50%;
-            margin: 0 0 0 0;
+            margin: 6% 0 6% 0;
+            height: calc(100% - 20%);
 
             .formSection {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                margin: 100px 0 100px 0;
+                height: 100%;
 
                 .placeholder {
                     display: flex;
                     font-family: Overpass;
-                    margin-left: 75px;
+                    margin: 0 0 1% 10%;
+                    font-size: clamp(16px, 1.3vw, 38px);
+                    color: #333333;
+                    font-weight: 600;
                 }
 
                 textarea {
                     display: flex;
                     box-sizing: border-box;
                     resize: none;
-                    margin-left: 75px;
-                    margin-right: 75px;
-                    min-height: 150px;
+                    margin: 0 10% 0 10%;
+                    min-height: 30%;
                 }
 
                 .fields {
                     display: flex;
                     border: 1px solid;
-                    flex: 1;
                     box-sizing: border-box;
-                    margin-left: 75px;
-                    margin-right: 75px;
+                    margin: 0 10% 10% 10%;
                     outline: none;
                     background: none;
-                    font-size: 18px;
-                    padding: 20px 10px 20px 5px;
-                    margin-bottom: 50px;
+                    padding: 3% 0 3% 0;
+                    font-size: clamp(24px, 2vw, 42px);
+                    margin-bottom: 3%;
                     border-radius: 9px;
                     box-shadow:
                         inset 2px 2px 8px rgba(25, 25, 25, 0.6),
@@ -212,25 +221,47 @@
 @media screen and (max-width: 1050px) {
     .contactContainer {
         flex-direction: column;
-        margin: 3% 3% 3% 3% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
 
         .contactDataContainer {
             position: absolute;
             z-index: 1;
             background-color: #fffcf3;
             width: 94% !important;
-            height: 84%;
-            top: 4%;
+            height: 80%;
+            top: 6%;
             left: 2%;
             right: 2%;
             border: none !important;
             border-radius: 12px;
 
+            .headlineTextContakt {
+               height: 15% !important;
+            }
+
             .contactInformationContainer {
                 display: flex;
                 width: calc(100% - 6%);
-                flex: 1;
-                margin: 3% 3% 0 3% !important;
+                height: 45% !important;
+                margin: 0 3% 0 3% !important;
+            }
+
+            .socialMedia {
+                width: 100% !important;
+                margin: 3% 0 12% 0 !important;
+
+                .socialContainer {
+                    height: 60%;
+                    width: calc(100% - 40px);
+                    margin: 0 20px 0 20px !important;
+                }
+
+                .switchButton {
+                    display: flex;
+                    width: 100%;
+                    margin: 0 !important;
+                }
             }
         }
 
@@ -238,12 +269,13 @@
             position: absolute;
             background-color: #fffcf3;
             border-radius: 12px;
-            width: calc(100% - 6%) !important;
-            height: calc(100% - 20%) !important;
-            top: 7%;
+            width: 100% !important;
+            height: 74% !important;
+            top: 3%;
             left: 3%;
             right: 3%;
-            bottom: 13%;
+            bottom: 26%;
+        
 
             textarea {
                 display: flex;
@@ -251,6 +283,24 @@
                 resize: none;
                 margin-left: 75px;
                 margin-right: 75px;
+                min-height: 20% !important;
+            }
+
+            .fields {
+                display: flex;
+                border: 1px solid;
+                flex: 1;
+                max-height: 50px !important;
+                box-sizing: border-box;
+                margin-left: 75px;
+                margin-right: 75px;
+                outline: none;
+                background: none;
+                font-size: 18px;
+                padding: 22px 10px 20px 5px;
+                margin-bottom: 13% !important;
+                border-radius: 9px;
+                box-shadow: inset 2px 2px 8px rgba(25, 25, 25, 0.6), inset -2px -2px 8px rgba(245, 245, 245, 0.1);
             }
         }
 
@@ -262,28 +312,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-        }
-
-        .switchButton {
-            display: block !important;
-            position: absolute;
-            margin: 0 5% 5% 5%;
-            z-index: 2;
-            bottom: 0;
-            width: calc(100% - 10%) !important;
-            justify-content: center;
-            transform: initial !important;
+            margin: 0 0 100px 0 !important;
         }
 
         .switchButtonSend {
-            display: block !important;
-            position: absolute;
-            margin: 0 5% 0 5%;
-            z-index: 2;
-            top: 100%;
             width: calc(100% - 10%) !important;
-            justify-content: center;
-            transform: initial !important;
         }
     }
 
@@ -317,3 +350,23 @@
         animation: slideOut 300ms ease-in;
     }
 }
+
+/*@media screen and (max-height: 800px) {
+
+    .contactContainer {
+        .contactSendContainer {
+            height: 76% !important;
+            top: 6% !important;
+            bottom: 30% !important;
+
+            .fields {
+                margin: 0 3% 3% 3% !important;
+            }
+        }
+    }
+
+    .contactDataContainer {
+        width: 94% !important;
+        height: 74% !important;
+    } 
+}*/

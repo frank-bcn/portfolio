@@ -1,27 +1,21 @@
 <div class="container">
   <div class="language"></div>
   <div class="infoSection">
-    <div class="containerText">
-      <section>
-        <div class="text">
-          <div class="textContainer">
-            <div class="headlineText">
-              <div class="textbar">Frank</div>
-              <div class="textbar">Sinnigen</div>
-              <div class="barContainer">
-                <div class="bar">Full-Stack Developer</div>
-              </div>
-            </div>
+    <section>
+      <div class="text">
+        <div class="containerImg">
+          <img class="img" src="/assets/ images/etc_images/background.png" />
+        </div>
+        <div class="textContainer">
+          <div class="headlineText">
+            <div class="textbar">Frank Sinnigen</div>
           </div>
           <p>&lt;p&gt; {{ ls.language()?.slogan }} &lt;/p&gt;</p>
           <button [routerLink]="['/about']" class="btn btnStart">
             {{ ls.language()?.btnText }}
           </button>
         </div>
-      </section>
-    </div>
-  </div>
-  <div class="containerImg">
-    <img class="img" src="/assets/ images/etc_images/background.png" />
+      </div>
+    </section>
   </div>
 </div>
