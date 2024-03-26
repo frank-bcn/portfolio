@@ -1,0 +1,95 @@
+<div class="container">
+  <form>
+    <span class="placeholder">{{ ls.language()?.placeholderName }}</span>
+    <div
+      *ngIf="nameField.touched && (name.trim() === '' || !nameValid())"
+      class="errorMessage"
+    >
+      {{ name.trim() === "" ? "Name is required." : "Invalid name format." }}
+    </div>
+    <input
+      required
+      name="name"
+      type="text"
+      class="fields"
+      [(ngModel)]="name"
+      #nameField="ngModel"
+      [ngClass]="{
+        'fields-untouched': nameField.touched && name.trim() === '',
+        valid: nameValid(),
+        invalid: !nameValid() && nameField.touched
+      }"
+      pattern="[A-Za-z\s]+"
+      title="Please enter only letters"
+    />
+
+    <span class="placeholder">{{ ls.language()?.placeholderEmail }}</span>
+    <div
+      *ngIf="emailField.touched && (email.trim() === '' || !emailValid())"
+      class="errorMessage"
+    >
+      {{ email.trim() === "" ? "Email is required." : "Invalid email format." }}
+    </div>
+    <input
+      required
+      name="email"
+      type="email"
+      class="fields"
+      [(ngModel)]="email"
+      #emailField="ngModel"
+      [ngClass]="{
+        'fields-untouched': emailField.touched && email.trim() === '',
+        valid: emailValid(),
+        invalid: !emailValid() && emailField.touched
+      }"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      title="Please enter a valid email address"
+    />
+
+    <span class="placeholder">{{ ls.language()?.placeholderMessage }}</span>
+    <div
+      *ngIf="messageField.touched && (message.trim() === '' || !messageValid())"
+      class="errorMessage"
+    >
+      {{
+        message.trim() === ""
+          ? "Message is required."
+          : "Invalid message format."
+      }}
+    </div>
+    <textarea
+      required
+      name="message"
+      class="fields"
+      [(ngModel)]="message"
+      #messageField="ngModel"
+      [ngClass]="{
+        'fields-untouched': messageField.touched && message.trim() === '',
+        valid: messageValid(),
+        invalid: !messageValid() && messageField.touched
+      }"
+      pattern=".*\S+.*"
+      title="Please enter a message"
+    ></textarea>
+
+    <button
+      class="btn btnSend"
+      [disabled]="!formValid() || loading"
+      [ngStyle]="{
+        cursor: !formValid() || loading ? 'not-allowed' : 'pointer'
+      }"
+      (click)="sendMail()"
+    >
+      <span *ngIf="!loading && !showSentMessage">{{
+        ls.language()?.send
+      }}</span>
+      <span *ngIf="loading"><div class="spinner"></div></span>
+      <span *ngIf="showSentMessage">{{ ls.language()?.sent }}</span>
+    </button>
+  </form>
+  <button class="btn switchButtonSend" (click)="ss.switch()" *ngIf="ss.tapView">
+    {{
+      ss.active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
+    }}
+  </button>
+</div>

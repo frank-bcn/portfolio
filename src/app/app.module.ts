@@ -16,6 +16,8 @@ import { JoinComponent } from './pages/project-join/join.component';
 import { ProjectPolloComponent } from './pages/project-pollo/project-pollo.component';
 import { ProjectPokedexComponent } from './pages/project-pokedex/project-pokedex.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
+import { MessageFormComponent } from './pages/message-form/message-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
     ProjectPolloComponent,
     ProjectPokedexComponent,
     ImprintComponent,
+    MessageFormComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule,
   ],
   providers: [],

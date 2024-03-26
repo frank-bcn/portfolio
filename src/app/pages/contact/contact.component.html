@@ -2,8 +2,8 @@
   <div class="contactContainer">
     <div
       class="contactDataContainer"
-      [ngClass]="active ? 'slide-in' : 'slide-out'"
-      *ngIf="!active"
+      [ngClass]="ss.active ? 'slide-in' : 'slide-out'"
+      *ngIf="!ss.active"
     >
       <div class="headlineTextContakt">
         {{ ls.language()?.headlineContact }}
@@ -46,85 +46,27 @@
             <img src="/assets/ images/skills_images/github.png" />
           </a>
         </div>
-        <button class="btn switchButton" (click)="switch()" *ngIf="tapView">
+        <button
+          class="btn switchButton"
+          (click)="ss.switch()"
+          *ngIf="ss.tapView"
+        >
           {{
-            active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
+            ss.active
+              ? ls.language()?.changeInfoBtn
+              : ls.language()?.changeSendBtn
           }}
         </button>
       </div>
     </div>
-    <form class="contactSendContainer">
+    <div class="contactSendContainer">
       <div
         class="formSection"
-        [ngClass]="active ? 'slide-in' : 'slide-out'"
-        *ngIf="active || !tapView"
+        [ngClass]="ss.active ? 'slide-in' : 'slide-out'"
+        *ngIf="ss.active || !ss.tapView"
       >
-        <span class="placeholder">{{ ls.language()?.placeholderName }}</span>
-        <input
-          required
-          name="name"
-          type="text"
-          class="fields"
-          [(ngModel)]="name"
-          [ngClass]="{
-            valid: nameValid() && name.trim() !== '',
-            invalid: !nameValid() && name.trim() !== '',
-            'fields-untouched': name.trim() === ''
-          }"
-          pattern="[A-Za-z\s]+"
-          title="Please enter only letters"
-        />
-
-        <span class="placeholder">{{ ls.language()?.placeholderEmail }}</span>
-        <input
-          required
-          name="email"
-          type="email"
-          class="fields"
-          [(ngModel)]="email"
-          [ngClass]="{
-            valid: emailValid() && email.trim() !== '',
-            invalid: !emailValid() && email.trim() !== '',
-            'fields-untouched': email.trim() === ''
-          }"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-          title="Please enter a valid email address"
-        />
-
-        <span class="placeholder">{{ ls.language()?.placeholderMessage }}</span>
-        <textarea
-          required
-          name="message"
-          class="fields message"
-          [(ngModel)]="message"
-          [ngClass]="{
-            valid: messageValid() && message.trim() !== '',
-            invalid: !messageValid() && message.trim() !== '',
-            'fields-untouched': message.trim() === ''
-          }"
-          pattern=".*\S+.*"
-          title="Please enter a message"
-        ></textarea>
-        <button
-          class="btn btnSend"
-          [disabled]="!formValid() || loading"
-          [ngStyle]="{
-            cursor: !formValid() || loading ? 'not-allowed' : 'pointer'
-          }"
-          (click)="sendMail()"
-        >
-          <span *ngIf="!loading && !showSentMessage">{{
-            ls.language()?.send
-          }}</span>
-          <span *ngIf="loading"><div class="spinner"></div></span>
-          <span *ngIf="showSentMessage">{{ ls.language()?.sent }}</span>
-        </button>
-        <button class="btn switchButtonSend" (click)="switch()" *ngIf="tapView">
-          {{
-            active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
-          }}
-        </button>
+        <app-message-form></app-message-form>
       </div>
-    </form>
+    </div>
   </div>
 </div>

@@ -64,7 +64,7 @@ export class LanguageService {
       headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: '',
+      descriptionProject1: 'Basándose en PokeAPI, una biblioteca simple que proporciona y cataloga información sobre Pokémon.',
 
       descriptionProject2:
         'Un juego simple de salto y carrera en 2D basado en un enfoque orientado a objetos. El enfoque principal durante la implementación fue el uso de Canvas. Ayuda a El-Pollo-Loco a encontrar monedas y botellas de veneno para luchar contra el mortal jefe final.',
@@ -160,7 +160,7 @@ export class LanguageService {
       headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: '',
+      descriptionProject1: 'Based on PokeAPI a simple libaray that provides and catalogues pokemon information',
 
       descriptionProject2:
         'A simple 2D jump-and-run game based on an object-oriented approach. The main focus during implementation was on the use of Canvas. Help El-Pollo-Loco find coins and poison bottles to fight against the deadly end boss.',
@@ -256,7 +256,7 @@ export class LanguageService {
       headlineProject3: 'Join',
       headlineProject4: '',
       headlineProject5: '',
-      descriptionProject1: '',
+      descriptionProject1: 'Basierend auf der PokeAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
 
       descriptionProject2:
         'Ein einfaches 2D-Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Das Hauptaugenmerk bei der Umsetzung lag hierbei auf der Nutzung von Canvas. Hilf El-Pollo-Loco, Münzen und Giftflaschen zu finden, um gegen den tödlichen Endboss zu kämpfen.',
