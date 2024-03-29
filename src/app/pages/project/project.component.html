@@ -24,7 +24,7 @@
         >
           {{ ls.language()?.btnProject3 }}
         </button>
-        <button
+        <!-- <button
           class="btn btnProj"
           (click)="switchProject('project4')"
           [ngClass]="{ active: currentProject === 'project4' }"
@@ -37,7 +37,7 @@
           [ngClass]="{ active: currentProject === 'project5' }"
         >
           {{ ls.language()?.btnProject5 }}
-        </button>
+        </button> -->
       </div>
     </div>
     <div class="section" [@slideAnimation]="currentProject">
@@ -50,12 +50,12 @@
       <div *ngIf="currentProject === 'project3'" class="sliderContainer">
         <app-project-join></app-project-join>
       </div>
-      <div *ngIf="currentProject === 'project4'" class="sliderContainer">
-        <!--New App -->
+      <!-- <div *ngIf="currentProject === 'project4'" class="sliderContainer">
+        <!--New App 
       </div>
       <div *ngIf="currentProject === 'project5'" class="sliderContainer">
-        <!--New App -->
-      </div>
+        <!--New App 
+      </div> -->
     </div>
   </div>
 </div>

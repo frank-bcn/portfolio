@@ -19,5 +19,7 @@ export class ContactComponent {
 
   constructor(public ls: LanguageService, public ss: ScreenService ) {}
 
-
+  ngOnInit() {
+    this.ss.checkScreenWidth();
+  }
 }
