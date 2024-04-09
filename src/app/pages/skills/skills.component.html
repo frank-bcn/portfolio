@@ -6,21 +6,21 @@
       }}</span>
       <div class="linkContainer"> 
         <button
-          class="btn btnSkill"
+          class="btn btnLink"
           (click)="switchSkill('frontend')"
           [ngClass]="{ active: currentSkill === 'frontend' }"
         >
           {{ ls.language()?.btnFrontend }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnLink"
           (click)="switchSkill('backend')"
           [ngClass]="{ active: currentSkill === 'backend' }"
         >
           {{ ls.language()?.btnBackend }}
         </button>
         <button
-          class="btn btnSkill"
+          class="btn btnLink"
           (click)="switchSkill('extra')"
           [ngClass]="{ active: currentSkill === 'extra' }"
         >

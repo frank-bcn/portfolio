@@ -1,43 +1,31 @@
 <div class="container">
   <div class="sectionContainer">
-    <div class="menu menuProject">
-      <div class="headlineText headline">{{ ls.language()?.headline }}</div>
-      <div class="btnContainerProj">
-        <button
-          class="btn btnProj"
-          (click)="switchProject('project1')"
-          [ngClass]="{ active: currentProject === 'project1' }"
-        >
-          {{ ls.language()?.btnProject1 }}
-        </button>
-        <button
-          class="btn btnProj"
-          (click)="switchProject('project2')"
-          [ngClass]="{ active: currentProject === 'project2' }"
-        >
-          {{ ls.language()?.btnProject2 }}
-        </button>
-        <button
-          class="btn btnProj"
-          (click)="switchProject('project3')"
-          [ngClass]="{ active: currentProject === 'project3' }"
-        >
-          {{ ls.language()?.btnProject3 }}
-        </button>
-        <!-- <button
-          class="btn btnProj"
-          (click)="switchProject('project4')"
-          [ngClass]="{ active: currentProject === 'project4' }"
-        >
-          {{ ls.language()?.btnProject4 }}
-        </button>
-        <button
-          class="btn btnProj"
-          (click)="switchProject('project5')"
-          [ngClass]="{ active: currentProject === 'project5' }"
-        >
-          {{ ls.language()?.btnProject5 }}
-        </button> -->
+    <div class="menu">
+      <span class="headlineText headline">{{ ls.language()?.headline }}</span>
+      <div class="linkContainer">
+        <div class="btnContainer" [ngClass]="{'scrollable': btnCount > 3}">
+          <button
+            class="btn btnLink"
+            (click)="switchProject('project1')"
+            [ngClass]="{ active: currentProject === 'project1' }"
+          >
+            {{ ls.language()?.btnProject1 }}
+          </button>
+          <button
+            class="btn btnLink"
+            (click)="switchProject('project2')"
+            [ngClass]="{ active: currentProject === 'project2' }"
+          >
+            {{ ls.language()?.btnProject2 }}
+          </button>
+          <button
+            class="btn btnLink"
+            (click)="switchProject('project3')"
+            [ngClass]="{ active: currentProject === 'project3' }"
+          >
+            {{ ls.language()?.btnProject3 }}
+          </button>
+        </div>
       </div>
     </div>
     <div class="section" [@slideAnimation]="currentProject">
@@ -50,12 +38,6 @@
       <div *ngIf="currentProject === 'project3'" class="sliderContainer">
         <app-project-join></app-project-join>
       </div>
-      <!-- <div *ngIf="currentProject === 'project4'" class="sliderContainer">
-        <!--New App 
-      </div>
-      <div *ngIf="currentProject === 'project5'" class="sliderContainer">
-        <!--New App 
-      </div> -->
     </div>
   </div>
 </div>

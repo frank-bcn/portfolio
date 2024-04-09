@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 import { animation } from '../_animations/animation';
 
@@ -9,9 +9,15 @@ import { animation } from '../_animations/animation';
   animations: [animation],
 })
 export class ProjectComponent {
+
   currentProject = 'project1';
+  btnCount!: number;
 
   constructor(public ls: LanguageService) {}
+
+  ngOnInit() {
+    this.btnCount = document.querySelectorAll('.btnContainer .btn').length;
+  }
 
   switchProject(project: string) {
     this.currentProject = project;

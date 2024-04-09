@@ -13,7 +13,14 @@ export class AppComponent {
 
   title = 'portfolio';
 
-  constructor(private router: Router, public ls: LanguageService) {}
+  constructor(private router: Router, public ls: LanguageService) {
+
+  console.log(
+    '%c  Fränk rules!',
+    'font-size:20px; font-weight:800; color:red; text-shadow: 5px 5px 10px green'
+  );
+
+}
 
   ngOnInit() {
     this.isStartPage();

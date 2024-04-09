@@ -14,8 +14,8 @@ export class LanguageService {
       code: '1',
       name: 'es',
 
-      /*header*/
-      btnAbout: 'Sobre mí',
+      /*footer*/
+      btnAbout: 'Sobre',
       btnSkills: 'Habilidades',
       btnProjects: 'Proyectos',
       btnConatct: 'Contacto',
@@ -64,7 +64,8 @@ export class LanguageService {
       headlineProject3: 'Join',
       // headlineProject4: '',
       // headlineProject5: '',
-      descriptionProject1: 'Un Pokedex básico, para este pequeño proyecto, el enfoque estaba en cargar datos e información desde una API.',
+      descriptionProject1:
+        'Un Pokedex básico, para este pequeño proyecto, el enfoque estaba en cargar datos e información desde una API.',
 
       descriptionProject2:
         'El Pollo Loco es un juego de plataformas 2D simple donde puedes recolectar monedas y botellas para derrotar enemigos. El enfoque de este juego estuvo en utilizar el lienzo (Canvas) y el enfoque orientado a objetos.',
@@ -111,7 +112,7 @@ export class LanguageService {
       code: '2',
       name: 'en',
 
-      /*header*/
+      /*footer*/
       btnAbout: 'About',
       btnSkills: 'Skills',
       btnProjects: 'Projects',
@@ -160,7 +161,8 @@ export class LanguageService {
       headlineProject3: 'Join',
       // headlineProject4: '',
       // headlineProject5: '',
-      descriptionProject1: 'A simple Pokedex, for this small project, the focus was on loading data and information from an API.',
+      descriptionProject1:
+        'A simple Pokedex, for this small project, the focus was on loading data and information from an API.',
 
       descriptionProject2:
         'El Pollo Loco is a simple 2D jump and run game where you can collect coins and bottles to defeat enemies. The focus of this game was on using the Canvas and the object-oriented approach.',
@@ -207,8 +209,8 @@ export class LanguageService {
       code: '3',
       name: 'de',
 
-      /*header*/
-      btnAbout: 'Über mich',
+      /*footer*/
+      btnAbout: 'Über',
       btnSkills: 'Fähigkeiten',
       btnProjects: 'Projekte',
       btnConatct: 'Kontakt',
@@ -256,7 +258,8 @@ export class LanguageService {
       headlineProject3: 'Join',
       // headlineProject4: '',
       // headlineProject5: '',
-      descriptionProject1: 'Ein einfacher Pokedex, bei diesem kleinen Projekt lag der Fokus auf das Laden von Daten und Informationen über einer API.',
+      descriptionProject1:
+        'Ein einfacher Pokedex, bei diesem kleinen Projekt lag der Fokus auf das Laden von Daten und Informationen über einer API.',
 
       descriptionProject2:
         'El Pollo Loco ist ein einfaches 2D Jump and Run Spiel, bei dem man Münzen und Flaschen sammeln kann, um Gegner zu besiegen. Bei diesem Spiel lag der Fokus auf die Nutzung des Canvas und dem objektorientierten Ansatz.',
