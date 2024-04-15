@@ -27,14 +27,9 @@ export class LanguageService {
 
       /*about page*/
       headlineAbout: 'Sobre mí',
-      professionalCareerHeadline: 'Carrera Profesional',
-      professionalCareerText:
-        'Después de terminar mi educación escolar, completé con éxito un aprendizaje como albañil.',
-
       professionalIntensiveHeadline: 'Fase Intensiva Profesional',
-
       professionalIntensiveText:
-        'Durante mi formación profesional, entré en contacto con la programación a través de varios caminos indirectos. Esta fascinación me llevó a profundizar aún más en ella, y para alcanzar un nivel más alto, finalmente me inscribí en la Academia de Desarrolladores.',
+        'Después de varios años de programación, mi curiosidad se volvió infinita y decidí inscribirme en la Academia de Desarrolladores para obtener más información y alcanzar un nivel más alto. Desde entonces, he creado varios proyectos complejos y he adquirido experiencia en colaborar con otros desarrolladores.',
       btn: 'Vamos a hablar',
 
       /*Skills*/
@@ -124,14 +119,9 @@ export class LanguageService {
 
       /*about page*/
       headlineAbout: 'About me',
-      professionalCareerHeadline: 'Professional Career',
-      professionalCareerText:
-        'After completing my schooling, I successfully completed an apprenticeship as a bricklayer.',
-
       professionalIntensiveHeadline: 'Professional Intensive Phase',
-
       professionalIntensiveText:
-        'During my vocational training, I came into contact with programming through various detours. This fascination drove me to delve even deeper into it, and to achieve a higher level, I eventually enrolled in the Developer Academy.',
+        'After several years of programming, my curiosity became boundless, and I decided to enroll at the Developer Academy to gain more input and reach a higher level. Since then, I have created several complex projects and gained experience in collaborating with other developers.',
       btn: 'Let`s talk',
 
       /*Skills*/
@@ -221,14 +211,9 @@ export class LanguageService {
 
       /*about page*/
       headlineAbout: 'Über mich',
-      professionalCareerHeadline: 'Beruflicher Werdegang',
-      professionalCareerText:
-        'Nach meiner Schulausbildung habe ich eine Lehre zum Maurer erfolgreich absolviert.',
-
       professionalIntensiveHeadline: 'Berufliche Intensivphase',
-
       professionalIntensiveText:
-        'Während meiner beruflichen Ausbildung kam ich dann über Umwege mit dem Programmieren in Kontakt. Diese Faszination trieb mich dazu, mich noch intensiver damit zu beschäftigen und um ein höheres Niveau zu erreichen, meldete ich mich schließlich bei der Developer Akademie an.',
+        'Nach einigen Jahren des Programmierens wurde meine Neugier grenzenlos und ich entschied mich, mich bei der Developer Akademie anzumelden, um dort mehr Input und ein höheres Niveau zu erreichen. Seitdem habe ich mehrere komplexe Projekte erstellt und Erfahrungen in der Zusammenarbeit mit anderen Entwicklern gesammelt.',
       btn: 'Lass uns reden',
 
       /*Skills*/
