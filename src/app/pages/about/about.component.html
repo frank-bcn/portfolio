@@ -1,6 +1,10 @@
 <div class="container">
   <div class="imageContainer">
-    <img draggable="false" src="/assets/ images/etc_images/about.png" />
+    <img
+      draggable="false"
+      (contextmenu)="ss.preventContextMenu($event)"
+      src="/assets/ images/etc_images/about.png"
+    />
   </div>
   <div class="aboutSection">
     <span class="headlineText">{{ ls.language()?.headlineAbout }}</span>
@@ -11,7 +15,9 @@
       </span>
     </div>
     <div class="btnContainer">
-      <button [routerLink]="['/contact']" class="btn btnAbout">{{ ls.language()?.btn }}</button>
+      <button [routerLink]="['/contact']" class="btn btnAbout">
+        {{ ls.language()?.btn }}
+      </button>
     </div>
   </div>
 </div>

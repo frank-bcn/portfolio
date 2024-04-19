@@ -25,4 +25,8 @@ export class ScreenService {
       this.active = !this.active;
     }
   }
+
+  preventContextMenu(event: MouseEvent) {
+    event.preventDefault();
+  }
 }

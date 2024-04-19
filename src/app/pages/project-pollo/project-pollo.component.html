@@ -5,14 +5,27 @@
         ls.language()?.headlineProject2
       }}</span>
       <span class="projIcon">
-        <img draggable="false" src="/assets/ images/skills_images/html.png" />
-        <img draggable="false" src="/assets/ images/skills_images/js.png" />
-        <img draggable="false" src="/assets/ images/skills_images/css.png" />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/html.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/js.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/css.png"
+        />
       </span>
     </header>
     <div class="sectionProject">
       <img
         draggable="false"
+        (contextmenu)="ss.preventContextMenu($event)"
         src="/assets/ images/etc_images/pollo-loco.png"
         class="projImg"
       />
@@ -25,7 +38,11 @@
         target="_blank"
         class="btn btnProject"
         >GitHub
-        <img draggable="false" src="/assets/ images/skills_images/github.png" />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/github.png"
+        />
       </a>
 
       <a
@@ -35,7 +52,11 @@
         class="btn btnProject"
       >
         Live
-        <img draggable="false" src="/assets/ images/etc_images/live.png" />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/etc_images/live.png"
+        />
       </a>
     </div>
   </div>

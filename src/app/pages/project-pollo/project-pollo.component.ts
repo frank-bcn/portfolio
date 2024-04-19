@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { ScreenService } from '../../services/screen.service';
 
 @Component({
   selector: 'app-project-pollo',
@@ -8,6 +9,6 @@ import { LanguageService } from '../../services/language.service';
 })
 export class ProjectPolloComponent {
 
-  constructor(public ls: LanguageService) { }
+  constructor(public ls: LanguageService, public ss: ScreenService) { }
 
 }

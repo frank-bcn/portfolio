@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { ScreenService } from '../../services/screen.service';
 
 @Component({
   selector: 'app-extra',
@@ -7,6 +8,6 @@ import { LanguageService } from '../../services/language.service';
   styleUrl: './extra.component.scss'
 })
 export class ExtraComponent {
-  constructor(public ls: LanguageService) {}
+  constructor(public ls: LanguageService, public ss: ScreenService) {}
 
 }

@@ -12,6 +12,7 @@
         <div class="map">
           <img
             draggable="false"
+            (contextmenu)="ss.preventContextMenu($event)"
             src="/assets/ images/etc_images/map.png"
             class="legend"
           />
@@ -41,6 +42,7 @@
             >LinkedIn
             <img
               draggable="false"
+              (contextmenu)="ss.preventContextMenu($event)"
               src="/assets/ images/etc_images/linkedIn.png"
             />
           </a>
@@ -54,6 +56,7 @@
             GitHub
             <img
               draggable="false"
+              (contextmenu)="ss.preventContextMenu($event)"
               src="/assets/ images/skills_images/github.png"
             />
           </a>

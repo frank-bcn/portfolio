@@ -1,11 +1,28 @@
 <div class="container">
-    <span class="headlineIcon">
-        <img draggable="false" class="imgIcon" src="/assets/ images/skills_images/python.png">
-    </span>
-    <div class="content"> {{ ls.language()?.backendDescription }}</div>
-    <span class="otherIcon">
-        <img draggable="false" src="/assets/ images/skills_images/sql.png">
-        <img draggable="false" src="/assets/ images/skills_images/django.png">
-        <img draggable="false" src="/assets/ images/skills_images/firebase.png">
-    </span>
+  <span class="headlineIcon">
+    <img
+      draggable="false"
+      (contextmenu)="ss.preventContextMenu($event)"
+      class="imgIcon"
+      src="/assets/ images/skills_images/python.png"
+    />
+  </span>
+  <div class="content">{{ ls.language()?.backendDescription }}</div>
+  <span class="otherIcon">
+    <img
+      draggable="false"
+      (contextmenu)="ss.preventContextMenu($event)"
+      src="/assets/ images/skills_images/sql.png"
+    />
+    <img
+      draggable="false"
+      (contextmenu)="ss.preventContextMenu($event)"
+      src="/assets/ images/skills_images/django.png"
+    />
+    <img
+      draggable="false"
+      (contextmenu)="ss.preventContextMenu($event)"
+      src="/assets/ images/skills_images/firebase.png"
+    />
+  </span>
 </div>

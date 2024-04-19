@@ -7,16 +7,30 @@
       <span class="projIcon">
         <img
           draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
           src="/assets/ images/skills_images/angular.png"
         />
-        <img draggable="false" src="/assets/ images/skills_images/django.png" />
-        <img draggable="false" src="/assets/ images/skills_images/sql.png" />
-        <img draggable="false" src="/assets/ images/skills_images/docker.png" />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/django.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/sql.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/docker.png"
+        />
       </span>
     </header>
     <div class="sectionProject">
       <img
         draggable="false"
+        (contextmenu)="ss.preventContextMenu($event)"
         src="/assets/ images/etc_images/join.png"
         class="projImg"
       />
@@ -39,7 +53,11 @@
         class="btn btnProject"
       >
         Live
-        <img draggable="false" src="/assets/ images/etc_images/live.png" />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/etc_images/live.png"
+        />
       </a>
     </div>
   </div>

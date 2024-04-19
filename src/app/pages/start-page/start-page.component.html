@@ -4,7 +4,12 @@
     <section>
       <div class="text">
         <div class="containerImg">
-          <img draggable="false" class="img" src="/assets/ images/etc_images/background.png" />
+          <img
+            draggable="false"
+            (contextmenu)="ss.preventContextMenu($event)"
+            class="img"
+            src="/assets/ images/etc_images/background.png"
+          />
         </div>
         <div class="textContainer">
           <div class="headlineText">

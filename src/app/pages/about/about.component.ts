@@ -10,5 +10,4 @@ import { ScreenService } from '../../services/screen.service';
 export class AboutComponent {
   
   constructor(public ls: LanguageService, public ss: ScreenService) { }
-
 }

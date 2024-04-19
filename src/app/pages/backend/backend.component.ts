@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { ScreenService } from '../../services/screen.service';
 
 @Component({
   selector: 'app-backend',
@@ -7,6 +8,6 @@ import { LanguageService } from '../../services/language.service';
   styleUrl: './backend.component.scss'
 })
 export class BackendComponent {
-  constructor(public ls: LanguageService) { }
+  constructor(public ls: LanguageService, public ss: ScreenService) { }
 
 }
