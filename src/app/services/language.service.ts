@@ -41,7 +41,7 @@ export class LanguageService {
         'En la academia, el enfoque estaba en el framework Angular. Implementé mis primeros proyectos utilizando HTML, CSS y JavaScript.',
 
       backendDescription:
-        'En mis proyectos iniciales, utilicé Firebase, pero quería ampliar mis horizontes y entender mejor lo que sucede en segundo plano. Python con el framework Django y las bases de datos SQL y NoSQL eran perfectos para este propósito. Consulta mi proyecto (Join).',
+        'En mis proyectos iniciales, solía utilizar Firebase, pero quería ampliar mis horizontes y comprender mejor lo que sucede detrás de escena. Python con el framework Django y la base de datos SQLite fueron perfectos para esto. Consulta mi proyecto (Join).',
 
       extraDescription:
         'Otras habilidades que he adquirido incluyen Scrum, Git (o GitHub) y APIs.Pude implementar Scrum y Git/GitHub en varios proyectos grupales, así como de manera independiente en casa, por ejemplo, para una planificación y ejecución efectivas de proyectos. Utilicé Git/GitHub para crear repositorios y para almacenar, rastrear y gestionar código. Con mi pequeño proyecto (Pokedex), aprendí a interactuar con APIs y a recuperar datos de interfaces.',
@@ -133,7 +133,7 @@ export class LanguageService {
         'At the academy, the focus was on the Angular framework. I implemented my first projects using HTML, CSS, and JavaScript.',
 
       backendDescription:
-        'In my initial projects, I used Firebase, but I wanted to broaden my horizons and better understand what happens behind the scenes. Python with the Django framework and SQL and NoSQL databases were perfect for this purpose. See my project (Join).',
+        'In my early projects, I used Firebase, but I wanted to broaden my horizons and gain a better understanding of what happens behind the scenes. Python with the Django framework and the SQLite database were perfect for this. See my project (Join).',
 
       extraDescription:
         'Additional skills I`ve acquired include Scrum, Git (or GitHub), and APIs.I was able to implement Scrum and Git/GitHub in several group projects as well as independently at home, for instance, for effective project planning and execution. I used Git/GitHub to create repositories and to store, track, and manage code.With my small project (Pokedex), I learned how to interact with APIs and retrieve data from interfaces.',
@@ -225,7 +225,7 @@ export class LanguageService {
         'In der Akademie lag der Fokus auf dem Framework Angular. Meine ersten Projekte habe ich mit HTML, CSS und JavaScript umgesetzt.',
 
       backendDescription:
-        'In meinen Anfangsprojekten verwendete ich noch Firebase, aber ich wollte über den Tellerrand schauen und besser verstehen, was im Hintergrund alles passiert. Python mit dem Framework Django und den Datenbanken SQL und NoSQL waren perfekt dafür geeignet. Siehe mein Projekt (Join).',
+        'In meinen Anfangsprojekten habe ich noch Firebase verwendet, aber ich wollte über den Tellerrand schauen und besser verstehen, was im Hintergrund alles passiert. Python mit dem Framework Django und der SQLite-Datenbank waren perfekt dafür geeignet. Siehe mein Projekt (Join).',
 
       extraDescription:
         'Weitere Skills, die ich erlernt habe, sind Scrum, Git (bzw. Github) und APIs. Scrum und Git/Github konnte ich in mehreren Gruppenprojekten und auch alleine zu Hause umsetzen, z.B. zur effektiven Planung und Durchführung von Projekten. Dabei verwendete ich Git/Github, um Git-Repositories zu erstellen und Code zu speichern, zu verfolgen und zu verwalten. Mit meinem kleinen Projekt (Pokedex) lernte ich den Umgang mit APIs kennen und wie man Daten von Schnittstellen abruft.',
