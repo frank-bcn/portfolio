@@ -48,7 +48,7 @@ export class LanguageService {
         'Otras habilidades que he adquirido incluyen Scrum, Git (o GitHub) y APIs.Pude implementar Scrum y Git/GitHub en varios proyectos grupales, así como de manera independiente en casa, por ejemplo, para una planificación y ejecución efectivas de proyectos. Utilicé Git/GitHub para crear repositorios y para almacenar, rastrear y gestionar código. Con mi pequeño proyecto (Pokedex), aprendí a interactuar con APIs y a recuperar datos de interfaces.',
 
       deploymentDescription:
-        'En mis proyectos he utilizado Google Cloud y Docker. Google Cloud ofrece una infraestructura confiable y flexible, lo que me permite hospedar y administrar mis proyectos de manera eficiente. Docker simplifica la contenerización de mis proyectos, asegurando que se ejecuten de manera consistente y sin problemas en cualquier entorno.',
+        'En mis proyectos, he utilizado Google Cloud, Docker, Redis, así como Integración Continua (CI) y Despliegue Continuo (CD). Google Cloud me proporciona una infraestructura confiable y flexible. Docker simplifica la contenedorización de mis proyectos. El uso de CI/CD automatiza mi proceso de desarrollo y mejora la calidad de mis proyectos. Al utilizar Redis como base de datos en memoria (RAM), pude lograr un procesamiento y almacenamiento de datos rápido y eficiente.',
 
       /*Projects*/
       headline: 'Projectos',
@@ -144,7 +144,7 @@ export class LanguageService {
         'Additional skills I`ve acquired include Scrum, Git (or GitHub), and APIs.I was able to implement Scrum and Git/GitHub in several group projects as well as independently at home, for instance, for effective project planning and execution. I used Git/GitHub to create repositories and to store, track, and manage code.With my small project (Pokedex), I learned how to interact with APIs and retrieve data from interfaces.',
 
       deploymentDescription:
-        'In my projects, I have utilized Google Cloud and Docker. Google Cloud provides a reliable and flexible infrastructure, enabling me to efficiently host and manage my projects. Docker simplifies the containerization of my projects, ensuring they run consistently and seamlessly in any environment.',
+        'In my projects, I have used Google Cloud, Docker, Redis, as well as Continuous Integration (CI) and Continuous Deployment (CD). Google Cloud provides me with a reliable and flexible infrastructure. Docker simplifies the containerization of my projects. The use of CI/CD automates my development process and improves the quality of my projects. By utilizing Redis as an in-memory database (RAM), I was able to achieve fast and efficient data processing and storage.',
 
       /*Projects*/
       headline: 'Projects',
@@ -240,7 +240,7 @@ export class LanguageService {
         'Weitere Skills, die ich erlernt habe, sind Scrum, Git (bzw. Github) und APIs. Scrum und Git/Github konnte ich in mehreren Gruppenprojekten und auch alleine zu Hause umsetzen, z.B. zur effektiven Planung und Durchführung von Projekten. Dabei verwendete ich Git/Github, um Git-Repositories zu erstellen und Code zu speichern, zu verfolgen und zu verwalten. Mit meinem kleinen Projekt (Pokedex) lernte ich den Umgang mit APIs kennen und wie man Daten von Schnittstellen abruft.',
 
       deploymentDescription:
-        'Bei meinen Projekten habe ich Google Cloud und Docker verwendet. Google Cloud bietet eine zuverlässige und flexible Infrastruktur, die es mir ermöglicht, meine Projekte effizient zu hosten und zu verwalten. Docker erleichtert die Containerisierung meiner Projekte, sodass sie in jeder Umgebung konsistent und problemlos laufen.',
+        'Bei meinen Projekten habe ich Google Cloud, Docker, Redis sowie Continuous Integration (CI) und Continuous Deployment (CD) verwendet. Google Cloud bietet mir eine zuverlässige und flexible Infrastruktur. Docker erleichtert die Containerisierung meiner Projekte. Der Einsatz von CI/CD automatisiert meinen Entwicklungsprozess und verbessert die Qualität meiner Projekte. Durch den Einsatz von Redis als In-Memory-Datenbank (Arbeitsspeicher) konnte ich schnelle und effiziente Datenverarbeitungen und -speicherungen erreichen.',
       /*Projects*/
       headline: 'Projekte',
       btnProject1: 'Pokedex',
