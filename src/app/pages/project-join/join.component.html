@@ -4,6 +4,14 @@
       <span class="headlineTextProj headlineProjects">{{
         ls.language()?.headlineProject3
       }}</span>
+    </header>
+    <div class="sectionProject">
+      <img
+        draggable="false"
+        (contextmenu)="ss.preventContextMenu($event)"
+        src="/assets/ images/etc_images/join.png"
+        class="projImg"
+      />
       <span class="projIcon">
         <img
           draggable="false"
@@ -18,7 +26,12 @@
         <img
           draggable="false"
           (contextmenu)="ss.preventContextMenu($event)"
-          src="/assets/ images/skills_images/sql.png"
+          src="/assets/ images/skills_images/sql-lite.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/skills_images/google-cloud.png"
         />
         <img
           draggable="false"
@@ -26,14 +39,6 @@
           src="/assets/ images/skills_images/docker.png"
         />
       </span>
-    </header>
-    <div class="sectionProject">
-      <img
-        draggable="false"
-        (contextmenu)="ss.preventContextMenu($event)"
-        src="/assets/ images/etc_images/join.png"
-        class="projImg"
-      />
       <span class="description">{{ ls.language()?.descriptionProject3 }}</span>
     </div>
     <div class="linkSection">

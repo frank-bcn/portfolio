@@ -18,6 +18,8 @@ import { ProjectPokedexComponent } from './pages/project-pokedex/project-pokedex
 import { ImprintComponent } from './pages/imprint/imprint.component';
 import { MessageFormComponent } from './pages/message-form/message-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DeploymentComponent } from './pages/deployment/deployment.component';
+import { ProjectNetflixCloneComponent } from './pages/project-netflix-clone/project-netflix-clone.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProjectPokedexComponent,
     ImprintComponent,
     MessageFormComponent,
+    DeploymentComponent,
+    ProjectNetflixCloneComponent,
   ],
   imports: [
     BrowserModule,

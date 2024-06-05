@@ -15,7 +15,7 @@
       </span>
     </div>
     <div class="btnContainer">
-      <button [routerLink]="['/contact']" class="btn btnAbout">
+      <button (click)="navigateToContact()" class="btn btnAbout">
         {{ ls.language()?.btn }}
       </button>
     </div>

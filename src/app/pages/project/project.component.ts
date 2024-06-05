@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
-import { animation } from '../_animations/animation';
+import { animation } from '../_animations/animation-project';
 
 @Component({
   selector: 'app-project',
@@ -9,16 +9,17 @@ import { animation } from '../_animations/animation';
   animations: [animation],
 })
 export class ProjectComponent {
-
   currentProject = 'project1';
-  btnCount!: number;
 
   constructor(public ls: LanguageService) {}
 
-  ngOnInit() {
-    this.btnCount = document.querySelectorAll('.btnContainer .btn').length;
-  }
-
+  /**
+   * Switches the current project to the specified project.
+   *
+   * This function sets the `currentProject` property to the provided project.
+   *
+   * @param {string} project - The new project to be set as the current project.
+   */
   switchProject(project: string) {
     this.currentProject = project;
   }

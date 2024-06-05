@@ -37,6 +37,7 @@ export class LanguageService {
       btnFrontend: 'frontend',
       btnBackend: 'backend',
       btnExtra: 'extra',
+      btnDeployment: 'deployment',
       frontendDescription:
         'En la academia, el enfoque estaba en el framework Angular. Implementé mis primeros proyectos utilizando HTML, CSS y JavaScript.',
 
@@ -46,12 +47,15 @@ export class LanguageService {
       extraDescription:
         'Otras habilidades que he adquirido incluyen Scrum, Git (o GitHub) y APIs.Pude implementar Scrum y Git/GitHub en varios proyectos grupales, así como de manera independiente en casa, por ejemplo, para una planificación y ejecución efectivas de proyectos. Utilicé Git/GitHub para crear repositorios y para almacenar, rastrear y gestionar código. Con mi pequeño proyecto (Pokedex), aprendí a interactuar con APIs y a recuperar datos de interfaces.',
 
+      deploymentDescription:
+        'En mis proyectos he utilizado Google Cloud y Docker. Google Cloud ofrece una infraestructura confiable y flexible, lo que me permite hospedar y administrar mis proyectos de manera eficiente. Docker simplifica la contenerización de mis proyectos, asegurando que se ejecuten de manera consistente y sin problemas en cualquier entorno.',
+
       /*Projects*/
       headline: 'Projectos',
       btnProject1: 'Pokedex',
       btnProject2: 'El pollo loco',
       btnProject3: 'Join',
-      btnProject4: 'Project 4',
+      btnProject4: 'Netflix clone',
       btnProject5: 'Project 5',
 
       headlineProject1: 'Pokedex',
@@ -129,6 +133,7 @@ export class LanguageService {
       btnFrontend: 'Frontend',
       btnBackend: 'Backend',
       btnExtra: 'Extra',
+      btnDeployment: 'Deployment',
       frontendDescription:
         'At the academy, the focus was on the Angular framework. I implemented my first projects using HTML, CSS, and JavaScript.',
 
@@ -138,12 +143,15 @@ export class LanguageService {
       extraDescription:
         'Additional skills I`ve acquired include Scrum, Git (or GitHub), and APIs.I was able to implement Scrum and Git/GitHub in several group projects as well as independently at home, for instance, for effective project planning and execution. I used Git/GitHub to create repositories and to store, track, and manage code.With my small project (Pokedex), I learned how to interact with APIs and retrieve data from interfaces.',
 
+      deploymentDescription:
+        'In my projects, I have utilized Google Cloud and Docker. Google Cloud provides a reliable and flexible infrastructure, enabling me to efficiently host and manage my projects. Docker simplifies the containerization of my projects, ensuring they run consistently and seamlessly in any environment.',
+
       /*Projects*/
       headline: 'Projects',
       btnProject1: 'Pokedex',
       btnProject2: 'El pollo loco',
       btnProject3: 'Join',
-      btnProject4: 'Project 4',
+      btnProject4: 'Netflix clone',
       btnProject5: 'Project 5',
 
       headlineProject1: 'Pokedex',
@@ -221,6 +229,7 @@ export class LanguageService {
       btnFrontend: 'Frontend',
       btnBackend: 'Backend',
       btnExtra: 'Extra',
+      btnDeployment: 'Deployment',
       frontendDescription:
         'In der Akademie lag der Fokus auf dem Framework Angular. Meine ersten Projekte habe ich mit HTML, CSS und JavaScript umgesetzt.',
 
@@ -230,12 +239,14 @@ export class LanguageService {
       extraDescription:
         'Weitere Skills, die ich erlernt habe, sind Scrum, Git (bzw. Github) und APIs. Scrum und Git/Github konnte ich in mehreren Gruppenprojekten und auch alleine zu Hause umsetzen, z.B. zur effektiven Planung und Durchführung von Projekten. Dabei verwendete ich Git/Github, um Git-Repositories zu erstellen und Code zu speichern, zu verfolgen und zu verwalten. Mit meinem kleinen Projekt (Pokedex) lernte ich den Umgang mit APIs kennen und wie man Daten von Schnittstellen abruft.',
 
+      deploymentDescription:
+        'Bei meinen Projekten habe ich Google Cloud und Docker verwendet. Google Cloud bietet eine zuverlässige und flexible Infrastruktur, die es mir ermöglicht, meine Projekte effizient zu hosten und zu verwalten. Docker erleichtert die Containerisierung meiner Projekte, sodass sie in jeder Umgebung konsistent und problemlos laufen.',
       /*Projects*/
       headline: 'Projekte',
       btnProject1: 'Pokedex',
       btnProject2: 'El pollo loco',
       btnProject3: 'Join',
-      btnProject4: 'Project 4',
+      btnProject4: 'Netflix clone',
       btnProject5: 'Project 5',
 
       headlineProject1: 'Pokedex',

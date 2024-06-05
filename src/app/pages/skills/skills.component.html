@@ -1,31 +1,40 @@
 <div class="container">
   <div class="sectionContainer">
-    <div class="menu"> 
+    <div class="menu">
       <span class="headlineText headline">{{
         ls.language()?.headlineSkill
       }}</span>
-      <div class="linkContainer"> 
-        <button
-          class="btn btnLink"
-          (click)="switchSkill('frontend')"
-          [ngClass]="{ active: currentSkill === 'frontend' }"
-        >
-          {{ ls.language()?.btnFrontend }}
-        </button>
-        <button
-          class="btn btnLink"
-          (click)="switchSkill('backend')"
-          [ngClass]="{ active: currentSkill === 'backend' }"
-        >
-          {{ ls.language()?.btnBackend }}
-        </button>
-        <button
-          class="btn btnLink"
-          (click)="switchSkill('extra')"
-          [ngClass]="{ active: currentSkill === 'extra' }"
-        >
-          {{ ls.language()?.btnExtra }}
-        </button>
+      <div class="linkContainer">
+        <div class="btnContainer">
+          <button
+            class="btn btnLink"
+            (click)="switchSkill('frontend')"
+            [ngClass]="{ active: currentSkill === 'frontend' }"
+          >
+            {{ ls.language()?.btnFrontend }}
+          </button>
+          <button
+            class="btn btnLink"
+            (click)="switchSkill('backend')"
+            [ngClass]="{ active: currentSkill === 'backend' }"
+          >
+            {{ ls.language()?.btnBackend }}
+          </button>
+          <button
+            class="btn btnLink"
+            (click)="switchSkill('extra')"
+            [ngClass]="{ active: currentSkill === 'extra' }"
+          >
+            {{ ls.language()?.btnExtra }}
+          </button>
+          <button
+            class="btn btnLink"
+            (click)="switchSkill('deployment')"
+            [ngClass]="{ active: currentSkill === 'deployment' }"
+          >
+            {{ ls.language()?.btnDeployment }}
+          </button>
+        </div>
       </div>
     </div>
     <div class="section" [@slideAnimation]="currentSkill">
@@ -37,6 +46,9 @@
       </div>
       <div *ngIf="currentSkill === 'extra'" class="sliderContainer">
         <app-extra></app-extra>
+      </div>
+      <div *ngIf="currentSkill === 'deployment'" class="sliderContainer">
+        <app-deployment></app-deployment>
       </div>
     </div>
   </div>

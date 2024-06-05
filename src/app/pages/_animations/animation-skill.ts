@@ -2,7 +2,6 @@ import { trigger, transition, style, query, animate, group } from '@angular/anim
 
 export const animation = trigger('slideAnimation', [
 
-  /*      Skill animation        */ 
   transition('frontend => backend', [
     style({ position: 'relative' }),
     query(
@@ -10,8 +9,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',       
-          height:'90%',
-          width: '100%',
+          height:'89.5%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -33,8 +32,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
-          width: '100%',
+          height:'89.5%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -61,7 +60,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           height:'90%',
-          width: '100%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -84,7 +83,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           height:'90%',
-          width: '100%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -107,7 +106,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           height:'90%',
-          width: '100%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -134,59 +133,7 @@ export const animation = trigger('slideAnimation', [
         style({
           position: 'absolute',
           height:'90%',
-          width: '100%',
-        }),
-      ],
-      { optional: true }
-    ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-      query(':leave', [style({ left: '0%' })], { optional: true }),
-    ]),
-    group([
-      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
-        optional: true,
-      }),
-      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
-        optional: true,
-      }),
-    ]),
-  ]),
-/*      Project animation        */ 
-  transition('project1 => project2', [
-    style({ position: 'relative' }),
-    query(
-      ':enter, :leave',
-      [
-        style({
-          position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
-        }),
-      ],
-      { optional: true }
-    ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
-    group([
-      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
-        optional: true,
-      }),
-    ]),
-  ]),
-
-  transition('project2 => project1', [
-    style({ position: 'relative' }),
-    query(
-      ':enter, :leave',
-      [
-        style({
-          position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -205,16 +152,15 @@ export const animation = trigger('slideAnimation', [
     ]),
   ]),
 
-  transition('project2 => project3', [
+  transition('frontend => deployment', [
     style({ position: 'relative' }),
     query(
       ':enter, :leave',
       [
         style({
           position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
+          height:'90%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -229,40 +175,15 @@ export const animation = trigger('slideAnimation', [
     ]),
   ]),
 
-  transition('project1 => project3', [
+  transition('deployment => frontend', [
     style({ position: 'relative' }),
     query(
       ':enter, :leave',
       [
         style({
           position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
-        }),
-      ],
-      { optional: true }
-    ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
-    group([
-      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
-        optional: true,
-      }),
-    ]),
-  ]),
-
-  transition('project3 => project2', [
-    style({ position: 'relative' }),
-    query(
-      ':enter, :leave',
-      [
-        style({
-          position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
+          height:'90%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -281,16 +202,38 @@ export const animation = trigger('slideAnimation', [
     ]),
   ]),
 
-  transition('project3 => project1', [
+  transition('backend => deployment', [
     style({ position: 'relative' }),
     query(
       ':enter, :leave',
       [
         style({
           position: 'absolute',
-          top: 0,
-          height:'92%',
-          width: '93%',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('deployment => backend', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
         }),
       ],
       { optional: true }
@@ -309,5 +252,53 @@ export const animation = trigger('slideAnimation', [
     ]),
   ]),
 
+  transition('extra => deployment', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
 
+  transition('deployment => extra', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
 ]);

@@ -26,6 +26,14 @@ export class ScreenService {
     }
   }
 
+  /**
+   * Prevents the context menu from appearing.
+   *
+   * This function prevents the default action of the right-click event,
+   * which typically triggers the context menu in a web browser.
+   *
+   * @param {MouseEvent} event - The mouse event that triggered the function.
+   */
   preventContextMenu(event: MouseEvent) {
     event.preventDefault();
   }
