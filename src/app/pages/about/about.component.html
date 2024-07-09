@@ -7,16 +7,16 @@
     />
   </div>
   <div class="aboutSection">
-    <span class="headlineText">{{ ls.language()?.headlineAbout }}</span>
+    <span class="headlineText">{{ "headlineAbout" | translate }}</span>
     <div class="section">
-      <p>{{ ls.language()?.professionalIntensiveHeadline }}</p>
+      <p>{{ "professionalIntensiveHeadline" | translate }}</p>
       <span>
-        {{ ls.language()?.professionalIntensiveText }}
+        {{ "professionalIntensiveText" | translate }}
       </span>
     </div>
     <div class="btnContainer">
       <button (click)="navigateToContact()" class="btn btnAbout">
-        {{ ls.language()?.btn }}
+        {{ "btn" | translate }}
       </button>
     </div>
   </div>

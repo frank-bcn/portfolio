@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
 import { animation } from '../_animations/animation-project';
 
 @Component({
@@ -11,7 +10,7 @@ import { animation } from '../_animations/animation-project';
 export class ProjectComponent {
   currentProject = 'project1';
 
-  constructor(public ls: LanguageService) {}
+  constructor() {}
 
   /**
    * Switches the current project to the specified project.

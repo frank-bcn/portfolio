@@ -20,7 +20,13 @@ import { MessageFormComponent } from './pages/message-form/message-form.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { DeploymentComponent } from './pages/deployment/deployment.component';
 import { ProjectNetflixCloneComponent } from './pages/project-netflix-clone/project-netflix-clone.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +52,14 @@ import { ProjectNetflixCloneComponent } from './pages/project-netflix-clone/proj
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

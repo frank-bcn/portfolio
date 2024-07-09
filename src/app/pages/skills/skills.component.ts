@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
 import { animation } from '../_animations/animation-skill';
 
 @Component({
@@ -11,7 +10,7 @@ import { animation } from '../_animations/animation-skill';
 export class SkillsComponent {
   currentSkill = 'frontend';
 
-  constructor(public ls: LanguageService) {}
+  constructor() {}
 
   /**
    * Switches the current skill to the specified skill.

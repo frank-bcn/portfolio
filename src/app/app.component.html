@@ -1,28 +1,17 @@
 <div class="page">
   <div class="languageContainer">
     <p
-      (click)="ls.onToggleChange('1')"
-      [class.selected]="ls.selectedValue === '1'"
+      *ngFor="let language of languages"
+      (click)="onToggleChange(language.code)"
+      [class.selected]="selectedValue === language.code"
     >
-      ES
-    </p>
-    <p
-      (click)="ls.onToggleChange('2')"
-      [class.selected]="ls.selectedValue === '2'"
-    >
-      EN
-    </p>
-    <p
-      (click)="ls.onToggleChange('3')"
-      [class.selected]="ls.selectedValue === '3'"
-    >
-      DE
+      {{ language.name }}
     </p>
   </div>
   <div class="contentPage" [@routeAnimation]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"> </router-outlet>
   </div>
-  <footer >
+  <footer>
     <div [class.footerContainer]="!isStartPage()">
       <button
         *ngIf="!isStartPage()"
@@ -30,7 +19,7 @@
         routerLinkActive="active"
         class="btn btnMediaQuerie"
       >
-        {{ ls.language()?.btnAbout }}
+        {{ "btnAbout" | translate }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -38,7 +27,7 @@
         routerLinkActive="active"
         class="btn btnMediaQuerie"
       >
-        {{ ls.language()?.btnSkills }}
+        {{ "btnSkills" | translate }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -46,7 +35,7 @@
         routerLinkActive="active"
         class="btn btnMediaQuerie"
       >
-        {{ ls.language()?.btnProjects }}
+        {{ "btnProjects" | translate }}
       </button>
       <button
         *ngIf="!isStartPage()"
@@ -54,7 +43,7 @@
         routerLinkActive="active"
         class="btn btnMediaQuerie"
       >
-        {{ ls.language()?.btnConatct }}
+        {{ "btnConatct" | translate }}
       </button>
     </div>
   </footer>

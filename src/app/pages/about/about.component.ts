@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
 import { ScreenService } from '../../services/screen.service';
 import { Router } from '@angular/router';
 
@@ -10,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent {
   
-  constructor(public ls: LanguageService, public ss: ScreenService, public router: Router) { }
+  constructor(public ss: ScreenService, public router: Router) { }
 
   /**
  * Navigates to the contact page.

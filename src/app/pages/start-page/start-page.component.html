@@ -15,9 +15,9 @@
           <div class="headlineText">
             <div class="textbar">Frank Sinnigen</div>
           </div>
-          <p>&lt;p&gt; {{ ls.language()?.slogan }} &lt;/p&gt;</p>
+          <p>&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
           <button [routerLink]="['/about']" class="btn btnStart">
-            {{ ls.language()?.btnText }}
+            {{ "btnText" | translate }}
           </button>
         </div>
       </div>

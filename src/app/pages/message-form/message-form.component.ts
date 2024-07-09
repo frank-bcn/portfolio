@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
 import { ScreenService } from '../../services/screen.service';
 
 @Component({
@@ -15,7 +14,7 @@ export class MessageFormComponent {
   loading: boolean = false;
   showSentMessage: boolean = false;
 
-  constructor(public ls: LanguageService, public ss: ScreenService) {}
+  constructor(public ss: ScreenService) {}
 
   /**
    * Asynchronously sends an email by preparing form data and using the sendFormData function.

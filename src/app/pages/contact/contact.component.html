@@ -6,7 +6,7 @@
       *ngIf="!ss.active"
     >
       <div class="headlineTextContakt">
-        {{ ls.language()?.headlineContact }}
+        {{ "headlineContact" | translate }}
       </div>
       <div class="contactInformationContainer">
         <div class="map">
@@ -23,10 +23,10 @@
           </span>
           <div class="contactInformation">
             <address>
-              <p class="address">{{ ls.language()?.address }}</p>
-              <p class="address">{{ ls.language()?.email }}</p>
+              <p class="address">{{ "address" | translate }}</p>
+              <p class="address">{{ "email" | translate }}</p>
               <p [routerLink]="['/imprint']" class="address imprint">
-                <b>{{ ls.language()?.imprint }}</b>
+                <b>{{ "imprint" | translate }}</b>
               </p>
             </address>
           </div>
@@ -68,8 +68,8 @@
         >
           {{
             ss.active
-              ? ls.language()?.changeInfoBtn
-              : ls.language()?.changeSendBtn
+              ? ("changeInfoBtn" | translate)
+              : ("changeSendBtn" | translate)
           }}
         </button>
       </div>

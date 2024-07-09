@@ -1,6 +1,8 @@
 <div class="container">
   <form>
-    <span class="placeholder">{{ ls.language()?.placeholderName }}</span>
+    <span class="placeholder">{{
+      "placeholderName" | translate
+    }}</span>
     <div
       *ngIf="nameField.touched && (name.trim() === '' || !nameValid())"
       class="errorMessage"
@@ -23,7 +25,9 @@
       title="Please enter only letters"
     />
 
-    <span class="placeholder">{{ ls.language()?.placeholderEmail }}</span>
+    <span class="placeholder">{{
+      "placeholderEmail" | translate
+    }}</span>
     <div
       *ngIf="emailField.touched && (email.trim() === '' || !emailValid())"
       class="errorMessage"
@@ -46,7 +50,9 @@
       title="Please enter a valid email address"
     />
 
-    <span class="placeholder">{{ ls.language()?.placeholderMessage }}</span>
+    <span class="placeholder">{{
+      "placeholderMessage" | translate
+    }}</span>
     <div
       *ngIf="messageField.touched && (message.trim() === '' || !messageValid())"
       class="errorMessage"
@@ -81,15 +87,17 @@
       (click)="sendMail()"
     >
       <span *ngIf="!loading && !showSentMessage">{{
-        ls.language()?.send
+        "btnSend" | translate
       }}</span>
       <span *ngIf="loading"><div class="spinner"></div></span>
-      <span *ngIf="showSentMessage">{{ ls.language()?.sent }}</span>
+      <span *ngIf="showSentMessage">{{
+        "messageSend" | translate
+      }}</span>
     </button>
   </form>
   <button class="btn switchButtonSend" (click)="ss.switch()" *ngIf="ss.tapView">
     {{
-      ss.active ? ls.language()?.changeInfoBtn : ls.language()?.changeSendBtn
+      ss.active ? ("changeInfoBtn" | translate) : ("changeSendBtn" | translate)
     }}
   </button>
 </div>

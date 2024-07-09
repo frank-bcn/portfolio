@@ -1,7 +1,7 @@
 <div class="container">
   <div class="sectionContainer">
     <div class="menu">
-      <span class="headlineText headline">{{ ls.language()?.headline }}</span>
+      <span class="headlineText headline">{{ "headline" | translate }}</span>
       <div class="linkContainer">
         <div class="btnContainer">
           <button
@@ -9,29 +9,29 @@
             (click)="switchProject('project1')"
             [ngClass]="{ active: currentProject === 'project1' }"
           >
-            {{ ls.language()?.btnProject1 }}
+            {{ "btnProject1" | translate }}
           </button>
           <button
             class="btn btnLink"
             (click)="switchProject('project2')"
             [ngClass]="{ active: currentProject === 'project2' }"
           >
-            {{ ls.language()?.btnProject2 }}
+            {{ "btnProject2" | translate }}
           </button>
           <button
             class="btn btnLink"
             (click)="switchProject('project3')"
             [ngClass]="{ active: currentProject === 'project3' }"
           >
-            {{ ls.language()?.btnProject3 }}
+            {{ "btnProject3" | translate }}
           </button>
           <button
-          class="btn btnLink"
-          (click)="switchProject('project4')"
-          [ngClass]="{ active: currentProject === 'project4' }"
-        >
-          {{ ls.language()?.btnProject4 }}
-        </button>
+            class="btn btnLink"
+            (click)="switchProject('project4')"
+            [ngClass]="{ active: currentProject === 'project4' }"
+          >
+            {{ "btnProject4" | translate }}
+          </button>
         </div>
       </div>
     </div>

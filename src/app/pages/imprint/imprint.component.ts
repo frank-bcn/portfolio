@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-imprint',
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
-  constructor(private sanitizer: DomSanitizer, public ls: LanguageService) {}
+  constructor(private sanitizer: DomSanitizer) {}
 
   getEmailLink(): SafeHtml {
     const email = 'info@frank-sinnigen.de';

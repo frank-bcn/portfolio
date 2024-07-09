@@ -1,16 +1,16 @@
 <div class="container">
   <div class="containerImprint">
     <div class="imprintContent">
-      <h1>{{ ls.language()?.imprint }}</h1>
+      <h1>{{ "imprint" | translate }}</h1>
       <div class="containerProfile">
         <div class="containerText">
-          <b>{{ ls.language()?.headlineName }}:</b>
+          <b>{{ "headlineName" | translate }}:</b>
         </div>
         <span class="text">Frank Sinnigen</span>
       </div>
       <div class="containerProfile">
         <div class="containerText">
-          <b>{{ ls.language()?.headlineAddress }}:</b>
+          <b>{{ "headlineAddress" | translate }}:</b>
         </div>
         <span class="text">Federico Garcia Lorca 16,1-4</span>
       </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="containerProfile">
         <div class="containerText">
-          <b>{{ ls.language()?.headlineWeb }}:</b>
+          <b>{{ "headlineWeb" | translate }}:</b>
         </div>
         <span class="text"
           ><a
@@ -31,20 +31,20 @@
           ></span
         >
       </div>
-      <h1>{{ ls.language()?.headlineResponsible }}:</h1>
+      <h1>{{ "headlineResponsible" | translate }}:</h1>
       <div class="responsibility">
         <span class="textImpressum">Frank Sinnigen</span><br />
         <span class="textImpressum">Federico Garcia Lorca 16, 1-4</span><br />
         <span class="textImpressum">08042 Barcelona</span><br />
         <span class="textImpressum" [innerHTML]="getEmailLink()"></span>
       </div>
-      <h1>{{ ls.language()?.headlineDisclaimer }}:</h1>
-      <span class="textImpressum">{{ ls.language()?.disclaimerText }}</span>
-      <h1>{{ ls.language()?.headlineCopyright }}</h1>
-      <span class="textImpressum">{{ ls.language()?.copyrightText }}</span>
-      <h1>{{ ls.language()?.headlineSources }}</h1>
+      <h1>{{ "headlineDisclaimer" | translate }}:</h1>
+      <span class="textImpressum">{{ "disclaimerText" | translate }}</span>
+      <h1>{{ "headlineCopyright" | translate }}</h1>
+      <span class="textImpressum">{{ "copyrightText" | translate }}</span>
+      <h1>{{ "headlineSources" | translate }}</h1>
       <span class="textImpressum"
-        >{{ ls.language()?.souresText }}
+        >{{ "souresText" | translate }}
         <a
           draggable="false"
           href="https://www.e-recht24.de"
