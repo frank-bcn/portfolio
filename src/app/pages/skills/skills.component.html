@@ -34,6 +34,13 @@
           >
             {{ "btnDeployment" | translate }}
           </button>
+          <button
+            class="btn btnLink"
+            (click)="switchSkill('certificate')"
+            [ngClass]="{ active: currentSkill === 'certificate' }"
+          >
+            {{ "btnCertificate" | translate }}
+          </button>
         </div>
       </div>
     </div>
@@ -49,6 +56,9 @@
       </div>
       <div *ngIf="currentSkill === 'deployment'" class="sliderContainer">
         <app-deployment></app-deployment>
+      </div>
+      <div *ngIf="currentSkill === 'certificate'" class="sliderContainer">
+        <app-certificate></app-certificate>
       </div>
     </div>
   </div>

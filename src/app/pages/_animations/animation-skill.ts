@@ -301,4 +301,204 @@ export const animation = trigger('slideAnimation', [
       }),
     ]),
   ]),
+
+  transition('frontend => certificate', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('certificate => frontend', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('backend => certificate', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('certificate => backend', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('extra => certificate', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('certificate => extra', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('deployment => certificate', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height:'90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
+
+  transition('certificate => deployment', [
+    style({ position: 'relative' }),
+    query(
+      ':enter, :leave',
+      [
+        style({
+          position: 'absolute',
+          height: '90%',
+          width: '92%',
+        }),
+      ],
+      { optional: true }
+    ),
+    group([
+      query(':enter', [style({ left: '100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
+    group([
+      query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+        optional: true,
+      }),
+      query(':leave', [animate('500ms ease-out', style({ left: '-100%' }))], {
+        optional: true,
+      }),
+    ]),
+  ]),
 ]);
