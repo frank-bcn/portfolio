@@ -104,13 +104,15 @@ import {
       ),
       group([
         query(':enter', [style({ left: '100%' })], { optional: true }),
-        
+        query(':leave', [style({ left: '0%' })], { optional: true }),
       ]),
       group([
         query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
           optional: true,
         }),
-        
+        query(':leave', [animate('500ms ease-out', style({ right: '-100%' }))], {
+          optional: true,
+        }),
       ]),
     ]),
 

@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CertificateComponent {
   images: string[] = [
-    'assets/ images/skills_images/1697829889051.jpeg',
-    'assets/ images/skills_images/1697829889051.jpeg',
-    'assets/ images/skills_images/1697829889051.jpeg'
+    'assets/ images/certificates/1697829889051.jpeg',
+    'assets/ images/certificates/1697829889051.jpeg'
   ];
   currentIndex: number = 0;
 

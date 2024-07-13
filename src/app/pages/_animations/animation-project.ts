@@ -10,7 +10,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -34,7 +34,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -62,7 +62,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -86,7 +86,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -110,7 +110,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -138,7 +138,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -166,7 +166,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -194,7 +194,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -222,7 +222,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -250,7 +250,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -274,7 +274,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],
@@ -298,7 +298,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height:'92%',
+          height:'92.5%',
           width: '93%',
         }),
       ],

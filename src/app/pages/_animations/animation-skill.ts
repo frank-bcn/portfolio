@@ -1,23 +1,27 @@
-import { trigger, transition, style, query, animate, group } from '@angular/animations';
+import {
+  trigger,
+  transition,
+  style,
+  query,
+  animate,
+  group,
+} from '@angular/animations';
 
 export const animation = trigger('slideAnimation', [
-
   transition('frontend => backend', [
     style({ position: 'relative' }),
     query(
       ':enter, :leave',
       [
         style({
-          position: 'absolute',       
-          height:'89.5%',
+          position: 'absolute',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -32,7 +36,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'89.5%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -59,15 +63,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -82,15 +84,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -105,7 +105,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -132,7 +132,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -159,15 +159,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -182,7 +180,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -209,15 +207,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -232,7 +228,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -259,15 +255,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -282,7 +276,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
@@ -309,15 +303,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -328,20 +320,31 @@ export const animation = trigger('slideAnimation', [
   transition('certificate => frontend', [
     style({ position: 'relative' }),
     query(
-      ':enter, :leave',
+      ':enter',
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
+          left: '100%',
+          zIndex: 1,
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-      query(':leave', [style({ left: '0%' })], { optional: true }),
-    ]),
+    query(
+      ':leave',
+      [
+        style({
+          position: 'absolute',
+          height: '92.5%',
+          width: '92%',
+          left: '0%',
+          zIndex: 0,
+        }),
+      ],
+      { optional: true }
+    ),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -359,15 +362,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -378,20 +379,31 @@ export const animation = trigger('slideAnimation', [
   transition('certificate => backend', [
     style({ position: 'relative' }),
     query(
-      ':enter, :leave',
+      ':enter',
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
+          left: '100%',
+          zIndex: 1,
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-      query(':leave', [style({ left: '0%' })], { optional: true }),
-    ]),
+    query(
+      ':leave',
+      [
+        style({
+          position: 'absolute',
+          height: '92.5%',
+          width: '92%',
+          left: '0%',
+          zIndex: 0,
+        }),
+      ],
+      { optional: true }
+    ),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -409,15 +421,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -428,20 +438,31 @@ export const animation = trigger('slideAnimation', [
   transition('certificate => extra', [
     style({ position: 'relative' }),
     query(
-      ':enter, :leave',
+      ':enter',
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
+          left: '100%',
+          zIndex: 1,
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-      query(':leave', [style({ left: '0%' })], { optional: true }),
-    ]),
+    query(
+      ':leave',
+      [
+        style({
+          position: 'absolute',
+          height: '92.5%',
+          width: '92%',
+          left: '0%',
+          zIndex: 0,
+        }),
+      ],
+      { optional: true }
+    ),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -459,15 +480,13 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height:'90%',
+          height: '92.5%',
           width: '92%',
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '-100%' })], { optional: true }),
-    ]),
+    group([query(':enter', [style({ left: '-100%' })], { optional: true })]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
@@ -478,20 +497,31 @@ export const animation = trigger('slideAnimation', [
   transition('certificate => deployment', [
     style({ position: 'relative' }),
     query(
-      ':enter, :leave',
+      ':enter',
       [
         style({
           position: 'absolute',
-          height: '90%',
+          height: '92.5%',
           width: '92%',
+          left: '100%',
+          zIndex: 1,
         }),
       ],
       { optional: true }
     ),
-    group([
-      query(':enter', [style({ left: '100%' })], { optional: true }),
-      query(':leave', [style({ left: '0%' })], { optional: true }),
-    ]),
+    query(
+      ':leave',
+      [
+        style({
+          position: 'absolute',
+          height: '92.5%',
+          width: '92%',
+          left: '0%',
+          zIndex: 0,
+        }),
+      ],
+      { optional: true }
+    ),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
