@@ -270,6 +270,8 @@ html {
       border-top-right-radius: 0;
       border-bottom-left-radius: var(--br-x) var(--br-y);
       border-bottom-right-radius: var(--br-x) var(--br-y);
+      border-top: none;
+      border-bottom: none;
 
       .headline {
         margin: 1% 0 0 0;
