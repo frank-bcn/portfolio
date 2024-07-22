@@ -19,7 +19,7 @@ export class AppComponent {
   ];
   selectedValue: string = 'en';
 
-  constructor(private router: Router, public translate: TranslateService) {
+  constructor(public router: Router, public translate: TranslateService) {
     this.translate.setDefaultLang(this.selectedValue);
     this.translate.use(this.selectedValue);
 
