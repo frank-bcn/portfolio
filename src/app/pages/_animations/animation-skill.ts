@@ -15,8 +15,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -36,8 +36,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -63,8 +63,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -84,8 +84,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -105,8 +105,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -132,8 +132,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -159,8 +159,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -180,8 +180,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -207,8 +207,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -228,8 +228,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -255,8 +255,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -276,8 +276,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -303,8 +303,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -324,8 +324,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '100%',
           zIndex: 1,
         }),
@@ -337,8 +337,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: '92.5%',
-          width: '92%',
+          height: '100%',
+          width: '100%',
           left: '0%',
           zIndex: 0,
         }),
@@ -362,8 +362,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          hheight: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          hheight: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -383,8 +383,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '100%',
           zIndex: 1,
         }),
@@ -396,8 +396,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '0%',
           zIndex: 0,
         }),
@@ -421,8 +421,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -442,8 +442,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '100%',
           zIndex: 1,
         }),
@@ -455,8 +455,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '0%',
           zIndex: 0,
         }),
@@ -480,8 +480,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -501,8 +501,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '100%',
           zIndex: 1,
         }),
@@ -514,8 +514,8 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
           left: '0%',
           zIndex: 0,
         }),

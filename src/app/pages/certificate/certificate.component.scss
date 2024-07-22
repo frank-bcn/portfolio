@@ -1,6 +1,7 @@
 :host {
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 4%);
+  width: calc(100% - 4%);
+  margin: 2%;
   background-color: #fffcf3;
 }
 

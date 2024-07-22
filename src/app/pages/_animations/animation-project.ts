@@ -10,8 +10,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -34,8 +34,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -62,8 +62,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -86,8 +86,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -110,8 +110,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -138,8 +138,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -166,8 +166,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -194,8 +194,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -222,8 +222,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -250,8 +250,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -274,8 +274,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }
@@ -298,8 +298,8 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11%)',
-          width: 'calc(100% - 8%)',
+          height: '100%',
+          width: '100%',
         }),
       ],
       { optional: true }

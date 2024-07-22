@@ -1,0 +1,30 @@
+:host {
+    height: calc(100% - 8%);
+    width: calc(100% - 8%);
+    margin: 4%;
+    background-color: #fffcf3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8%);
+    height: calc(100% - 8%);
+    padding: 4%;
+
+    // .contentProject {
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     font-size: clamp(12px, 3vw, 38px);
+    //     font-family: "overpass";
+    //     color: #333333;
+    //     font-weight: 500;
+    //     border-radius: 12px;
+    //     height: 100%;
+    //     padding: 0 3% 0 3%;
+    //     box-shadow:
+    //         inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+    //         inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+    // }
+}
