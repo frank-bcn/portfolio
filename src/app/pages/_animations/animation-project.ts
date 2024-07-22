@@ -10,7 +10,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -34,7 +34,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -62,7 +62,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -86,7 +86,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -110,7 +110,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -138,7 +138,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -166,7 +166,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -194,7 +194,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -222,7 +222,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -250,7 +250,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -274,7 +274,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -298,7 +298,7 @@ transition('project1 => project2', [
         style({
           position: 'absolute',
           top: 0,
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],

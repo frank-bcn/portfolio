@@ -15,7 +15,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -36,7 +36,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -63,7 +63,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -84,7 +84,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -105,7 +105,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -132,7 +132,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -159,7 +159,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -180,7 +180,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -207,7 +207,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -228,7 +228,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -255,7 +255,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -276,7 +276,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -303,7 +303,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -324,7 +324,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '100%',
           zIndex: 1,
@@ -362,7 +362,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          hheight: 'calc(100% - 11.2%)',
+          hheight: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -383,7 +383,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '100%',
           zIndex: 1,
@@ -396,7 +396,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '0%',
           zIndex: 0,
@@ -421,7 +421,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -442,7 +442,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '100%',
           zIndex: 1,
@@ -455,7 +455,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '0%',
           zIndex: 0,
@@ -480,7 +480,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
         }),
       ],
@@ -501,7 +501,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '100%',
           zIndex: 1,
@@ -514,7 +514,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          height: 'calc(100% - 11.2%)',
+          height: 'calc(100% - 11%)',
           width: 'calc(100% - 8%)',
           left: '0%',
           zIndex: 0,
