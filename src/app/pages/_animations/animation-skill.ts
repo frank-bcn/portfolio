@@ -362,7 +362,7 @@ export const animation = trigger('slideAnimation', [
       [
         style({
           position: 'absolute',
-          hheight: '100%',
+          height: '100%',
           width: '100%',
         }),
       ],

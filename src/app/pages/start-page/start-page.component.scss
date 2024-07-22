@@ -124,6 +124,13 @@
 
 @media screen and (max-height: 600px) {
     .containerImg {
-        display: none !important;
+        height: 100% !important;
+        width: 77% !important;
+
+        .img {
+            display: flex;
+            width: 40% !important;
+            height: 40% !important;
+        }
     }
 }
