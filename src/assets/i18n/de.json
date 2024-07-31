@@ -18,7 +18,7 @@
     "btnExtra": "Extra",
     "extraDescription": "Weitere Skills, die ich erlernt habe, sind Scrum, Git (bzw. Github) und APIs. Scrum und Git/Github konnte ich in mehreren Gruppenprojekten und auch alleine zu Hause umsetzen, z.B. zur effektiven Planung und Durchführung von Projekten. Dabei verwendete ich Git/Github, um Git-Repositories zu erstellen und Code zu speichern, zu verfolgen und zu verwalten. Mit meinem kleinen Projekt (Pokedex) lernte ich den Umgang mit APIs kennen und wie man Daten von Schnittstellen abruft.",
     "btnDeployment": "Deployment",
-    "deploymentDescription": "Bei meinen Projekten habe ich Google Cloud, Docker, Redis sowie Continuous Integration (CI) und Continuous Deployment (CD) verwendet. Google Cloud bietet mir eine zuverlässige und flexible Infrastruktur. Docker erleichtert die Containerisierung meiner Projekte. Der Einsatz von CI/CD automatisiert meinen Entwicklungsprozess und verbessert die Qualität meiner Projekte. Durch den Einsatz von Redis als In-Memory-Datenbank (Arbeitsspeicher) konnte ich schnelle und effiziente Datenverarbeitungen und -speicherungen erreichen.",
+    "deploymentDescription": "Bei meinen Projekten habe ich Google Cloud, Docker sowie Continuous Integration (CI) und Continuous Deployment (CD) verwendet. Google Cloud bietet mir eine zuverlässige und flexible Infrastruktur. Docker erleichtert die Containerisierung meiner Projekte. Der Einsatz von CI/CD automatisiert meinen Entwicklungsprozess und verbessert die Qualität meiner Projekte.",
     "btnCertificate": "Zertifikate",
 
     "commentProjects": "projects-page",
