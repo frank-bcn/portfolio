@@ -56,7 +56,7 @@
                 justify-content: space-between;
                 width: calc(100% - 20%);
                 height: 50%;
-                margin: 0 10% 6% 10%;
+                margin: 0 10% 4% 10%;
 
                 img {
                     display: flex;
@@ -68,7 +68,7 @@
             .projImg {
                 display: flex;
                 justify-content: center;
-                margin: 0 0 6% 0;
+                margin: 0 0 4% 0;
                 height: 80%;
                 width: 80%;
             }
@@ -98,9 +98,9 @@
 /************************   query's   ************************/
 /*************************************************************/
 
-@media screen and (max-width: 1050px) {
+// @media screen and (max-width: 1050px) {
 
-    ::-webkit-scrollbar {
-        display: flex !important;
-    }
-}
+//     ::-webkit-scrollbar {
+//         display: flex !important;
+//     }
+// }
