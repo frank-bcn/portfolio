@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScreenService } from '../../services/screen.service';
 
 @Component({
   selector: 'app-project-netflix-clone',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ProjectNetflixCloneComponent {
 
+  constructor(public ss: ScreenService){}
 }

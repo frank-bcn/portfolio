@@ -63,3 +63,9 @@
         height: 70px;
     }
 }
+
+@media screen and (max-height: 935px) { 
+    .languageContainer {
+        height: 30px !important;
+    }  
+}
