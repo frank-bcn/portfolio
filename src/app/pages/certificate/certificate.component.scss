@@ -1,5 +1,4 @@
 :host {
-  height: calc(100% - 4%);
   width: calc(100% - 4%);
   margin: 2%;
   background-color: #fffcf3;
@@ -36,7 +35,8 @@
 
     .slide img {
       width: 80%;
-      height: 100%;
+      height: calc(100% - 12px);
+      margin: 0 0 12px 0;
       object-fit: contain;
     }
   }
