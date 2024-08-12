@@ -1,5 +1,4 @@
 :host {
-    height: calc(100% - 8%);
     width: calc(100% - 8%);
     margin: 4%;
     background-color: #fffcf3;
@@ -48,7 +47,7 @@
             align-items: center;
             height: 60%;
             width: 100%;
-            overflow-y: scroll;
+            overflow-y: scroll; 
 
             .projIcon {
                 display: flex;
@@ -91,5 +90,19 @@
             width: calc(100% - 24%);
             margin: 0 12% 0 12%;
         }
+    }
+}
+
+/*************************************************************/
+/**********************   Phone Query   **********************/
+/*************************************************************/
+
+@media screen and (max-width: 1050px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 8%);
+        height: 100%;
+        padding: 0 4% 0 4%;
     }
 }

@@ -21,4 +21,12 @@
     ::-webkit-scrollbar {
         display: flex !important;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        height: 100%;
+        padding: 0 4% 0 4%;
+    }
 }
