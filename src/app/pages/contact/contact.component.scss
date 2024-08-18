@@ -226,36 +226,6 @@
             width: calc(100% - 10%) !important;
         }
     }
-
-    // @keyframes slideIn {
-    //     from {
-    //         transform: translateX(0);
-    //         opacity: 1;
-    //     }
-    //     to {
-    //         transform: translatey(100%);
-    //         opacity: 1;
-    //     }
-    // }
-
-    // @keyframes slideOut {
-    //     from {
-    //         transform: translateX(100%);
-    //         opacity: 1;
-    //     }
-    //     to {
-    //         transform: translateX(0);
-    //         opacity: 1;
-    //     }
-    // }
-
-    // .slide-in {
-    //     animation: slideIn 300ms ease-out;
-    // }
-
-    // .slide-out {
-    //     animation: slideOut 300ms ease-in;
-    // }
 }
 
 @media screen and (max-height: 800px) {
