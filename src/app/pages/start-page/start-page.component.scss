@@ -134,3 +134,9 @@
         }
     }
 }
+
+@media screen and (max-width: 445px) {
+    p {
+        font-size: clamp(7.5px, 1vw, 16px) !important;
+    }
+}

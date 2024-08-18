@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="contentProject">
+      <header>
+        <span class="headlineTextProj headlineProjects">{{
+          "headlineProject5" | translate
+        }}</span>
+      </header>
+      <div class="sectionProject">
+        <img
+          draggable="false"
+          (contextmenu)="ss.preventContextMenu($event)"
+          src="/assets/ images/etc_images/bot.png"
+          class="projImg"
+        /> 
+        <span class="projIcon">
+          <img
+            draggable="false"
+            (contextmenu)="ss.preventContextMenu($event)"
+            src="/assets/ images/skills_images/python.png"
+          />
+        </span> 
+        <span class="description">{{ "descriptionProject5" | translate }}</span>
+      </div>
+      <div class="linkSection">
+        <a
+          draggable="false"
+          href="https://github.com/frank-bcn/WhatsApp-bot"
+          target="_blank"
+          class="btn btnProject"
+          >GitHub
+          <img draggable="false" src="/assets/ images/skills_images/github.png" />
+        </a>
+      </div>
+    </div>
+  </div>

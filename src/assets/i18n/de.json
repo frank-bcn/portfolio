@@ -35,6 +35,9 @@
     "btnProject4": "Netflix clone",
     "headlineProject4": "Streamify",
     "descriptionProject4": "Das Projekt befindet sich derzeit in Bearbeitung. Weitere Informationen folgen in Kürze",
+    "btnProject5": "WhatsApp Bot",
+    "headlineProject5": "WhatsApp Bot",
+    "descriptionProject5": "In diesem Projekt habe ich einen WhatsApp-Bot entwickelt, der automatisierte Nachrichten über WhatsApp senden kann. Der Bot wurde in Python programmiert und nutzt die Bibliothek pywhatkit, um die WhatsApp-Web-Oberfläche zu steuern und Nachrichten an Kontakte oder Gruppen zu versenden.",
 
     "commentContact": "contact-page",
     "headlineContact": "Kontakt",

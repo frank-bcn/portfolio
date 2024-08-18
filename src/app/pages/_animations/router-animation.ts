@@ -165,7 +165,9 @@ import {
         query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
           optional: true,
         }),
-        
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
       ]),
     ]),
 
@@ -218,7 +220,9 @@ import {
         query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
           optional: true,
         }),
-        
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
       ]),
     ]),
 
@@ -242,6 +246,9 @@ import {
       ]),
       group([
         query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
+          optional: true,
+        }),
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
           optional: true,
         }),
         
@@ -270,7 +277,9 @@ import {
         query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
           optional: true,
         }),
-        
+        query(':leave', [animate('500ms ease-out', style({ left: '100%' }))], {
+          optional: true,
+        }),
       ]),
     ]),
 

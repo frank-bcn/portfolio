@@ -32,6 +32,13 @@
           >
             {{ "btnProject4" | translate }}
           </button>
+          <button
+            class="btn btnLink"
+            (click)="switchProject('project5')"
+            [ngClass]="{ active: currentProject === 'project5' }"
+          >
+            {{ "btnProject5" | translate }}
+          </button>
         </div>
       </div>
     </div>
@@ -47,6 +54,9 @@
       </div>
       <div *ngIf="currentProject === 'project4'" class="sliderContainer">
         <app-project-netflix-clone></app-project-netflix-clone>
+      </div>
+      <div *ngIf="currentProject === 'project5'" class="sliderContainer">
+        <app-project-bot></app-project-bot>
       </div>
     </div>
   </div>

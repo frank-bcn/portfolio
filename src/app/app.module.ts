@@ -24,6 +24,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CertificateComponent } from './pages/certificate/certificate.component';
+import { ProjectBotComponent } from './pages/project-bot/project-bot.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     DeploymentComponent,
     ProjectNetflixCloneComponent,
     CertificateComponent,
+    ProjectBotComponent,
   ],
   imports: [
     BrowserModule,

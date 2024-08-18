@@ -1,19 +1,19 @@
 :host {
     height: 100%;
     width: 100%;
-    background-color: #fffcf3;
-    z-index: 3;
 }
 
 .container {
     display: flex;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     background-color: #fffcf3;
 
     .contactContainer {
         display: flex;
-        margin: 50px 100px 32px 100px;
-        width: 100%;
+        height: calc(100% - 100px);
+        width: calc(100% - 200px);
         border-radius: 12px;
         z-index: 1;
         box-shadow: 0px 10px 15px rgba(#191919, 0.6);
@@ -62,6 +62,7 @@
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
+                    text-align: center;
                     width: 52%;
                     border-radius: 12px;
                     margin: 2%;
@@ -81,10 +82,13 @@
                             color: #333333;
                             font-weight: 700;
                         }
+                    }
 
-                        .contactInformation {
-                            display: flex;
-                        }
+                    .contactInformation {
+                        display: flex;
+                        justify-content: center;
+                        padding: 3%;
+                        width: calc(100% - 6%);
                     }
 
                     .address {
@@ -95,6 +99,7 @@
                         color: #333333;
                         font-weight: 600;
                     }
+
                     .imprint {
                         margin: 20% 0 0 0;
                         cursor: pointer;
@@ -107,7 +112,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 50px;
                 width: calc(100% - 6%);
                 margin: 0 3% 0 3%;
                 height: 30%;
@@ -155,21 +159,24 @@
 
 @media screen and (max-width: 1050px) {
     .contactContainer {
+        justify-content: center;
         flex-direction: column;
+        width: calc(100% - 6%)!important;
+        height: 100% !important;
         margin: 0 !important;
+        background-color: #fffcf3;
+        box-shadow: none !important;
         border-radius: 0 !important;
 
         .contactDataContainer {
-            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: calc(100% - 6%) !important;
+            height: 100% !important;
             z-index: 1;
+            margin: 0 3% 0 3%!important;
             background-color: #fffcf3;
-            width: 94% !important;
-            height: 80%;
-            top: 6%;
-            left: 2%;
-            right: 2%;
             border: none !important;
-            border-radius: 12px;
 
             .headlineTextContakt {
                 height: 15% !important;
@@ -177,50 +184,40 @@
 
             .contactInformationContainer {
                 display: flex;
-                width: calc(100% - 6%);
+                width: calc(100% - 6%) !important;
                 height: 45% !important;
-                margin: 0 3% 0 3% !important;
+                margin: 3% !important;
             }
 
             .socialMedia {
                 width: 100% !important;
-                margin: 12% 0 12% 0 !important;
+                margin: 0 !important;
 
                 .socialContainer {
                     height: 60%;
-                    width: calc(100% - 40px);
-                    margin: 0 20px 0 20px !important;
+                    width: 100%;
+                    margin: 0 !important;
                 }
 
                 .switchButton {
                     display: flex;
-                    width: 100%;
-                    margin: 0 !important;
+                    width: calc(100% - 6%);
                 }
             }
         }
 
         .contactSendContainer {
-            position: absolute;
+            display: flex;
             background-color: #fffcf3;
             border-radius: 12px;
             width: 100% !important;
-            height: calc(100% - 200px)!important;
-            top: 100px;
-            left: 0;
-            right: 0;
-            bottom: 100px !important;
+            height: calc(100% - 200px) !important;
             margin: 0 !important;
         }
 
         .formSection {
-            position: absolute;
             background-color: #fffcf3;
             flex: 1;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
             width: 100% !important;
             margin: 0 !important;
         }
@@ -230,39 +227,38 @@
         }
     }
 
-    @keyframes slideIn {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 1;
-        }
-    }
+    // @keyframes slideIn {
+    //     from {
+    //         transform: translateX(0);
+    //         opacity: 1;
+    //     }
+    //     to {
+    //         transform: translatey(100%);
+    //         opacity: 1;
+    //     }
+    // }
 
-    @keyframes slideOut {
-        from {
-            transform: translateX(100%);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
+    // @keyframes slideOut {
+    //     from {
+    //         transform: translateX(100%);
+    //         opacity: 1;
+    //     }
+    //     to {
+    //         transform: translateX(0);
+    //         opacity: 1;
+    //     }
+    // }
 
-    .slide-in {
-        animation: slideIn 300ms ease-out;
-    }
+    // .slide-in {
+    //     animation: slideIn 300ms ease-out;
+    // }
 
-    .slide-out {
-        animation: slideOut 300ms ease-in;
-    }
+    // .slide-out {
+    //     animation: slideOut 300ms ease-in;
+    // }
 }
 
 @media screen and (max-height: 800px) {
-
     .contactContainer {
         .contactSendContainer {
             height: 76% !important;
@@ -274,5 +270,5 @@
     .contactDataContainer {
         width: 94% !important;
         height: 74% !important;
-    } 
+    }
 }
