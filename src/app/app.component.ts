@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
 import { slideInAnimation } from './pages/_animations';
+import { ScreenService } from './services/screen.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -19,7 +20,7 @@ export class AppComponent {
   ];
   selectedValue: string = 'en';
 
-  constructor(public router: Router, public translate: TranslateService) {
+  constructor(public router: Router, public translate: TranslateService, public ss: ScreenService) {
     this.translate.setDefaultLang(this.selectedValue);
     this.translate.use(this.selectedValue);
 
@@ -36,6 +37,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.isStartPage();
+    this.ss.checkScreenWidth();
   }
 
   /**
