@@ -7,68 +7,66 @@
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   background-color: #fffcf3;
 
   .containerImprint {
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
-    margin-bottom: 32px;
-    width: 100%;
+    height: calc(100% - 100px);
+    width: calc(100% - 200px);
     border-radius: 12px;
     z-index: 1;
     box-shadow: 0px 10px 15px rgba(#191919, 0.6);
     background-color: #fffcf3;
-    overflow-y: scroll;
 
     .imprintContent {
       display: flex;
       flex-direction: column;
-      margin: 3%;
+      overflow-y: scroll;
+      margin: 3% 3% 6% 3%;
     }
 
-      .containerProfile {
-        display: flex;
-        align-items: center;
-      }
+    .containerProfile {
+      display: flex;
+      align-items: center;
+    }
 
-      .containerText {
-        display: flex;
-        margin-bottom: 10px;
-        font-size: 2vh;
-      }
+    .containerText {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 2vh;
+    }
 
-      h1 {
-        display: flex;
-        font-size: 3vh;
-      }
+    h1 {
+      display: flex;
+      font-size: 3vh;
+    }
 
-      h2 {
-        display: flex;
-        font-size: 2vh;
-      }
+    h2 {
+      display: flex;
+      font-size: 2vh;
+    }
 
-      .text {
-        display: flex;
-        margin-left: 10px;
-        font-size: 2vh;
-        margin-bottom: 10px;
-      }
+    .text {
+      display: flex;
+      margin-left: 10px;
+      font-size: 2vh;
+      margin-bottom: 10px;
+    }
 
-      .textImpressum {
-        display: flex;
-        margin-right: 10px;
-        font-size: 15px;
-      }
+    .textImpressum {
+      display: flex;
+      font-size: 15px;
+    }
 
-      a {
-        display: flex;
-        margin-left: 10px;
-      }
+    a {
+      display: flex;
+      margin-left: 10px;
     }
   }
+}
 
 /*************************************************************/
 /***********************   Tap Query   ***********************/
@@ -86,15 +84,9 @@
       flex-direction: column;
       background-color: #fffcf3;
       margin-left: 3% !important;
-      margin-right: 3%!important;
+      margin-right: 3% !important;
       flex: 1;
       width: calc(100% - 6%) !important;
     }
   }
-}
-
-/*************************************************************/
-/*********************    Phone Query    *********************/
-/*************************************************************/
-@media screen and (max-width: 700px) {
 }

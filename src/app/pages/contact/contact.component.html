@@ -61,17 +61,6 @@
             />
           </a>
         </div>
-        <button
-          class="btn switchButton"
-          (click)="ss.switch()"
-          *ngIf="ss.tapView"
-        >
-          {{
-            ss.active
-              ? ("changeInfoBtn" | translate)
-              : ("changeSendBtn" | translate)
-          }}
-        </button>
       </div>
     </div>
     <div class="contactSendContainer">
@@ -83,5 +72,21 @@
         <app-message-form></app-message-form>
       </div>
     </div>
+    <button class="btn switchButton" (click)="ss.switch()" *ngIf="ss.tapView">
+      <div class="">
+        <span class="arrow arrow-right">&gt;</span>
+        <span class="arrow arrow-right">&gt;</span>
+      </div>
+
+      {{
+        ss.active
+          ? ("changeInfoBtn" | translate)
+          : ("changeSendBtn" | translate)
+      }}
+      <div class="">
+        <span class="arrow arrow-left">&lt;</span>
+        <span class="arrow arrow-left">&lt;</span>
+      </div>
+    </button>
   </div>
 </div>

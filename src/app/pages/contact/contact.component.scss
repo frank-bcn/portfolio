@@ -114,7 +114,7 @@
                 align-items: center;
                 width: calc(100% - 6%);
                 margin: 0 3% 0 3%;
-                height: 30%;
+                height: 40%;
 
                 .socialContainer {
                     display: flex;
@@ -138,7 +138,6 @@
             align-items: center;
             width: 50%;
             margin: 6% 0 6% 0;
-            height: calc(100% - 20%);
 
             .formSection {
                 display: flex;
@@ -160,6 +159,7 @@
 @media screen and (max-width: 1050px) {
     .contactContainer {
         justify-content: center;
+        align-items: center !important;
         flex-direction: column;
         width: calc(100% - 6%)!important;
         height: 100% !important;
@@ -172,7 +172,7 @@
             display: flex;
             justify-content: center;
             width: calc(100% - 6%) !important;
-            height: 100% !important;
+            height: calc(100% - 100px);
             z-index: 1;
             margin: 0 3% 0 3%!important;
             background-color: #fffcf3;
@@ -190,28 +190,24 @@
             }
 
             .socialMedia {
+                justify-content: flex-start !important;
                 width: 100% !important;
                 margin: 0 !important;
 
                 .socialContainer {
-                    height: 60%;
                     width: 100%;
                     margin: 0 !important;
-                }
-
-                .switchButton {
-                    display: flex;
-                    width: calc(100% - 6%);
                 }
             }
         }
 
         .contactSendContainer {
             display: flex;
+            flex-direction: column;
             background-color: #fffcf3;
             border-radius: 12px;
+            flex: 1;
             width: 100% !important;
-            height: calc(100% - 200px) !important;
             margin: 0 !important;
         }
 
@@ -226,19 +222,51 @@
             width: calc(100% - 10%) !important;
         }
     }
-}
 
-@media screen and (max-height: 800px) {
-    .contactContainer {
-        .contactSendContainer {
-            height: 76% !important;
-            top: 6% !important;
-            bottom: 30% !important;
+    .switchButton {
+        position: relative;
+        justify-content: space-around;
+        bottom: 10px;
+        height: 50px;
+        z-index: 1;
+        width: calc(100% - 10%);
+
+        .arrow {
+            display: inline-block;
+            color: #ff9900;
+            font-size: 24px;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
-    }
-
-    .contactDataContainer {
-        width: 94% !important;
-        height: 74% !important;
+        
+        .arrow-left {
+            animation-name: move-left;
+        }
+        
+        .arrow-right {
+            animation-name: move-right;
+        }
+        
+        @keyframes move-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(5px);
+            }
+        }
+        
+        @keyframes move-right {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-5px);
+            }
+        }
+        
+        
     }
 }
