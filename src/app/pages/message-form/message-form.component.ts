@@ -7,7 +7,6 @@ import { ScreenService } from '../../services/screen.service';
   styleUrls: ['./message-form.component.scss'],
 })
 export class MessageFormComponent {
-
   name: string = '';
   email: string = '';
   message: string = '';
@@ -99,6 +98,11 @@ export class MessageFormComponent {
     return this.name.trim() !== '' && /^[A-Za-z\s]+$/.test(this.name.trim());
   }
 
+  /*
+   * Validates the email address format.
+   * Checks if the email address is not empty and conforms to a standard email format using a regular expression.
+   * Returns `true` if the email is valid, otherwise `false`.
+   */
   emailValid(): boolean {
     return (
       this.email.trim() !== '' &&
@@ -123,5 +127,4 @@ export class MessageFormComponent {
   formValid(): boolean {
     return this.nameValid() && this.emailValid() && this.messageValid();
   }
-
 }

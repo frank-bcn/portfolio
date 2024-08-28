@@ -20,7 +20,11 @@ export class AppComponent {
   ];
   selectedValue: string = 'en';
 
-  constructor(public router: Router, public translate: TranslateService, public ss: ScreenService) {
+  constructor(
+    public router: Router,
+    public translate: TranslateService,
+    public ss: ScreenService
+  ) {
     this.translate.setDefaultLang(this.selectedValue);
     this.translate.use(this.selectedValue);
 
@@ -30,14 +34,24 @@ export class AppComponent {
     );
   }
 
-  onToggleChange(value: string) {
-    this.selectedValue = value;
-    this.translate.use(value);
-  }
-
+  /*
+   * Initializes the component by performing setup tasks.
+   * Calls `isStartPage` to determine if the current page is the start page.
+   * Invokes `checkScreenWidth` from the `ss` service to evaluate or adjust layout based on the screen width.
+   */
   ngOnInit() {
     this.isStartPage();
     this.ss.checkScreenWidth();
+  }
+
+  /*
+   * Handles changes in toggle selection and updates the language.
+   * Sets the selected value based on the provided input and changes the application language using the translate service.
+   * Ensures that the user interface reflects the selected language.
+   */
+  toggleChange(value: string) {
+    this.selectedValue = value;
+    this.translate.use(value);
   }
 
   /**

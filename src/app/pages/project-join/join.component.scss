@@ -36,7 +36,7 @@
             .headlineProjects {
                 display: flex;
                 margin: 0 0 0 0;
-            }  
+            }
         }
 
         .sectionProject {
@@ -89,6 +89,35 @@
             width: calc(100% - 24%);
             margin: 0 12% 0 12%;
         }
+    }
+
+    .btnContainer {
+        position: relative;
+        display: inline-block;
+        width: calc(50% - 12px);
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: -3%;
+        left: 0;
+        width: 100%;
+        background-color: #fffcf3;
+        z-index: 1;
+        border-radius: 8px;
+
+        .btnSmall {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 6px!important;
+            border-radius: 5px!important;
+        }
+    }
+
+    .btnContainer:hover .dropdown {
+        display: block;
     }
 }
 

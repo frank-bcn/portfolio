@@ -2,7 +2,7 @@
   <div class="languageContainer">
     <p
       *ngFor="let language of languages"
-      (click)="onToggleChange(language.code)"
+      (click)="toggleChange(language.code)"
       [class.selected]="selectedValue === language.code"
     >
       {{ language.name }}

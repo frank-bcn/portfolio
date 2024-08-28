@@ -25,7 +25,7 @@
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
-      margin: 3% 3% 6% 3%;
+      margin: 3% 0 6% 3%;
     }
 
     .containerProfile {
@@ -77,7 +77,6 @@
     margin-right: 3% !important;
     width: calc(100% - 6%) !important;
     height: calc(100% - 10%) !important;
-    overflow-y: scroll;
 
     .container {
       display: flex;
