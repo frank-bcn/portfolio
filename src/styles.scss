@@ -15,25 +15,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff9900;
-  border-radius: 6px;
+  background-color: rgba(255, 153, 0, 0.7);
 }
 
-::-moz-scrollbar {
-  width: 12px;
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-::-moz-scrollbar-thumb {
-  background-color: #ff9900;
+* {
+  scrollbar-color: rgba(255, 153, 0, 0.7) rgba(0, 0, 0, 0.1); 
 }
-
-/**********************************************************/
-/***********************   buttons  ***********************/
-/**********************************************************/
 
 .btn {
   display: flex;
@@ -100,15 +95,17 @@ html {
 
   img {
     height: 32px;
+    padding: 3%;
   }
 }
 
 .linkContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   padding: 0 calc(4% - 6px) 12px 4%;
-  overflow-y: scroll;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .headlineText {
@@ -191,7 +188,7 @@ html {
   box-shadow:
     inset 2px 2px 8px rgba(25, 25, 25, 0.6),
     inset -2px -2px 8px rgba(245, 245, 245, 0.1);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .otherIcon {
@@ -222,7 +219,7 @@ html {
   }
 
   .btnLink {
-    margin: 2% 0 0 0 !important;
+    margin: 3% 0 0 0 !important;
     padding: 10px 0 10px 0;
   }
 
@@ -260,12 +257,17 @@ html {
       height: 30%;
       --br-x: 100%;
       --br-y: 20px;
+      padding: 0 0 12px 0;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       border-bottom-left-radius: var(--br-x) var(--br-y);
       border-bottom-right-radius: var(--br-x) var(--br-y);
       border-top: none;
       border-bottom: none;
+
+      .linkContainer {
+        justify-content: flex-start;
+      }
 
       .headline {
         margin: 1% 0 0 0;

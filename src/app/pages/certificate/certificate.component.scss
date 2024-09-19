@@ -37,8 +37,6 @@
 
     .slide img {
       width: 80%;
-      height: calc(100% - 12px);
-      margin: 0 0 12px 0;
       object-fit: contain;
     }
   }
@@ -58,6 +56,7 @@
     .slideCounter {
       display: flex;
       height: 100%;
+      width: 100px;
       justify-content: center;
       align-items: center;
       font-size: 24px;

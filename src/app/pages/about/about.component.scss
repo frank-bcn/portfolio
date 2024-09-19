@@ -37,7 +37,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            overflow-y: scroll;
+            overflow-y: auto;
             font-size: clamp(16px, 2vw, 24px);
             font-family: "overpass";
             color: #333333;

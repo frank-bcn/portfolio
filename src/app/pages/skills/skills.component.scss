@@ -6,15 +6,11 @@
 
 .container {
     display: flex;
-    height: 100%; 
+    height: 100%;
 
     .btnContainer {
         display: flex;
         flex-direction: column;
-
-        ::-webkit-scrollbar {
-            display: flex !important;
-          }
     }   
 }
 

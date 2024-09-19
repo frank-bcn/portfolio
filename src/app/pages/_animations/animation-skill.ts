@@ -497,31 +497,20 @@ export const animation = trigger('slideAnimation', [
   transition('certificate => deployment', [
     style({ position: 'relative' }),
     query(
-      ':enter',
+      ':enter, :leave',
       [
         style({
           position: 'absolute',
           height: '100%',
           width: '100%',
-          left: '100%',
-          zIndex: 1,
         }),
       ],
       { optional: true }
     ),
-    query(
-      ':leave',
-      [
-        style({
-          position: 'absolute',
-          height: '100%',
-          width: '100%',
-          left: '0%',
-          zIndex: 0,
-        }),
-      ],
-      { optional: true }
-    ),
+    group([
+      query(':enter', [style({ left: '-100%' })], { optional: true }),
+      query(':leave', [style({ left: '0%' })], { optional: true }),
+    ]),
     group([
       query(':enter', [animate('500ms ease-out', style({ left: '0%' }))], {
         optional: true,
