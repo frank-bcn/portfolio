@@ -18,7 +18,7 @@
     "btnExtra": "Extra",
     "extraDescription": "Otras habilidades que he adquirido incluyen Scrum, Git (o GitHub) y APIs.Pude implementar Scrum y Git/GitHub en varios proyectos grupales, así como de manera independiente en casa, por ejemplo, para una planificación y ejecución efectivas de proyectos. Utilicé Git/GitHub para crear repositorios y para almacenar, rastrear y gestionar código. Con mi pequeño proyecto (Pokedex), aprendí a interactuar con APIs y a recuperar datos de interfaces.",
     "btnDeployment": "Deployment",
-    "deploymentDescription": "En mis proyectos, he utilizado Google Cloud, Docker, así como Integración Continua (CI) y Despliegue Continuo (CD). Google Cloud me proporciona una infraestructura confiable y flexible. Docker simplifica la contenedorización de mis proyectos. El uso de CI/CD automatiza mi proceso de desarrollo y mejora la calidad de mis proyectos.",
+    "deploymentDescription": "A través de mis conocimientos en varias tecnologías en la nube, como Google Cloud, Microsoft Azure y AWS, puedo acceder a infraestructuras flexibles y escalables que se adaptan de manera óptima a las necesidades de mis proyectos. Utilizo Docker para contenerizar mis proyectos, mientras que implemento la Integración Continua (CI) y el Despliegue Continuo (CD) para automatizar el proceso de desarrollo. Estas herramientas desempeñan un papel clave en mejorar la eficiencia y aumentar la calidad de mis proyectos.",
     "btnCertificate": "Certificados",
 
     "commentProjects": "projects-page",
@@ -61,7 +61,7 @@
     "headlineDisclaimer": "Exención de responsabilidad",
     "disclaimerText": "El contenido de esta página web ha sido revisado cuidadosamente y creado con el mejor conocimiento. Sin embargo, no se asume ninguna garantía respecto a la precisión, integridad y actualidad del contenido. Se excluye cualquier responsabilidad por daños que surjan directa o indirectamente del uso de esta página web, a menos que se base en intención o negligencia grave.",
     "headlineCopyright": "Derechos de autor",
-    "copyrightText": "Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.",
+    "copyrightText": "© 2024 Frank Sinnigen. Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.",
     "headlineSources": "Fuentes",
     "souresText": "Este aviso legal fue creado con la ayuda de",
 
