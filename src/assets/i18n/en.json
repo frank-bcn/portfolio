@@ -18,7 +18,7 @@
     "btnExtra": "Extra",
     "extraDescription": "Additional skills I`ve acquired include Scrum, Git (or GitHub), and APIs.I was able to implement Scrum and Git/GitHub in several group projects as well as independently at home, for instance, for effective project planning and execution. I used Git/GitHub to create repositories and to store, track, and manage code.With my small project (Pokedex), I learned how to interact with APIs and retrieve data from interfaces.",
     "btnDeployment": "Deployment",
-    "deploymentDescription": "In my projects, I have used Google Cloud, Docker, as well as Continuous Integration (CI) and Continuous Deployment (CD). Google Cloud provides me with a reliable and flexible infrastructure. Docker simplifies the containerization of my projects. The use of CI/CD automates my development process and improves the quality of my projects.",
+    "deploymentDescription": "With my knowledge of various cloud technologies, including Google Cloud, Microsoft Azure, and AWS, I can access flexible and scalable infrastructures that are optimally tailored to the needs of my projects. I use Docker to containerize my projects, while I implement Continuous Integration (CI) and Continuous Deployment (CD) to automate the development process. These tools play a key role in improving efficiency and enhancing the quality of my projects.",
     "btnCertificate": "Certificates",
 
     "commentProjects": "projects-page",
@@ -61,7 +61,7 @@
     "headlineDisclaimer": "Disclaimer",
     "disclaimerText": "The contents of this website have been carefully examined and created to the best of our knowledge. However, no guarantee is assumed for the accuracy, completeness, and timeliness of the content. Any liability for damages arising directly or indirectly from the use of this website is excluded, unless based on intent or gross negligence.",
     "headlineCopyright": "Copyright",
-    "copyrightText": "All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.",
+    "copyrightText": "© 2024 Frank Sinnigen. All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.",
     "headlineSources": "Sources",
     "souresText": "This imprint was created with the help of.",
 

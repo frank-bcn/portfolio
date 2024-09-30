@@ -9,6 +9,7 @@ export class CertificateComponent  {
   images: string[] = [
     'assets/ images/certificates/THM-TJI8C28XQG.png',
     'assets/ images/certificates/THM-ECM9Q6VRUU.png',
+    'assets/ images/certificates/THM-MZN8NL33N1.png'
   ];
   currentIndex: number = 0;
 
