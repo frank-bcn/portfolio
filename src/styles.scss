@@ -229,6 +229,8 @@ html {
 
   .btnAbout {
     padding: 18px;
+    margin: 0;
+    width: 100%;
   }
 
   .btnLink {
@@ -294,7 +296,7 @@ html {
 
     .section {
       width: 100%;
-      height: calc(80% - 10%);
+      height: calc(80% - 4%);
       margin: 0 0 0 0;
     }
 

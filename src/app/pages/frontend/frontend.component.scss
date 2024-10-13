@@ -12,6 +12,10 @@
     padding: 4%;
 }
 
+.descriptionHeadline {
+    display: none;
+}
+
 /*************************************************************/
 /***********************   Tap Query   ***********************/
 /*************************************************************/
@@ -27,5 +31,16 @@
         width: 100%;
         height: 100%;
         padding: 0;
+    }
+
+    .descriptionHeadline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(24px, 3vw, 58px);
+        font-weight: 710;
+        font-family: "syne";
+        color: #333333;
+        margin: 0 0 12px 0;
     }
 }
