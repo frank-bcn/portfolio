@@ -1,5 +1,6 @@
 <div class="container">
   <div class="sectionContainer">
+    <span class="headlineText headline">{{ "headline" | translate }}</span>
     <div class="menu">
       <span class="headlineText headline">{{ "headline" | translate }}</span>
       <div class="linkContainer">
@@ -42,6 +43,7 @@
         </div>
       </div>
     </div>
+    
     <div class="section" [@slideAnimation]="currentProject">
       <div *ngIf="currentProject === 'project1'" class="sliderContainer">
         <app-project-pokedex></app-project-pokedex>
@@ -57,6 +59,29 @@
       </div>
       <div *ngIf="currentProject === 'project5'" class="sliderContainer">
         <app-project-bot></app-project-bot>
+      </div>
+    </div>
+
+    <div class="changeComponent">
+      <div class="switchContainer">
+        <button
+          class="btn btnSwitch"
+          (click)="prevSkill()"
+        >{{ "btnprev" | translate }}
+        </button>
+        <button
+          class="btn btnSwitch"
+          (click)="nextSkill()"
+        >{{ "btnnext" | translate }}
+        </button>
+      </div>
+      <div class="dotsContainer">
+        <span
+          *ngFor="let skill of skills; let i = index"
+          class="dot"
+          [ngClass]="{ active: currentProjectIndex === i }"
+          (click)="currentProjectIndex = i; currentProject = skills[i];"
+        ></span>
       </div>
     </div>
   </div>

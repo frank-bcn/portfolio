@@ -1,7 +1,8 @@
 <div class="container">
   <div class="sectionContainer">
+    <span class="headlineText headline">{{ "headlineSkill" | translate }}</span>
     <div class="menu">
-      <span class="headlineText headline">{{ "headline" | translate }}</span>
+      <span class="headlineText headline">{{ "headlineSkill" | translate }}</span>
       <div class="linkContainer">
         <div class="btnContainer">
           <button
@@ -59,5 +60,31 @@
         <app-certificate></app-certificate>
       </div>
     </div>
+
+    <div class="changeComponent">
+      <div class="switchContainer">
+        <button
+          class="btn btnSwitch"
+          (click)="prevSkill()"
+          [ngClass]="{ active: currentSkill === 'frontend' }"
+        >{{ "btnprev" | translate }}
+        </button>
+        <button
+          class="btn btnSwitch"
+          (click)="nextSkill()"
+          [ngClass]="{ active: currentSkill === 'backend' }"
+        >{{ "btnnext" | translate }}
+        </button>
+      </div>
+      <div class="dotsContainer">
+        <span
+          *ngFor="let skill of skills; let i = index"
+          class="dot"
+          [ngClass]="{ active: currentSkillIndex === i }"
+        ></span>
+      </div>
+    </div>
+
+
   </div>
 </div>

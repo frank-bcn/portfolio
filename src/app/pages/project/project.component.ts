@@ -8,9 +8,14 @@ import { animation } from '../_animations/animation-project';
   animations: [animation],
 })
 export class ProjectComponent {
-  currentProject = 'project1';
+  currentProjectIndex = 0; // Track the index of the current project
+  skills = ['project1', 'project2', 'project3', 'project4', 'project5']; 
 
-  constructor() {}
+  constructor() {
+    this.currentProject = this.skills[this.currentProjectIndex]; 
+  }
+
+  currentProject: string; 
 
   /**
    * Switches the current project to the specified project.
@@ -21,5 +26,23 @@ export class ProjectComponent {
    */
   switchProject(project: string) {
     this.currentProject = project;
+  }
+
+  prevSkill() {
+    if (this.currentProjectIndex > 0) {
+      this.currentProjectIndex--;
+    } else {
+      this.currentProjectIndex = this.skills.length - 1; 
+    }
+    this.currentProject = this.skills[this.currentProjectIndex]; 
+  }
+
+  nextSkill() {
+    if (this.currentProjectIndex < this.skills.length - 1) {
+      this.currentProjectIndex++;
+    } else {
+      this.currentProjectIndex = 0; 
+    }
+    this.currentProject = this.skills[this.currentProjectIndex];
   }
 }

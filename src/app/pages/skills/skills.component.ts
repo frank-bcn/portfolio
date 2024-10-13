@@ -8,18 +8,42 @@ import { animation } from '../_animations/animation-skill';
   animations: [animation],
 })
 export class SkillsComponent {
-  currentSkill = 'frontend';
+  currentSkillIndex = 0; // Aktueller Index der Fertigkeit
+  skills = ['frontend', 'backend', 'extra', 'deployment', 'certificate']; // Alle Fertigkeiten
 
-  constructor() {}
+  constructor() {
+    this.currentSkill = this.skills[this.currentSkillIndex]; 
+  }
+
+  currentSkill: string; 
 
   /**
-   * Switches the current skill to the specified skill.
+   * Wechselt die aktuelle Fertigkeit zur angegebenen Fertigkeit.
    *
-   * This function sets the `currentSkill` property to the provided skill.
-   *
-   * @param {string} skill - The new skill to be set as the current skill.
+   * @param {string} skill - Die neue Fertigkeit, die als aktuelle Fertigkeit gesetzt werden soll.
    */
   switchSkill(skill: string) {
     this.currentSkill = skill;
+    this.currentSkillIndex = this.skills.indexOf(skill); // Aktualisiere den Index
+  }
+
+ 
+  prevSkill() {
+    if (this.currentSkillIndex > 0) {
+      this.currentSkillIndex--;
+    } else {
+      this.currentSkillIndex = this.skills.length - 1; 
+    }
+    this.currentSkill = this.skills[this.currentSkillIndex]; 
+  }
+
+  
+  nextSkill() {
+    if (this.currentSkillIndex < this.skills.length - 1) {
+      this.currentSkillIndex++;
+    } else {
+      this.currentSkillIndex = 0; 
+    }
+    this.currentSkill = this.skills[this.currentSkillIndex];
   }
 }

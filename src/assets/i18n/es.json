@@ -1,6 +1,6 @@
 {
     "comment": "start-page",
-    "slogan": "Donde el código se convierte en arte y los sueños digitales se hacen realidad",
+    "slogan": "Programar con pasión – realizar innovaciones.",
     "btnText": "Ver más",
 
     "commentAbout": "about-page",
@@ -38,6 +38,8 @@
     "btnProject5": "WhatsApp Bot",
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "En este proyecto, desarrollé un bot de WhatsApp que puede enviar mensajes automatizados a través de WhatsApp. El bot fue programado en Python y utiliza la biblioteca pywhatkit para controlar la interfaz web de WhatsApp y enviar mensajes a contactos o grupos.",
+    "btnprev": "atrás",
+    "btnnext": "siguiente",
 
     "commentContact": "contact-page",
     "headlineContact": "Contacto",
