@@ -1,10 +1,7 @@
+
 <div class="container">
-  <div class="imageContainer">
-    <img
-      draggable="false"
-      (contextmenu)="ss.preventContextMenu($event)"
-      src="/assets/ images/etc_images/about.png"
-    />
+  <div class="background-animation">
+    <img *ngFor="let image of images" [src]="image" alt="Background Image" />
   </div>
   <div class="aboutSection">
     <span class="headlineText">{{ "headlineAbout" | translate }}</span>

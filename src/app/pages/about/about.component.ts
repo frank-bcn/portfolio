@@ -8,6 +8,12 @@ import { Router } from '@angular/router';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+
+  images: string[] = [
+    '/assets/ images/etc_images/about.png',
+    '/assets/ images/etc_images/background.png',
+    '/assets/ images/etc_images/portfolio.png'
+  ];
   
   constructor(public ss: ScreenService, public router: Router) { }
 
