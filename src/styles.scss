@@ -27,7 +27,7 @@ html {
 }
 
 * {
-  scrollbar-color: rgba(255, 153, 0, 0.7) rgba(0, 0, 0, 0.1); 
+  scrollbar-color: rgba(255, 153, 0, 0.7) rgba(0, 0, 0, 0.1);
 }
 
 .btn {
@@ -212,7 +212,7 @@ html {
 }
 
 .changeComponent {
-  display: none; 
+  display: none;
 }
 
 /*************************************************************/
@@ -261,17 +261,6 @@ html {
     }
   }
 
-  .headlineText {
-    display: flex;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(34px, 3.5vw, 58px);
-    font-weight: 800;
-    font-family: "syne";
-    color: #333333;
-  }
-
   .sectionContainer {
     flex-direction: column;
     margin: 0;
@@ -296,7 +285,7 @@ html {
 
     .section {
       width: 100%;
-      height: calc(80% - 4%);
+      height: calc(100% - 15%);
       margin: 0 0 0 0;
     }
 
@@ -306,35 +295,32 @@ html {
       justify-content: end;
       height: 15%;
     }
-    
   }
 
-  
-
   .switchContainer {
-    display: none; 
-  
+    display: none;
+
     @media (max-width: 1200px) {
-      display: flex; 
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
   }
-  
+
   .dotsContainer {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     margin: 0 0 12px 0;
   }
-  
+
   .dot {
-    height: 10px; 
+    height: 10px;
     width: 10px;
-    margin: 0 5px; 
-    border-radius: 50%; 
-    background-color: #ccc; 
-    cursor: pointer; 
-  
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+
     &.active {
       background-color: #ff9900;
     }
