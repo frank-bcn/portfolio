@@ -66,13 +66,13 @@
           class="btn btnSwitch"
           (click)="prevSkill()"
           [ngClass]="{ active: currentSkill === 'frontend' }"
-        ><span style="color: #ff9900; margin-right: 10px;">&lt;</span>{{ "btnprev" | translate }}
+        ><span style="color: #ff9900; margin-right: 10px; font-size: 24px;">&lt;</span>{{ "btnprev" | translate }}
         </button>
         <button
           class="btn btnSwitch"
           (click)="nextSkill()"
           [ngClass]="{ active: currentSkill === 'backend' }"
-        >{{ "btnnext" | translate }}<span style="color: #ff9900; margin-left: 10px;">&gt;</span>
+        >{{ "btnnext" | translate }}<span style="color: #ff9900; margin-left: 10px; font-size: 24px;">&gt;</span>
         </button>
       </div>
       <div class="dotsContainer">

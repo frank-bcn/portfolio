@@ -244,15 +244,15 @@
             animation-direction: alternate;
         }
         
-        .arrow-left {
-            animation-name: move-left;
+        .arrowLeft {
+            animation-name: moveLeft;
         }
         
-        .arrow-right {
-            animation-name: move-right;
+        .arrowRight {
+            animation-name: moveRight;
         }
         
-        @keyframes move-left {
+        @keyframes moveLeft {
             0% {
                 transform: translateX(0);
             }
@@ -261,7 +261,7 @@
             }
         }
         
-        @keyframes move-right {
+        @keyframes moveRight {
             0% {
                 transform: translateX(0);
             }
