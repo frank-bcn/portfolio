@@ -85,17 +85,16 @@
   
   .background-animation img:nth-child(1) {
     animation-delay: 0s;
-    left: 10%; 
+
   }
   
   .background-animation img:nth-child(2) {
     animation-delay: 6s; 
-    left: 30%; 
   }
+  
   
   .background-animation img:nth-child(3) {
     animation-delay: 12s;
-    left: 70%;
   }
   
   @keyframes float {
@@ -136,20 +135,5 @@
 
     .background-animation img {
       width: 100px;
-    }
-    
-    .background-animation img:nth-child(1) {
-      animation-delay: 0s;
-      left: 2%;
-    }
-    
-    .background-animation img:nth-child(2) {
-      animation-delay: 6s; 
-      left: 30%; 
-    }
-    
-    .background-animation img:nth-child(3) {
-      animation-delay: 12s;
-      left: 65%;
     }
   }

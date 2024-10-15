@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { ScreenService } from '../../services/screen.service';
 import { Router } from '@angular/router';
 
@@ -7,26 +7,54 @@ import { Router } from '@angular/router';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent {
+export class AboutComponent implements OnDestroy {
 
   images: string[] = [
     '/assets/ images/etc_images/about.png',
     '/assets/ images/etc_images/background.png',
     '/assets/ images/etc_images/portfolio.png'
   ];
-  
-  constructor(public ss: ScreenService, public router: Router) { }
+
+  shuffledImages: any[] = [];
+  intervalId: any;
+
+  constructor(public ss: ScreenService, public router: Router) {
+    this.shuffleImages();
+
+    this.intervalId = setInterval(() => {
+      this.shuffleImages();
+    }, 30000);
+  }
 
   /**
- * Navigates to the contact page.
- * 
- * This function checks if the `tapView` variable in the `ss` service is set.
- * If `tapView` is set, the `active` variable in the `ss` service is set to `true`.
- * Then, the router is used to navigate to the contact page.
- */
+   * Shuffles the images array and assigns random positions.
+   */
+  shuffleImages() {
+
+    this.shuffledImages = this.images
+      .map((image) => ({
+        src: image,
+        left: Math.random() * 80 + '%',
+        animationDelay: `${Math.random() * 15}s` 
+      }))
+      .sort(() => Math.random() - 0.5);
+  }
+
+  /**
+   * Cleanup interval on component destruction.
+   */
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+  /**
+   * Navigates to the contact page.
+   */
   navigateToContact() {
     if (this.ss.tapView) {
-    this.ss.active = true;
+      this.ss.active = true;
     }
     this.router.navigate(['/contact']);
   }
