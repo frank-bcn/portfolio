@@ -2,7 +2,89 @@
     display: flex;
     width: 100%;
     height: 100vh;
+    background-color: #fffcf3;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.4);
+
+    .infoSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 18% 3% 18%;
+        border-radius: 12px;
+        width: calc(100% - 10%);
+        height: calc(100% - 9%);
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .containerImg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+
+                .img {
+                    display: flex;
+                    height: 80%;
+                    padding: 0 0 5% 0;
+                    filter: grayscale(100%) drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
+                    transform: perspective(500px) rotateY(-5deg);
+                    cursor: default;
+
+                    // &:hover {
+                    //     filter: none;
+                    // }
+                }
+            }
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                height: fit-content;
+                width: calc(100% - 30px);
+                border-radius: 12px;
+                box-shadow:
+                    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+
+                .headlineText {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    .textbar {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        border-bottom: 3px solid #ff9900;
+                        margin: 0 0 0 0;
+                        font-size: clamp(22px, 4.5vw, 48px);
+                        font-weight: 800;
+                        color: #333333;
+                        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+
+            p {
+                display: flex;
+                margin: 3% 0 3% 0;
+                font-family: poppins;
+                font-size: clamp(9px, 1.5vw, 16px);
+                font-weight: 600;
+                color: #333333;
+            }
+        }
+    }
 }

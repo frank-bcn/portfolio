@@ -1,10 +1,23 @@
 <div class="container">
-
-
-
-    
-  
-
-
-
+  <div class="infoSection">
+    <section>
+      <div class="containerImg" data-aos="zoom-in" data-aos-duration="2000">
+        <img
+          draggable="false"
+          (contextmenu)="preventContextMenu($event)"
+          class="img"
+          src="/assets/ images/etc_images/background.png"
+        />
+      </div>
+      <div class="textContainer">
+        <div class="headlineText">
+          <div class="textbar">Frank Sinnigen</div>
+        </div>
+        <p>&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
+        <button class="btn btnStart">
+          {{ "contact" | translate }}
+        </button>
+      </div>
+    </section>
+  </div>
 </div>

@@ -1,15 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    background-color: #fffcf3;
-    font-family: Syne;
+  margin: 0;
+  padding: 0;
+  font-family: Syne;
 }
 
 .scroll-container {
-    overflow: auto;
-    scrollbar-width: none; 
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding: 15px;
+  margin: 3%;
+  border-radius: 9px;
+  transition: 300ms ease;
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow:
+    inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+    inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+    2px 2px 8px rgba(25, 25, 25, 0.6),
+    -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+  &:hover,
+  &.active {
+    box-shadow:
+      inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+      inset -2px -2px 8px rgba(245, 245, 245, 0.1);
   }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
+}

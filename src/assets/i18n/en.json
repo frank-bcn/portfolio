@@ -6,14 +6,13 @@
     "projects":"Projects",
     "footer":"",
 
-
-
-
-
-    "comment": "start-page",
+    "comment": "hero-page",
     "slogan": "Code with passion – create innovations.",
-    "btnText": "See more",
+    "contact": "Let's talk",
 
+
+
+    
     "commentAbout": "about-page",
     "headlineAbout": "About me",
     "professionalIntensiveHeadline": "Professional Intensive Phase",

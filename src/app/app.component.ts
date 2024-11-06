@@ -19,14 +19,19 @@ export class AppComponent {
   selectedValue: string = 'en';
 
   constructor(public translate: TranslateService) {}
+
   ngOnInit(): void {
     AOS.init();
     window.addEventListener('load', AOS.refresh);
+
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    this.toggleChange(savedLanguage);
   }
 
   toggleChange(value: string) {
     this.selectedValue = value;
     this.translate.use(value);
+    localStorage.setItem('selectedLanguage', value);
   }
 
   toggleMenu(): void {

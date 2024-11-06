@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
+  preventContextMenu(event: MouseEvent) {
+    event.preventDefault();
+  }
+
 }
