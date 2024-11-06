@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as AOS from 'aos';
 import { TranslateService } from '@ngx-translate/core';
+import { ScrollService } from './services/scroll.service';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ export class AppComponent {
   ];
   selectedValue: string = 'en';
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService, public ss: ScrollService) {}
 
   ngOnInit(): void {
     AOS.init();

@@ -8,20 +8,19 @@
 
     "comment": "start-page",
     "slogan": "Programar con pasión – realizar innovaciones.",
-    "contact": "Hablemos",
+    "contact": "Vamos a hablar",
 
-
+    "commentAbout": "about-page",
+    "headlineAbout": "Sobre mí",
+    "professionalIntensiveHeadline": "Fase Intensiva Profesional",
+    "professionalIntensiveText": "Después de varios años de programación, mi curiosidad se volvió infinita y decidí inscribirme en la Academia de Desarrolladores para obtener más información y alcanzar un nivel más alto. Desde entonces, he creado varios proyectos complejos y he adquirido experiencia en colaborar con otros desarrolladores.",
+ 
 
 
 
 
 
     
-    "commentAbout": "about-page",
-    "headlineAbout": "Sobre mí",
-    "professionalIntensiveHeadline": "Fase Intensiva Profesional",
-    "professionalIntensiveText": "Después de varios años de programación, mi curiosidad se volvió infinita y decidí inscribirme en la Academia de Desarrolladores para obtener más información y alcanzar un nivel más alto. Desde entonces, he creado varios proyectos complejos y he adquirido experiencia en colaborar con otros desarrolladores.",
-    "btn": "Vamos a hablar",
 
     "commentSkill": "skill-page",
     "headlineSkill": "Habilidades",

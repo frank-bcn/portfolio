@@ -57,13 +57,55 @@ nav {
 
     li {
         list-style: none;
+        width: calc(100% - 20px);
+        margin: 12px 0 0 20px;
+    
+        &:hover a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #ff9900;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #333333;
+            position: relative;
+            font-size: 18px;
+            font-weight: 700;
+        }
     }
+    
+    
 }
 
 nav.open {
     left: 0;
     background-color: #fffcf3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // nav.open .text {
 //     display: block;

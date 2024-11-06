@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    background-color: #fffcf3;
+
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: auto;
+            font-size: clamp(16px, 2vw, 24px);
+            font-family: "overpass";
+            color: #333333;
+            font-weight: 500;
+            border-radius: 12px;
+            margin: 6% 18% 18% 18%;
+            box-shadow: 0px 10px 15px rgba(#191919, 0.6);
+
+            p {
+                font-family: poppins;
+                font-size: clamp(16px, 3vw, 26px);
+                font-weight: 700;
+                color: #333333;
+                border-bottom: 2px solid #ff9900;
+                margin: 24px 0 24px 0;
+            }
+
+            span {
+                padding: 0 50px 50px 50px;
+            }
+        }
+
+        .btnContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #fffcf3;
+        }
+    }
+}

@@ -40,3 +40,14 @@
       inset -2px -2px 8px rgba(245, 245, 245, 0.1);
   }
 }
+
+.headlineText {
+  display: flex;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(34px, 3.5vw, 58px);
+  font-weight: 800;
+  font-family: "syne";
+  color: #333333;
+}

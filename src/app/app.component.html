@@ -10,16 +10,41 @@
 
 <nav [class.open]="isMenuOpen" (click)="toggleMenu()">
   <div class="text">Menu</div>
-  <!-- <li>
-    <a href="#">{{ "start" | translate }}</a>
+  <li>
+    <span (click)="ss.scrollToElement('start')">{{ "start" | translate }}</span>
   </li>
   <li>
-    <a href="#">{{ "about" | translate }}</a>
-  </li> -->
+    <span (click)="ss.scrollToElement('about')">{{ "about" | translate }}</span>
+  </li>
 </nav>
 
+
 <app-hero></app-hero>
-<div class="a"></div>
+<app-about></app-about>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- <div class="a"></div>
 <div class="b">
