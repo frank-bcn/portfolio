@@ -12,6 +12,7 @@
         width: 100%;
         flex-wrap: wrap;
         gap: 60px;
+        margin: 12% 0 0 0;
 
         .cardWrapper {
             display: flex;
@@ -59,7 +60,7 @@
                     width: 100%;
 
                     img {
-                        height: 50px;
+                        height: 40px;
                     }
                 }
             }
