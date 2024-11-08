@@ -1,10 +1,14 @@
-<div id="start"class="container">
+<div id="start" class="container">
+  <div class="arrowContainer" [ngClass]="{ 'hide-arrows': isScrolled }">
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+  </div>
   <div class="infoSection">
     <section>
       <div class="containerImg" data-aos="zoom-in" data-aos-duration="2000">
         <img
           draggable="false"
-          (contextmenu)="preventContextMenu($event)"
+          (contextmenu)="cm.preventContextMenu($event)"
           class="img"
           src="/assets/ images/etc_images/background.png"
         />
@@ -12,11 +16,8 @@
       <div class="textContainer">
         <div class="headlineText">
           <div class="textbar">Frank Sinnigen</div>
+          <p>&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
         </div>
-        <p>&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
-        <button class="btn btnStart">
-          {{ "contact" | translate }}
-        </button>
       </div>
     </section>
   </div>

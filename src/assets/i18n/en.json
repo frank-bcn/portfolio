@@ -15,22 +15,26 @@
     "professionalIntensiveHeadline": "Professional Intensive Phase",
     "professionalIntensiveText": "After several years of programming, my curiosity became boundless, and I decided to enroll at the Developer Academy to gain more input and reach a higher level. Since then, I have created several complex projects and gained experience in collaborating with other developers.",
 
+    "commentSkill": "skill-page",
+    "headlineSkill": "Skills",
+    "headlineFrontend": "Frontend",
+    "frontendDescription": "In the academy, the focus was on Angular, an object-oriented framework using TypeScript. Previously, I worked on my first projects with HTML, CSS, and JavaScript to learn the basics of web development.",
+    "headlineBackend": "Backend",
+    "backendDescription": "In my early projects, I used Firebase, but I wanted to broaden my horizons and gain a better understanding of what happens behind the scenes. Python with the Django framework and the SQLite database were perfect for this. See my project (Join).",
+    "headlineExtra": "Extra",
+    "extraDescription": "I have also gained skills in Scrum, Git/Github, and APIs. I applied Scrum and Git/Github in group projects and privately to plan and execute projects effectively, using Git/Github to manage and track code. Through a small project (Pokedex), I also gained initial experience with APIs and retrieving data from interfaces." ,
+    "btnDeployment": "Deployment",
+    "deploymentDescription": "With my knowledge of cloud technologies like Google Cloud, Microsoft Azure, and AWS, I can deploy flexible, scalable infrastructures. I use Docker for containerization and CI/CD to automate the development process, which boosts the efficiency and quality of my projects.",
+
+
+
+
+
 
 
 
 
     
-
-    "commentSkill": "skill-page",
-    "headlineSkill": "Skills",
-    "btnFrontend": "Frontend",
-    "frontendDescription": "At the academy, the focus was on the Angular framework. I implemented my first projects using HTML, CSS, and JavaScript.",
-    "btnBackend": "Backend",
-    "backendDescription": "In my early projects, I used Firebase, but I wanted to broaden my horizons and gain a better understanding of what happens behind the scenes. Python with the Django framework and the SQLite database were perfect for this. See my project (Join).",
-    "btnExtra": "Extra",
-    "extraDescription": "Additional skills I`ve acquired include Scrum, Git (or GitHub), and APIs.I was able to implement Scrum and Git/GitHub in several group projects as well as independently at home, for instance, for effective project planning and execution. I used Git/GitHub to create repositories and to store, track, and manage code.With my small project (Pokedex), I learned how to interact with APIs and retrieve data from interfaces.",
-    "btnDeployment": "Deployment",
-    "deploymentDescription": "With my knowledge of various cloud technologies, including Google Cloud, Microsoft Azure, and AWS, I can access flexible and scalable infrastructures that are optimally tailored to the needs of my projects. I use Docker to containerize my projects, while I implement Continuous Integration (CI) and Continuous Deployment (CD) to automate the development process. These tools play a key role in improving efficiency and enhancing the quality of my projects.",
     "btnCertificate": "Certificates",
 
     "commentProjects": "projects-page",

@@ -1,14 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { ContextMenuService } from '../../services/context-menu.service';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
+  
+  isScrolled: boolean = false;
 
-  preventContextMenu(event: MouseEvent) {
-    event.preventDefault();
+  constructor(public cm: ContextMenuService) {}
+
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition = window.scrollY;
+    this.isScrolled = scrollPosition > 0;
   }
-
 }
+
