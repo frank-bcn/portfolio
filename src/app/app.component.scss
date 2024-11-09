@@ -33,7 +33,8 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 200px;
+    height: auto;
+    padding: 12px 0 12px 0;
     border-radius: 0 5px 5px 0;
     border: solid #333333;
     border-width: 2px 30px 2px 0;
@@ -59,7 +60,7 @@ nav {
     li {
         list-style: none;
         width: calc(100% - 20px);
-        margin: 12px 0 0 20px;
+        margin: 12px 0 12px 20px;
     
         &:hover span::after {
             content: '';
@@ -81,6 +82,7 @@ nav {
     }
     
     
+    
 }
 
 nav.open {
@@ -89,96 +91,3 @@ nav.open {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// nav.open .text {
-//     display: block;
-// }
-
-.a {
-    display: flex;
-    height: 500px;
-    background-color: black;
-}
-
-// a {
-//     color: #444;
-//     text-decoration: none;
-//     transition: all 0.3s;
-
-//     &:hover {
-//         color: #fff;
-//     }
-// }
-
-// .menu {
-//     position: absolute;
-//     color: #fff;
-//     writing-mode: tb-rl;
-//     right: -27px;
-//     top: 10px;
-//     cursor: pointer;
-// }
-
-// ul,
-// li {
-//     list-style: none;
-//     display: block;
-// }
-
-// ul li:before {
-//     content: "||";
-//     padding-right: 20px;
-//     color: #fff;
-// }
-
-// Dropdown-Menü Pfeil
-// ul li.drop-down > a:after {
-//     content: "\025B6";
-//     float: right;
-//     padding-right: 10px;
-//     transition: all 0.4s ease-in;
-// }
-
-// ul li.drop-down:hover > a:after {
-//     content: "\025B6";
-//     transform: rotate(450deg);
-//     margin-top: 6px;
-// }
-
-// Dropdowns
-// .drop-down {
-//     ul {
-//         opacity: 0;
-//         max-height: 0;
-//         transition: all 0.4s ease-in-out;
-//     }
-
-//     &:hover {
-//         > ul {
-//             opacity: 1;
-//             padding: 5px 15px;
-//             max-height: 200px;
-//         }
-
-//         > a {
-//             color: #fff;
-//         }
-//     }

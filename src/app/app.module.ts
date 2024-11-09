@@ -9,6 +9,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { PokedexComponent } from './components/projects/pokedex/pokedex.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -18,7 +20,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HeroComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,
