@@ -1,10 +1,15 @@
 .container {
     display: flex;
-    width: 100%;
+    width: calc(100% - 24%);
     height: 100vh;
     background-color: #fffcf3;
     justify-content: center;
     align-items: center;
+    padding: 0 12% 0 12%;
+
+    &.dark-mode {
+        background-color: #333333;
+    }
 
     .hide-arrows {
         display: none;
@@ -82,99 +87,90 @@
                 opacity: 1;
             }
         }
+        .arrow.dark-mode::before,
+        .arrow.dark-mode::after {
+            background-color: #fffcf3;
+        }
+    }
+
+    .arrow.dark-mode::before,
+    .arrow.dark-mode::after {
+        background-color: #fffcf3;
     }
 
     .infoSection {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3% 12% 3% 12%;
+        flex-direction: column;
+        width: 100%;
+        height: 60%;
         border-radius: 12px;
-        width: calc(100% - 24%);
-        height: calc(100% - 6%);
 
-        section {
+        .cover {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: calc(70% - 2%);
             width: 100%;
-            height: 100%;
 
-            .containerImg {
+            .coverImg {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                border-radius: 50%;
                 height: 300px;
                 width: 300px;
-                border-radius: 50%;
-                box-shadow: 0px 10px 15px rgba(25, 25, 25, 0.6);
                 background-image: url("/assets/ images/etc_images/background.png");
-                background-size: contain;
                 background-position: center 100%;
                 background-repeat: no-repeat;
                 background-size: 90%;
                 filter: grayscale(100%) drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
+                box-shadow:
+                    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
             }
+        }
 
-            .textContainer {
+        .sectionContainer {
+            display: flex;
+            height: 30%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .textbar {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                // box-shadow:
-                //     inset 2px 2px 8px rgba(25, 25, 25, 0.6),
-                //     inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+                flex-wrap: nowrap;
+                border-bottom: 3px solid #ff9900;
+                margin: 0 0 0 0;
+                font-size: clamp(20px, 6vw, 100px);
+                font-weight: 800;
+                color: #333333;
+                text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 
-                .headlineText {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-
-                    .textbar {
-                        display: flex;
-                        flex-wrap: nowrap;
-                        border-bottom: 3px solid #ff9900;
-                        margin: 0 0 0 0;
-                        font-size: clamp(20px, 6vw, 100px);
-                        font-weight: 800;
-                        color: #333333;
-                        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
-                    }
+                &.dark-mode {
+                    color: #fffcf3;
+                    text-shadow: 4px 4px 3px rgba(255, 255, 255, 0.2);
                 }
             }
+        }
+    }
 
-            p {
-                display: flex;
-                margin: 3% 0 3% 0;
-                font-family: poppins;
-                font-size: clamp(14px, 2vw, 24px);
-                font-weight: 600;
-                color: #333333;
-            }
+    p {
+        display: flex;
+        margin: 3% 0 3% 0;
+        font-family: poppins;
+        font-size: clamp(6px, 2vw, 24px);
+        font-weight: 600;
+        color: #333333;
+
+        &.dark-mode {
+            color: #fffcf3;
         }
     }
 }
 
 @media screen and (max-width: 530px) {
-    .infoSection {
-        margin: 0 12% 0 12% !important;
-        width: calc(100% - 24%) !important;
-    }
-
-    .headlineText {
-        margin: 0 !important;
-    }
-
-    .containerImg {
+    .coverImg {
         height: 200px !important;
         width: 200px !important;
-    }
-
-    .textContainer {
-        height: 120px !important;
     }
 }

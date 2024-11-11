@@ -1,24 +1,19 @@
-<div id="start" class="container">
+<div [ngClass]="{ 'dark-mode': dm.isDark}" id="start" class="container">
   <div class="arrowContainer" [ngClass]="{ 'hide-arrows': isScrolled }">
-    <div class="arrow"></div>
-    <div class="arrow"></div>
+    <div [ngClass]="{ 'dark-mode': dm.isDark}" class="arrow"></div>
+    <div [ngClass]="{ 'dark-mode': dm.isDark}" class="arrow"></div>
   </div>
   <div class="infoSection">
-    <section>
+    <div class="cover">
       <div
+        class="coverImg" data-aos="zoom-in" data-aos-duration="1000"
         draggable="false"
         (contextmenu)="cm.preventContextMenu($event)"
-        class="containerImg"
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-      >
-      </div>
-      <div class="textContainer">
-        <div class="headlineText">
-          <div class="textbar">Frank Sinnigen</div>
-          <p>&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
-        </div>
-      </div>
-    </section>
+      ></div>
+    </div>
+    <div class="sectionContainer">
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="textbar" data-aos="zoom-in" data-aos-duration="1500">Frank Sinnigen</div>
+      <p [ngClass]="{ 'dark-mode': dm.isDark}" data-aos="zoom-in" data-aos-duration="2000">&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
+    </div>
   </div>
 </div>

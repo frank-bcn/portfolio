@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import * as AOS from 'aos';
 import { TranslateService } from '@ngx-translate/core';
 import { ScrollService } from './services/scroll.service';
+import { DarkModeService } from './services/dark-mode.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,11 @@ export class AppComponent {
   ];
   selectedValue: string = 'en';
 
-  constructor(public translate: TranslateService, public ss: ScrollService) {}
+  constructor(
+    public translate: TranslateService,
+    public ss: ScrollService,
+    public dm: DarkModeService
+  ) {}
 
   ngOnInit(): void {
     AOS.init();

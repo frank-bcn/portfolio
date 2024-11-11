@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { ContextMenuService } from '../../services/context-menu.service';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'app-hero',
@@ -10,7 +11,7 @@ export class HeroComponent {
   
   isScrolled: boolean = false;
 
-  constructor(public cm: ContextMenuService) {}
+  constructor(public cm: ContextMenuService, public dm: DarkModeService) {}
 
 
   @HostListener('window:scroll', [])

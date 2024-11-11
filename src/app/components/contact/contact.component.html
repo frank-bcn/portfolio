@@ -1,0 +1,64 @@
+<div class="container">
+    <span class="headlineText" data-aos="fade-down" data-aos-duration="1500">{{
+        "headlineContact" | translate
+      }}</span>
+  <div class="contactContainer">
+    <div class="contactDataContainer">
+      <div class="contactInformationContainer">
+        <div class="map">
+          <img
+            draggable="false"
+            (contextmenu)="cm.preventContextMenu($event)"
+            src="/assets/ images/etc_images/map.png"
+            class="legend"
+          />
+        </div>
+        <div class="infoContainer">
+          <span class="information">
+            <p class="headlineInformation">Frank Sinnigen</p>
+          </span>
+          <div class="contactInformation">
+            <address>
+              <p class="address">{{ "address" | translate }}</p>
+              <p class="address">{{ "email" | translate }}</p>
+              <p [routerLink]="['/imprint']" class="address imprint btn">
+                <b>{{ "imprint" | translate }}</b>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="socialMedia">
+        <div class="socialContainer">
+          <a
+            draggable="false"
+            href="https://www.linkedin.com/in/frank-sinnigen/"
+            target="_blank"
+            class="btn btnSocial"
+            >LinkedIn
+            <img
+              draggable="false"
+              (contextmenu)="cm.preventContextMenu($event)"
+              src="/assets/ images/etc_images/linkedIn.png"
+            />
+          </a>
+
+          <a
+            draggable="false"
+            href="https://github.com/frank-bcn"
+            target="_blank"
+            class="btn btnSocial"
+          >
+            GitHub
+            <img
+              draggable="false"
+              (contextmenu)="cm.preventContextMenu($event)"
+              src="/assets/ images/skills_images/github.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contactSendContainer"></div> -->
+  </div>
+</div>

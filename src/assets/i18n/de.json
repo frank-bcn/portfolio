@@ -4,6 +4,7 @@
     "about":"Über mich",
     "skills":"Fähigkeiten",
     "projects":"Projekte",
+    "certificate":"Zertifikate",
     "footer":"",
 
     "comment": "hero-page",
@@ -26,16 +27,22 @@
     "headlineDeployment": "Deployment",
     "deploymentDescription": "Mit meinen Kenntnissen in Cloud-Technologien wie Google Cloud, Microsoft Azure und AWS kann ich flexible, skalierbare Infrastrukturen bereitstellen. Ich setze Docker zur Containerisierung und CI/CD zur Automatisierung des Entwicklungsprozesses ein, was die Effizienz und Qualität meiner Projekte steigert.",
 
+    "commentProjects": "projects-page",
+    "headlineProject": "Projekte",
+    
+
+
+
+    "commentCertificate": "certificate-page",
+    "headlineCertificate": "Zertifikate",
 
 
 
 
 
     
-    "btnCertificate": "Zertifikate",
-
-    "commentProjects": "projects-page",
-    "headline": "Projekte",
+    
+    
     "btnProject1": "Pokedex",
     "headlineProject1": "Pokedex",
     "descriptionProject1": "Ein einfacher Pokedex, bei diesem kleinen Projekt lag der Fokus auf das Laden von Daten und Informationen über einer API.",

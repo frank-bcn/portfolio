@@ -1,11 +1,11 @@
-<div id="skill" class="container">
-  <span class="headlineText" data-aos="fade-down" data-aos-duration="1500">{{
+<div [ngClass]="{ 'dark-mode': dm.isDark}" id="skill" class="container">
+  <span [ngClass]="{ 'dark-mode': dm.isDark}" class="headlineText" data-aos="fade-down" data-aos-duration="1500">{{
     "headlineSkill" | translate
   }}</span>
   <div class="containerCards">
     <div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="1000">
-      <div class="card">
-        <p>{{ "headlineFrontend" | translate }}</p>
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="card">
+        <p [ngClass]="{ 'dark-mode': dm.isDark}">{{ "headlineFrontend" | translate }}</p>
         <span class="headlineIcon">
           <img
             draggable="false"
@@ -35,8 +35,8 @@
       </div>
     </div>
     <div class="cardWrapper" data-aos="fade-up" data-aos-duration="1500">
-      <div class="card">
-        <p>{{ "headlineBackend" | translate }}</p>
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="card">
+        <p [ngClass]="{ 'dark-mode': dm.isDark}">{{ "headlineBackend" | translate }}</p>
         <span class="headlineIcon">
           <img
             draggable="false"
@@ -67,8 +67,8 @@
       </div>
     </div>
     <div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="2000">
-      <div class="card">
-        <p>{{ "headlineExtra" | translate }}</p>
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="card">
+        <p [ngClass]="{ 'dark-mode': dm.isDark}">{{ "headlineExtra" | translate }}</p>
         <span class="headlineIcon">
           <img
             draggable="false"
@@ -99,8 +99,8 @@
       </div>
     </div>
     <div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="2000">
-      <div class="card">
-        <p>{{ "headlineDeployment" | translate }}</p>
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="card">
+        <p [ngClass]="{ 'dark-mode': dm.isDark}">{{ "headlineDeployment" | translate }}</p>
         <span class="headlineIcon">
           <img
             draggable="false"
@@ -114,24 +114,13 @@
           <img
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"
+            src="/assets/ images/skills_images/cloud.png"
+          />
+          <img
+            draggable="false"
+            (contextmenu)="cm.preventContextMenu($event)"
             src="/assets/ images/skills_images/docker.png"
-          />
-          <img
-            draggable="false"
-            (contextmenu)="cm.preventContextMenu($event)"
-            src="/assets/ images/skills_images/google-cloud.png"
-          />
-          <img
-            draggable="false"
-            (contextmenu)="cm.preventContextMenu($event)"
-            src="/assets/ images/skills_images/aws.png"
-          />
-          <img
-            draggable="false"
-            (contextmenu)="cm.preventContextMenu($event)"
-            src="/assets/ images/skills_images/azure.png"
-          />
-
+          />   
           <img
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"

@@ -4,6 +4,7 @@
     "about":"Sobre mí",
     "skills":"Habilidades",
     "projects":"Proyectos",
+    "certificate":"Certificados",
     "footer":"",
 
     "comment": "start-page",
@@ -26,6 +27,12 @@
     "headlineDeployment": "Deployment",
     "deploymentDescription": "Con mis conocimientos en tecnologías en la nube como Google Cloud, Microsoft Azure y AWS, puedo implementar infraestructuras flexibles y escalables. Uso Docker para la contenerización y CI/CD para automatizar el proceso de desarrollo, lo que aumenta la eficiencia y calidad de mis proyectos.",
 
+    "commentProjects": "projects-page",
+
+
+
+    "commentCertificate": "certificate-page",
+    "headlineCertificate": "Certificados",
 
 
 
@@ -36,9 +43,9 @@
 
 
     
-    "btnCertificate": "Certificados",
+   
 
-    "commentProjects": "projects-page",
+    
     "headline": "Projectos",
     "btnProject1": "Pokedex",
     "headlineProject1": "Pokedex",

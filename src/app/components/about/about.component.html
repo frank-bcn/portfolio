@@ -1,15 +1,15 @@
-<div id="about" class="container">
+<div [ngClass]="{ 'dark-mode': dm.isDark}" id="about" class="container">
   <div class="aboutSection">
-    <span class="headlineText about" data-aos="fade-down" data-aos-duration="1500">{{
+    <span [ngClass]="{ 'dark-mode': dm.isDark}" class="headlineText about" data-aos="fade-down" data-aos-duration="1500">{{
       "headlineAbout" | translate
     }}</span>
-    <div class="section" data-aos="fade-down" data-aos-duration="1500">
-      <p>{{ "professionalIntensiveHeadline" | translate }}</p>
+    <div [ngClass]="{ 'dark-mode': dm.isDark}" class="section" data-aos="fade-down" data-aos-duration="1500">
+      <p [ngClass]="{ 'dark-mode': dm.isDark}" >{{ "professionalIntensiveHeadline" | translate }}</p>
       <span>
         {{ "professionalIntensiveText" | translate }}
       </span>
-      <div class="btnContainer">
-        <button class="btn btnAbout">
+      <div [ngClass]="{ 'dark-mode': dm.isDark}" class="btnContainer">
+        <button [ngClass]="{ 'dark-mode': dm.isDark}" class="btn btnAbout">
           {{ "contact" | translate }}
         </button>
       </div>

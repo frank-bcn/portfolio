@@ -4,6 +4,7 @@
     "about":"About me",
     "skills":"Skills",
     "projects":"Projects",
+    "certificate":"Certificates",
     "footer":"",
 
     "comment": "hero-page",
@@ -26,6 +27,13 @@
     "headlineDeployment": "Deployment",
     "deploymentDescription": "With my knowledge of cloud technologies like Google Cloud, Microsoft Azure, and AWS, I can deploy flexible, scalable infrastructures. I use Docker for containerization and CI/CD to automate the development process, which boosts the efficiency and quality of my projects.",
 
+    "commentProjects": "projects-page",
+
+
+
+    "commentCertificate": "certificate-page",
+    "headlineCertificate": "Certificates",
+
 
 
 
@@ -35,9 +43,9 @@
 
 
     
-    "btnCertificate": "Certificates",
+    
 
-    "commentProjects": "projects-page",
+    
     "headline": "Projects",
     "btnProject1": "Pokedex",
     "headlineProject1": "Pokedex",

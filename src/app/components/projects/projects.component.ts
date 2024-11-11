@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+
+  constructor(public dm: DarkModeService) {}
 
 }
