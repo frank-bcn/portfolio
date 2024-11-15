@@ -12,7 +12,7 @@
 
     .containerCards {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
         flex-wrap: wrap;
         gap: 60px;
@@ -27,14 +27,18 @@
                 align-items: center;
                 flex-direction: column;
                 height: 500px;
-                width: 300px;
+                width: 32vw;
                 font-size: clamp(16px, 2vw, 24px);
                 font-family: "overpass";
                 color: #333333;
                 font-weight: 500;
                 border-radius: 12px;
                 padding: 20px;
-                box-shadow: 0px 10px 15px rgba(25, 25, 25, 0.6);
+                box-shadow:
+                        inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+                        inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+                        2px 2px 8px rgba(25, 25, 25, 0.6),
+                        -2px -2px 8px rgba(245, 245, 245, 0.08);
                 transform: perspective(500px) rotateY(-5deg);
 
                 &.dark-mode {
@@ -43,7 +47,7 @@
 
                 p {
                     font-family: poppins;
-                    font-size: clamp(14px, 3vw, 26px);
+                    font-size: clamp(20px, 3vw, 32px);
                     font-weight: 700;
                     color: #333333;
                     border-bottom: 2px solid #ff9900;
@@ -104,6 +108,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 972px) {
     .containerCards {

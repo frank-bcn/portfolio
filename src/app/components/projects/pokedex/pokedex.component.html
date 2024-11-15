@@ -1,4 +1,26 @@
-<div class="container">
-
-    
+<div [ngClass]="{ 'dark-mode': dm.isDark }" id="project" class="container">
+  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="folderTab">
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="headlineProject">
+      <p [ngClass]="{ 'dark-mode': dm.isDark }">
+        {{ "headlineProject1" | translate }}
+      </p>
+      <span>
+        <img src="/assets/ images/skills_images/angular.png" alt="" />
+        <img src="/assets/ images/skills_images/api.png" alt="" />
+        <img src="/assets/ images/skills_images/typescript.png" alt="" />
+      </span>
+    </span>
+  </div>
+  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
+    <video
+      draggable="false"
+      (contextmenu)="cm.preventContextMenu($event)"
+      src="/assets/videos/pokedex.mp4"
+      loop
+      autoplay
+      muted
+      class="videoElement"
+    ></video>
+    <span class="description">{{ "descriptionProject1" | translate }}</span>
+  </div>
 </div>

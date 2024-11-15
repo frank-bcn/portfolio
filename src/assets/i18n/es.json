@@ -28,6 +28,7 @@
     "deploymentDescription": "Con mis conocimientos en tecnologías en la nube como Google Cloud, Microsoft Azure y AWS, puedo implementar infraestructuras flexibles y escalables. Uso Docker para la contenerización y CI/CD para automatizar el proceso de desarrollo, lo que aumenta la eficiencia y calidad de mis proyectos.",
 
     "commentProjects": "projects-page",
+    "headlineProject": "Projectos",
 
 
 
@@ -46,7 +47,7 @@
    
 
     
-    "headline": "Projectos",
+    
     "btnProject1": "Pokedex",
     "headlineProject1": "Pokedex",
     "descriptionProject1": "Un Pokedex básico, para este pequeño proyecto, el enfoque estaba en cargar datos e información desde una API.",

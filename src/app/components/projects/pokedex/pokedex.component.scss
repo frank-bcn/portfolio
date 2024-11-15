@@ -1,5 +1,246 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12% 0 0 0;
+  background-color: #fffcf3;
+
+  &.dark-mode {
+    background-color: #333333;
+  }
+
+  .folderTab {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 12% 0 0 0;
+    width: 60%;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 6px 6px 0 0;
+
+    font-weight: bold;
+    color: #fffcf3;
+    font-family: "overpass";
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &.dark-mode {
+      background-color: #fffcf3;
+      color: #333333;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 15px solid #333333;
+      border-top: 45px solid transparent;
+    }
+
+    &.dark-mode::after {
+      border-left-color: #fffcf3;
+    }
+
+    p {
+      border-bottom: 2px solid #ff9900;
+    }
+
+    img {
+      height: 30px;
+      padding: 0 24px 0 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: auto;
+    font-size: clamp(16px, 2vw, 24px);
+    font-family: "overpass";
+    color: #333333;
+    font-weight: 500;
+    background-color: #fffcf3;
+    border-radius: 0 12px 12px 12px;
+    padding: 20px;
+    box-shadow:
+      2px 2px 8px rgba(25, 25, 25, 0.6),
+      -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+    &.dark-mode {
+      color: #fffcf3;
+      background-color: #333333;
+    }
+
+    .videoElement {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 8px rgba(25, 25, 25, 0.6);
+    }
+
+    .description {
+      display: flex;
+      margin: 24px 0 24px 0;
+      font-family: "overpass";
+      font-size: 17px;
+    }
+  }
 }
+
+@media screen and (max-width: 530px) {
+  .folderTab {
+    width: 80% !important;
+
+    img {
+      height: 20px !important;
+      padding: 0 12px 0 0 !important;
+    }
+  }
+}
+// .container {
+//   display: flex;
+//   justify-content: center;
+//   padding: 12% 0 0 0;
+//   background-color: #fffcf3;
+
+//   &.dark-mode {
+//     background-color: #333333;
+//   }
+
+//   .content {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     height: 600px;
+//     width: 100%;
+//     font-size: clamp(16px, 2vw, 24px);
+//     font-family: "overpass";
+//     color: #333333;
+//     font-weight: 500;
+//     border-radius: 12px;
+//     padding: 20px;
+//     box-shadow:
+//       inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+//       inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+//       2px 2px 8px rgba(25, 25, 25, 0.6),
+//       -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+//     &.dark-mode {
+//       color: #fffcf3;
+//     }
+
+//     .contentContainer {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       height: 100%;
+//       width: 100%;
+
+//       .headline {
+//         display: flex;
+//         border-radius: 12px;
+//         width: 100%;
+
+//         p {
+//           border-bottom: 2px solid #ff9900;
+//         }
+//       }
+//     }
+
+//     .contentLeft {
+//       display: flex;
+//       align-items: center;
+//       flex-direction: column;
+//       width: 50%;
+//       padding: 24px 0;
+
+//       .image-card {
+//         display: flex;
+//         width: 60%;
+//         height: 200px;
+//         margin: 40px 0;
+//         flex-grow: 1;
+//         font-size: clamp(16px, 2vw, 24px);
+//         font-family: "overpass";
+//         color: #333333;
+//         font-weight: 500;
+//         border-radius: 12px;
+//         padding: 20px;
+//         background-image: url("/assets/ images/etc_images/pokemon.png");
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         box-shadow:
+//           inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+//           inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+//           2px 2px 8px rgba(25, 25, 25, 0.6),
+//           -2px -2px 8px rgba(245, 245, 245, 0.08);
+//         transform: perspective(500px) rotateY(+10deg);
+
+//       }
+//     }
+//   }
+
+//   .btnContainer {
+//     display: flex;
+//     justify-content: space-around;
+//     width: 100%;
+//     height: 150px;
+//     border-radius: 12px;
+
+//     button {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       text-align: center;
+//       width: 30%;
+//       height: 50%;
+
+//       a {
+//         display: flex;
+//         height: 100%;
+//         width: 100%;
+//         align-items: center;
+//         justify-content: space-around;
+//         text-decoration: none;
+//         color: #333333;
+
+//         &.dark-mode {
+//           color: #fffcf3;
+//         }
+
+//         img {
+//           height: 40px;
+//         }
+//       }
+//     }
+
+//   }
+
+// }
+
+// .content-column-right {
+//   display: flex;
+//   justify-content: center;
+//   width: 50%;
+//   height: 100%;
+//   padding: 24px 0 0 0;
+
+//   .highlight-card {
+//     display: flex;
+//     flex-direction: column;
+//     width: 60%;
+//     font-size: clamp(16px, 2vw, 24px);
+//     font-family: "overpass";
+//     color: #333333;
+//     font-weight: 500;
+//     border-radius: 12px;
+//     padding: 20px;
+//     border: 2px solid #ff9900;
+//   }
+// }
