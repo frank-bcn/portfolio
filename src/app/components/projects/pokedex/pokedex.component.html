@@ -13,14 +13,46 @@
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
     <video
-      draggable="false"
-      (contextmenu)="cm.preventContextMenu($event)"
-      src="/assets/videos/pokedex.mp4"
+      id="pokedex"
+      #videoElement
+      src="assets/videos/pokedex.mp4"
       loop
-      autoplay
       muted
+      playsinline
       class="videoElement"
     ></video>
     <span class="description">{{ "descriptionProject1" | translate }}</span>
+
+    <div class="btnContainer">
+      <button class="btn">
+        <a
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          draggable="false"
+          href="https://github.com/frank-bcn/Pokedex"
+          target="_blank"
+          >GitHub
+          <img
+            draggable="false"
+            (contextmenu)="cm.preventContextMenu($event)"
+            src="/assets/ images/skills_images/github.png"
+          />
+        </a>
+      </button>
+      <button class="btn">
+        <a
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          draggable="false"
+          href="https://pokedex.frank-sinnigen.de/"
+          target="_blank"
+        >
+          Live
+          <img
+            draggable="false"
+            (contextmenu)="cm.preventContextMenu($event)"
+            src="/assets/ images/etc_images/live.png"
+          />
+        </a>
+      </button>
+    </div>
   </div>
 </div>

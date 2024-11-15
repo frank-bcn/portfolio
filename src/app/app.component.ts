@@ -3,6 +3,7 @@ import * as AOS from 'aos';
 import { TranslateService } from '@ngx-translate/core';
 import { ScrollService } from './services/scroll.service';
 import { DarkModeService } from './services/dark-mode.service';
+import { VideoPlayService } from './services/video-play.service';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ export class AppComponent {
   constructor(
     public translate: TranslateService,
     public ss: ScrollService,
-    public dm: DarkModeService
+    public dm: DarkModeService,
+    public vp: VideoPlayService,
   ) {}
 
   ngOnInit(): void {
@@ -32,6 +34,7 @@ export class AppComponent {
 
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     this.toggleChange(savedLanguage);
+    this.vp.startVideo('#pokedex');
   }
 
   toggleChange(value: string) {

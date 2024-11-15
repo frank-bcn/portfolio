@@ -4,7 +4,8 @@
     justify-content: center !important;
     align-items: center;
     background-color: #fffcf3;
-    padding: 0 12% 0 12%;
+    padding: 0 12% 24px 12%;
+    overflow: hidden;
 
     &.dark-mode {
         background-color: #333333;
@@ -27,7 +28,7 @@
                 align-items: center;
                 flex-direction: column;
                 height: 500px;
-                width: 32vw;
+                width: 500px;
                 font-size: clamp(16px, 2vw, 24px);
                 font-family: "overpass";
                 color: #333333;
