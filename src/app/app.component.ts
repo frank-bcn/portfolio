@@ -35,6 +35,7 @@ export class AppComponent {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     this.toggleChange(savedLanguage);
     this.vp.startVideo('#pokedex');
+    this.vp.startVideo('#pollo');
   }
 
   toggleChange(value: string) {

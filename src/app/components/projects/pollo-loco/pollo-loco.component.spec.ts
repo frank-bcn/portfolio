@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactComponent } from './contact.component';
+import { PolloLocoComponent } from './pollo-loco.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('PolloLocoComponent', () => {
+  let component: PolloLocoComponent;
+  let fixture: ComponentFixture<PolloLocoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ContactComponent]
+      declarations: [PolloLocoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(PolloLocoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

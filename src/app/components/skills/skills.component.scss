@@ -5,7 +5,6 @@
     align-items: center;
     background-color: #fffcf3;
     padding: 0 12% 24px 12%;
-    overflow: hidden;
 
     &.dark-mode {
         background-color: #333333;
@@ -36,14 +35,17 @@
                 border-radius: 12px;
                 padding: 20px;
                 box-shadow:
-                        inset 0px 0px 0px rgba(25, 25, 25, 0.6),
-                        inset 0px 0px 0px rgba(245, 245, 245, 0.1),
-                        2px 2px 8px rgba(25, 25, 25, 0.6),
-                        -2px -2px 8px rgba(245, 245, 245, 0.08);
+                    inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+                    inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+                    2px 2px 8px rgba(25, 25, 25, 0.6),
+                    -2px -2px 8px rgba(245, 245, 245, 0.08);
                 transform: perspective(500px) rotateY(-5deg);
 
                 &.dark-mode {
                     color: #fffcf3;
+                    box-shadow:
+                        4px 4px 12px rgba(0, 0, 0, 0.8),
+                        -4px -4px 12px rgba(255, 255, 255, 0.1);
                 }
 
                 p {
@@ -109,7 +111,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 972px) {
     .containerCards {

@@ -30,8 +30,26 @@
     "commentProjects": "projects-page",
     "headlineProject": "Projects",
 
+    "headlineProject1": "Pokedex",
+    "descriptionProject1": "A simple Pokedex, for this small project, the focus was on loading data and information from an API.",
+ 
+    "headlineProject2": "El pollo loco",
+    "descriptionProject2": "El Pollo Loco is a simple 2D jump and run game where you can collect coins and bottles to defeat enemies. The focus of this game was on using the Canvas and the object-oriented approach.",
+
+    "headlineProject3": "Join",
+    "descriptionProject3": "In this project, I first learned about the interaction between frontend and backend. This task manager, designed in Figma, was used for creating tasks and organizing them via drag-and-drop. The focus was on the integration between frontend and backend functionalities.",
+
+    "headlineProject4": "Streamify",
+    "descriptionProject4": "The project is currently in progress. Further information will follow shortly",
+
+    "headlineProject5": "WhatsApp Bot",
+    "descriptionProject5": "In this project, I developed a WhatsApp bot that can send automated messages via WhatsApp. The bot was programmed in Python and uses the pywhatkit library to control the WhatsApp web interface and send messages to contacts or groups.",
 
 
+
+
+
+    
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificates",
 
@@ -47,21 +65,7 @@
     
 
 
-    "btnProject1": "Pokedex",
-    "headlineProject1": "Pokedex",
-    "descriptionProject1": "A simple Pokedex, for this small project, the focus was on loading data and information from an API.",
-    "btnProject2": "El pollo loco",
-    "headlineProject2": "El pollo loco",
-    "descriptionProject2": "El Pollo Loco is a simple 2D jump and run game where you can collect coins and bottles to defeat enemies. The focus of this game was on using the Canvas and the object-oriented approach.",
-    "btnProject3": "Join",
-    "headlineProject3": "Join",
-    "descriptionProject3": "In this project, I first learned about the interaction between frontend and backend. This task manager, designed in Figma, was used for creating tasks and organizing them via drag-and-drop. The focus was on the integration between frontend and backend functionalities.",
-    "btnProject4": "Netflix clone",
-    "headlineProject4": "Streamify",
-    "descriptionProject4": "The project is currently in progress. Further information will follow shortly",
-    "btnProject5": "WhatsApp Bot",
-    "headlineProject5": "WhatsApp Bot",
-    "descriptionProject5": "In this project, I developed a WhatsApp bot that can send automated messages via WhatsApp. The bot was programmed in Python and uses the pywhatkit library to control the WhatsApp web interface and send messages to contacts or groups.",
+    
     "btnprev": "prev",
     "btnnext": "next",
 
