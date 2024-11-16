@@ -102,7 +102,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 60%;
+        height: fit-content;
         border-radius: 12px;
 
         .cover {
@@ -169,6 +169,7 @@
 }
 
 @media screen and (max-width: 530px) {
+    
     .coverImg {
         height: 200px !important;
         width: 200px !important;

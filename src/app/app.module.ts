@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PokedexComponent } from './components/projects/pokedex/pokedex.component';
 import { PolloLocoComponent } from './components/projects/pollo-loco/pollo-loco.component';
+import { CertificateComponent } from './components/certificate/certificate.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     PokedexComponent,
     PolloLocoComponent,
+    CertificateComponent,
   ],
   imports: [
     BrowserModule,
