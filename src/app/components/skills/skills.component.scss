@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #fffcf3;
     padding: 0 12% 24px 12%;
+    overflow: hidden;
 
     &.dark-mode {
         background-color: #333333;
@@ -16,7 +17,7 @@
         width: 100%;
         flex-wrap: wrap;
         gap: 60px;
-        margin: 12% 0 0 0;
+        margin: 6% 0 0 0;
 
         .cardWrapper {
             display: flex;
