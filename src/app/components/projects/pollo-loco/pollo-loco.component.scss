@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     height: 50px;
     background-color: #333333;
     border-radius: 6px 6px 0 0;
@@ -46,6 +46,7 @@
 
     p {
       border-bottom: 2px solid #ff9900;
+      font-size: clamp(12px, 1vw, 24px);
     }
 
     img {
@@ -60,7 +61,6 @@
     justify-content: start;
     flex-direction: column;
     height: auto;
-    font-size: clamp(16px, 2vw, 24px);
     font-family: "overpass";
     color: #333333;
     font-weight: 500;
