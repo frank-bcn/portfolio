@@ -37,6 +37,8 @@ export class AppComponent {
     this.vp.startVideo('#pokedex');
     this.vp.startVideo('#pollo');
     this.vp.startVideo('#join');
+
+    this.vp.startVideo('#bot');
   }
 
   toggleChange(value: string) {

@@ -14,6 +14,7 @@ import { PokedexComponent } from './components/projects/pokedex/pokedex.componen
 import { PolloLocoComponent } from './components/projects/pollo-loco/pollo-loco.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { JoinComponent } from './components/projects/join/join.component';
+import { BotComponent } from './components/projects/bot/bot.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PolloLocoComponent,
     CertificateComponent,
     JoinComponent,
+    BotComponent,
   ],
   imports: [
     BrowserModule,

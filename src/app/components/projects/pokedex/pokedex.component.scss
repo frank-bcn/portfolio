@@ -17,32 +17,32 @@
     width: 70%;
     height: 50px;
     background-color: #333333;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px 50px 0 0;
     font-weight: bold;
     color: #fffcf3;
     font-family: "overpass";
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
+    // position: relative;
 
     &.dark-mode {
       background-color: #fffcf3;
       color: #333333;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: -15px;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      border-left: 15px solid #333333;
-      border-top: 45px solid transparent;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: -10px;
+    //   bottom: 0;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 12px solid #333333;
+    //   border-top: 48px solid transparent;
+    // }
 
-    &.dark-mode::after {
-      border-left-color: #fffcf3;
-    }
+    // &.dark-mode::after {
+    //   border-left-color: #fffcf3;
+    // }
 
     p {
       border-bottom: 2px solid #ff9900;
@@ -168,5 +168,6 @@
 
   .videoElement {
     width: 100%!important;
+    border-radius: 4px!important;
   }
 }

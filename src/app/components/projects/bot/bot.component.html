@@ -1,0 +1,58 @@
+<div [ngClass]="{ 'dark-mode': dm.isDark }" id="project" class="container">
+    <div [ngClass]="{ 'dark-mode': dm.isDark }" class="folderTab">
+      <span [ngClass]="{ 'dark-mode': dm.isDark }" class="headlineProject">
+        <p [ngClass]="{ 'dark-mode': dm.isDark }">
+          {{ "headlineProject5" | translate }}
+        </p>
+      </span>
+    </div>
+    <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
+      <span class="skillContainer">
+        <img src="/assets/ images/skills_images/python.png" alt="" />
+        <img src="/assets/ images/etc_images/bender.png" alt="" />
+        <img src="/assets/ images/etc_images/whatsapp.png" alt="" />
+      </span>
+      <video
+        id="bot"
+        #videoElement
+        src="assets/videos/bot.mp4"
+        loop
+        muted
+        playsinline
+        class="videoElement"
+      ></video>
+      <span class="description">{{ "descriptionProject5" | translate }}</span>
+  
+      <div class="btnContainer">
+        <button class="btn">
+          <a
+            [ngClass]="{ 'dark-mode': dm.isDark }"
+            draggable="false"
+            href="https://github.com/frank-bcn/El-Pollo-Loco"
+            target="_blank"
+            >GitHub
+            <img
+              draggable="false"
+              (contextmenu)="cm.preventContextMenu($event)"
+              src="/assets/ images/skills_images/github.png"
+            />
+          </a>
+        </button>
+        <button class="btn">
+          <a
+            [ngClass]="{ 'dark-mode': dm.isDark }"
+            draggable="false"
+            href="https://el-pollo.frank-sinnigen.de/index.html"
+            target="_blank"
+          >
+            Live
+            <img
+              draggable="false"
+              (contextmenu)="cm.preventContextMenu($event)"
+              src="/assets/ images/etc_images/live.png"
+            />
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
