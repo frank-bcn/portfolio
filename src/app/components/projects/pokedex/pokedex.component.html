@@ -4,14 +4,14 @@
       <p [ngClass]="{ 'dark-mode': dm.isDark }">
         {{ "headlineProject1" | translate }}
       </p>
+      <span class="skillContainer">
+        <img src="/assets/ images/skills_images/angular.png" alt="" />
+        <img src="/assets/ images/skills_images/api.png" alt="" />
+        <img src="/assets/ images/skills_images/typescript.png" alt="" />
+      </span>
     </span>
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
-    <span class="skillContainer">
-      <img src="/assets/ images/skills_images/angular.png" alt="" />
-      <img src="/assets/ images/skills_images/api.png" alt="" />
-      <img src="/assets/ images/skills_images/typescript.png" alt="" />
-    </span>
     <video
       id="pokedex"
       #videoElement
