@@ -15,6 +15,7 @@ import { PolloLocoComponent } from './components/projects/pollo-loco/pollo-loco.
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { JoinComponent } from './components/projects/join/join.component';
 import { BotComponent } from './components/projects/bot/bot.component';
+import { StreamifyComponent } from './components/projects/streamify/streamify.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CertificateComponent,
     JoinComponent,
     BotComponent,
+    StreamifyComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,14 +5,31 @@
         {{ "headlineProject5" | translate }}
       </p>
       <span class="skillContainer">
-        <img src="/assets/ images/skills_images/python.png" alt="" />
-        <img src="/assets/ images/etc_images/bender.png" alt="" />
-        <img src="/assets/ images/etc_images/whatsapp.png" alt="" />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/python.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/etc_images/bender.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/etc_images/whatsapp.png"
+          alt=""
+        />
       </span>
     </span>
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
     <video
+      draggable="false"
+      (contextmenu)="cm.preventContextMenu($event)"
       id="bot"
       #videoElement
       src="assets/videos/bot.mp4"

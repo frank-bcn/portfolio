@@ -2,50 +2,62 @@
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="folderTab">
     <span [ngClass]="{ 'dark-mode': dm.isDark }" class="headlineProject">
       <p [ngClass]="{ 'dark-mode': dm.isDark }">
-        {{ "headlineProject2" | translate }}
+        {{ "headlineProject4" | translate }}
       </p>
       <span class="skillContainer">
         <img
           draggable="false"
           (contextmenu)="cm.preventContextMenu($event)"
-          src="/assets/ images/skills_images/html.png"
+          src="/assets/ images/skills_images/angular.png"
           alt=""
         />
         <img
           draggable="false"
           (contextmenu)="cm.preventContextMenu($event)"
-          src="/assets/ images/skills_images/js.png"
+          src="/assets/ images/skills_images/django.png"
           alt=""
         />
         <img
           draggable="false"
           (contextmenu)="cm.preventContextMenu($event)"
-          src="/assets/ images/skills_images/css.png"
+          src="/assets/ images/skills_images/docker.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/redis.png"
           alt=""
         />
       </span>
     </span>
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
-    <video
+    <img
       draggable="false"
       (contextmenu)="cm.preventContextMenu($event)"
-      id="pollo"
-      #videoElement
-      src="assets/videos/pollo.mp4"
-      loop
-      muted
-      playsinline
-      class="videoElement"
-    ></video>
-    <span class="description">{{ "descriptionProject2" | translate }}</span>
+      src="/assets/ images/etc_images/streamify.png"
+      style="height: 300px"
+    />
+    <!-- <video
+     draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+        id="streamify"
+        #videoElement
+        src=""
+        loop
+        muted
+        playsinline
+        class="videoElement"
+      ></video> -->
+    <span class="description">{{ "descriptionProject4" | translate }}</span>
 
     <div class="btnContainer">
       <button class="btn">
         <a
           [ngClass]="{ 'dark-mode': dm.isDark }"
           draggable="false"
-          href="https://github.com/frank-bcn/El-Pollo-Loco"
+          href="https://github.com/frank-bcn/Join"
           target="_blank"
           >GitHub
           <img
@@ -59,7 +71,7 @@
         <a
           [ngClass]="{ 'dark-mode': dm.isDark }"
           draggable="false"
-          href="https://el-pollo.frank-sinnigen.de/index.html"
+          href="https://join.frank-sinnigen.de/index/index.html"
           target="_blank"
         >
           Live

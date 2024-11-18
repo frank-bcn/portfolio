@@ -5,15 +5,37 @@
         {{ "headlineProject3" | translate }}
       </p>
       <span class="skillContainer">
-        <img src="/assets/ images/skills_images/angular.png" alt="" />
-        <img src="/assets/ images/skills_images/django.png" alt="" />
-        <img src="/assets/ images/skills_images/sql-lite.png" alt="" />
-        <img src="/assets/ images/skills_images/docker.png" alt="" />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/angular.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/django.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/sql-lite.png"
+          alt=""
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/docker.png"
+          alt=""
+        />
       </span>
     </span>
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
     <video
+      draggable="false"
+      (contextmenu)="cm.preventContextMenu($event)"
       id="join"
       #videoElement
       src="assets/videos/join.mp4"
