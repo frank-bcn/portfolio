@@ -1,0 +1,18 @@
+<div [ngClass]="{ 'dark-mode': dm.isDark }" id="contacts" class="container">
+  <span
+    [ngClass]="{ 'dark-mode': dm.isDark }"
+    class="headlineText"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+    >{{ "headlineContact" | translate }}</span
+  >
+  <div
+    [ngClass]="{ 'dark-mode': dm.isDark }"
+    class="contactContainer"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
+    <app-contakt-info></app-contakt-info>
+    <app-social-btn></app-social-btn>
+  </div>
+</div>

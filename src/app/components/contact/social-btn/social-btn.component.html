@@ -1,0 +1,31 @@
+<div data-aos="fade-up-right" data-aos-duration="1000" class="btnContainer">
+  <button class="btn">
+    <a
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      draggable="false"
+      href="https://www.linkedin.com/in/frank-sinnigen/"
+      target="_blank"
+      >LinkedIn
+      <img
+        draggable="false"
+        (contextmenu)="cm.preventContextMenu($event)"
+        src="/assets/ images/etc_images/linkedIn.png"
+      />
+    </a>
+  </button>
+  <button class="btn">
+    <a
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      draggable="false"
+      href="https://github.com/frank-bcn"
+      target="_blank"
+    >
+      GitHub
+      <img
+        draggable="false"
+        (contextmenu)="cm.preventContextMenu($event)"
+        src="/assets/ images/skills_images/github.png"
+      />
+    </a>
+  </button>
+</div>

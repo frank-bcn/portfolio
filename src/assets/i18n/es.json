@@ -5,6 +5,7 @@
     "skills":"Habilidades",
     "projects":"Proyectos",
     "certificate":"Certificados",
+    "contacts":"Contacto",
     "footer":"",
 
     "comment": "start-page",
@@ -45,25 +46,8 @@
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "En este proyecto, desarrollé un bot de WhatsApp que puede enviar mensajes automatizados a través de WhatsApp. El bot fue programado en Python y utiliza la biblioteca pywhatkit para controlar la interfaz web de WhatsApp y enviar mensajes a contactos o grupos.",
 
-
-
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificados",
-
-
-
-
-
-
-
-
-
-    
-   
-
-    
-    
-    
     "btnprev": "atrás",
     "btnnext": "siguiente",
 
@@ -93,6 +77,10 @@
     "headlineSources": "Fuentes",
     "souresText": "Este aviso legal fue creado con la ayuda de",
 
+
+
+
+    
     "commentFooter": "footer",
     "btnAbout": "Sobre",
     "btnSkills": "Habilidades",

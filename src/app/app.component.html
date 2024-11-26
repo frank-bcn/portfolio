@@ -29,6 +29,9 @@
   <li>
     <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('certificate')">{{ "certificate" | translate }}</span>
   </li>
+  <li>
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('contacts')">{{ "contacts" | translate }}</span>
+  </li>
 
   
 
@@ -40,6 +43,8 @@
 <app-skills></app-skills> 
 <app-projects></app-projects>
 <app-certificate></app-certificate>
+<app-contact></app-contact>
+<app-imprint></app-imprint>
 
 
 

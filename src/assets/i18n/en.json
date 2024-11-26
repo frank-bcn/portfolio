@@ -5,6 +5,7 @@
     "skills":"Skills",
     "projects":"Projects",
     "certificate":"Certificates",
+    "contacts":"Contact",
     "footer":"",
 
     "comment": "hero-page",
@@ -45,27 +46,8 @@
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "In this project, I developed a WhatsApp bot that can send automated messages via WhatsApp. The bot was programmed in Python and uses the pywhatkit library to control the WhatsApp web interface and send messages to contacts or groups.",
 
-
-
-
-
-    
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificates",
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-    
     "btnprev": "prev",
     "btnnext": "next",
 
@@ -95,6 +77,9 @@
     "headlineSources": "Sources",
     "souresText": "This imprint was created with the help of.",
 
+
+
+    
     "commentFooter": "footer",
     "btnAbout": "About",
     "btnSkills": "Skills",

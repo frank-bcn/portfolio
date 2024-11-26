@@ -1,0 +1,46 @@
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 24px 0 24px 0;
+    border-radius: 12px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 30%;
+        height: 40%;
+        margin: 0;
+
+        a {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            text-decoration: none;
+            color: #333333;
+            font-size: clamp(6px, 1vw, 18px);
+
+            &.dark-mode {
+                color: #fffcf3;
+            }
+
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    button {
+        a {
+            img {
+                height: 15px !important;
+            }
+        }
+    }
+}

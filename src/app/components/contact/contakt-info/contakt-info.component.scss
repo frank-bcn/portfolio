@@ -1,0 +1,100 @@
+.contactInformationContainer {
+    display: flex;
+    width: calc(100% - 6%);
+    flex: 1;
+    border-radius: 12px;
+    margin: 3% 3% 0 3%;
+    box-shadow:
+        inset 0px 0px 0px rgba(25, 25, 25, 0.6),
+        inset 0px 0px 0px rgba(245, 245, 245, 0.1),
+        2px 2px 8px rgba(25, 25, 25, 0.6),
+        -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+    &.dark-mode {
+        box-shadow:
+            4px 4px 12px rgba(0, 0, 0, 0.8),
+            -4px -4px 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+
+        .legend {
+            display: flex;
+            height: auto;
+            width: 80%;
+        }
+    }
+
+    .infoContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 0 24px;
+        width: 52%;
+        border-radius: 12px;
+        margin: 2%;
+        box-shadow:
+            inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+            inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+
+        .information {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .headlineInformation {
+                border-bottom: 2px solid #ff9900;
+                font-family: "overpass";
+                font-size: clamp(16px, 1.5vw, 42px);
+                height: fit-content;
+                color: #333333;
+                font-weight: 700;
+
+                &.dark-mode {
+                    color: #fffcf3;
+                }
+            }
+        }
+
+        .contactInformation {
+            display: flex;
+            justify-content: center;
+            padding: 3%;
+            width: calc(100% - 6%);
+        }
+
+        .address {
+            display: flex;
+            justify-content: center;
+            font-family: "overpass";
+            font-size: clamp(12px, 1.2vw, 32px);
+            color: #333333;
+            font-weight: 500;
+
+            &.dark-mode {
+                color: #fffcf3;
+            }
+        }
+
+        .imprint {
+            margin: 20% 12px 0 12px;
+            padding: 15px;
+            cursor: pointer;
+
+            &.dark-mode {
+                color: #fffcf3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .imprint {
+        padding: 3px !important;
+    }
+}

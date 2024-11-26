@@ -70,6 +70,10 @@
                     img {
                         height: 80px;
                         filter: drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
+
+                        &.dark-mode {
+                            filter: drop-shadow(15px 5px 5px rgba(25, 25, 25, 1));
+                        }
                     }
                 }
 

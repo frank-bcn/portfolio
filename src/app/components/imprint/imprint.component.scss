@@ -1,0 +1,155 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  position: fixed;
+  top: 50px;
+  right: 11%;
+  left: 11%;
+  bottom: 0;
+  align-items: center;
+  justify-content: start;
+  background-color: #fffcf3;
+  transform: translateX(100%);
+  opacity: 0;
+  transition:
+    transform 0.8s ease,
+    opacity 0.5s ease;
+  z-index: 1;
+  overflow-y: auto;
+
+  .close {
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    top: 25px;
+    right: 25px;
+  }
+}
+
+.container.active {
+  transform: translateX(0);
+  opacity: 1;
+
+  .containerImprint {
+    display: flex;
+    height: calc(100% - 50px);
+    padding: 25px 0 25px 0;
+    box-shadow: 0px 10px 15px rgba(#191919, 0.6);
+    background-color: #fffcf3;
+    color: #333333;
+
+    &.dark-mode {
+      background-color: #333333;
+      color: #fffcf3;
+    }
+
+    .imprintContent {
+      display: flex;
+      flex-direction: column;
+      margin: 3% 0 6% 3%;
+    }
+
+    .containerProfile {
+      display: flex;
+      align-items: center;
+    }
+
+    .containerText {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 2vh;
+    }
+
+    h1 {
+      display: flex;
+      font-size: 3vh;
+      display: inline;
+      font-size: 3vh;
+      text-decoration: underline;
+      text-decoration-color: #ff9900;
+      text-decoration-thickness: 3px;
+    }
+
+    h2 {
+      display: flex;
+      font-size: 2vh;
+    }
+
+    .text {
+      display: flex;
+      margin-left: 10px;
+      font-size: 2vh;
+      margin-bottom: 10px;
+    }
+
+    .textImpressum {
+      display: flex;
+      font-size: 15px;
+    }
+
+    a {
+      display: flex;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: start;
+    justify-content: start;
+    background-color: #fffcf3;
+    transform: translateX(100%);
+    opacity: 0;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+  }
+
+  .close {
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    top: 15px !important;
+    right: 25px;
+  }
+
+  .containerText {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 1vh;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 2vh;
+  }
+
+  h2 {
+    display: flex;
+    font-size: 1vh;
+  }
+
+  .text {
+    display: flex;
+    margin-left: 10px;
+    font-size: 1vh;
+    margin-bottom: 10px;
+  }
+}

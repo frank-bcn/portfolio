@@ -14,6 +14,7 @@
         </p>
         <span class="headlineIcon">
           <img
+            [ngClass]="{ 'dark-mode': dm.isDark }"
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"
             src="/assets/ images/skills_images/angular.png"
@@ -47,6 +48,7 @@
         </p>
         <span class="headlineIcon">
           <img
+            [ngClass]="{ 'dark-mode': dm.isDark }"
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"
             src="/assets/ images/skills_images/python.png"
@@ -81,6 +83,7 @@
         </p>
         <span class="headlineIcon">
           <img
+            [ngClass]="{ 'dark-mode': dm.isDark }"
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"
             src="/assets/ images/skills_images/git.png"
@@ -115,6 +118,7 @@
         </p>
         <span class="headlineIcon">
           <img
+            [ngClass]="{ 'dark-mode': dm.isDark }"
             draggable="false"
             (contextmenu)="cm.preventContextMenu($event)"
             src="/assets/ images/skills_images/linux.png"

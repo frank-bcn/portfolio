@@ -1,0 +1,34 @@
+<div class="contactInformationContainer">
+  <div class="map">
+    <img
+      draggable="false"
+      (contextmenu)="cm.preventContextMenu($event)"
+      src="/assets/ images/etc_images/map.png"
+      class="legend"
+    />
+  </div>
+  <div class="infoContainer">
+    <span class="information">
+      <p [ngClass]="{ 'dark-mode': dm.isDark }" class="headlineInformation">
+        Frank Sinnigen
+      </p>
+    </span>
+    <div class="contactInformation">
+      <address>
+        <p [ngClass]="{ 'dark-mode': dm.isDark }" class="address">
+          {{ "address" | translate }}
+        </p>
+        <p [ngClass]="{ 'dark-mode': dm.isDark }" class="address">
+          {{ "email" | translate }}
+        </p>
+        <p
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          (click)="imprintOpen()"
+          class="address imprint btn"
+        >
+          <b>{{ "imprint" | translate }}</b>
+        </p>
+      </address>
+    </div>
+  </div>
+</div>

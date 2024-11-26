@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ScrollService {
+  isActive = false;
   constructor() {}
 
   scrollToElement(elementId: string): void {
