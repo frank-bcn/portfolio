@@ -15,7 +15,7 @@
   top: 50px;
   right: 11%;
   left: 11%;
-  bottom: 0;
+  bottom: 50px;
   align-items: center;
   justify-content: start;
   background-color: #fffcf3;
@@ -26,22 +26,36 @@
     opacity 0.5s ease;
   z-index: 1;
   overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(25, 25, 25, 0.6), -2px -2px 8px rgba(245, 245, 245, 0.08);
+
+  &.dark-mode {
+    background-color: #333333;
+  }
 
   .close {
     position: absolute;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 45px;
     top: 25px;
     right: 25px;
+    color: #333333;
+
+    &.dark-mode {
+      color: #fffcf3;
+    }
   }
 }
 
 .container.active {
   transform: translateX(0);
   opacity: 1;
+  overflow-y: hidden;
 
   .containerImprint {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: calc(100% - 50px);
     padding: 25px 0 25px 0;
     box-shadow: 0px 10px 15px rgba(#191919, 0.6);
@@ -56,6 +70,7 @@
     .imprintContent {
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
       margin: 3% 0 6% 3%;
     }
 
@@ -67,14 +82,13 @@
     .containerText {
       display: flex;
       margin-bottom: 10px;
-      font-size: 2vh;
+      font-size: clamp(16px, 2vw, 24px);
     }
 
     h1 {
       display: flex;
-      font-size: 3vh;
       display: inline;
-      font-size: 3vh;
+      font-size: clamp(16px, 2vw, 24px);
       text-decoration: underline;
       text-decoration-color: #ff9900;
       text-decoration-thickness: 3px;
@@ -82,19 +96,19 @@
 
     h2 {
       display: flex;
-      font-size: 2vh;
+      font-size: clamp(14px, 1.5vw, 22px);
     }
 
     .text {
       display: flex;
-      margin-left: 10px;
-      font-size: 2vh;
-      margin-bottom: 10px;
+      font-size: clamp(14px, 1.5vw, 22px);
+      margin: 0 0 8px 10px;
     }
 
     .textImpressum {
       display: flex;
-      font-size: 15px;
+      margin: 0 0 8px 0;
+      font-size: clamp(14px, 1.5vw, 22px);
     }
 
     a {
@@ -106,50 +120,11 @@
 
 @media screen and (max-width: 1050px) {
   .container {
-    display: flex;
-    position: fixed;
-    top: 50px;
     right: 0;
     left: 0;
-    bottom: 0;
-    align-items: start;
-    justify-content: start;
-    background-color: #fffcf3;
-    transform: translateX(100%);
-    opacity: 0;
-    transition:
-      transform 0.5s ease,
-      opacity 0.5s ease;
   }
 
   .close {
-    position: absolute;
-    cursor: pointer;
-    font-size: 25px;
     top: 15px !important;
-    right: 25px;
-  }
-
-  .containerText {
-    display: flex;
-    margin-bottom: 10px;
-    font-size: 1vh;
-  }
-
-  h1 {
-    display: flex;
-    font-size: 2vh;
-  }
-
-  h2 {
-    display: flex;
-    font-size: 1vh;
-  }
-
-  .text {
-    display: flex;
-    margin-left: 10px;
-    font-size: 1vh;
-    margin-bottom: 10px;
   }
 }

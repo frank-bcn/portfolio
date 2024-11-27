@@ -2,16 +2,16 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 24px 0 24px 0;
+    margin: 3% 0 0 0;
     border-radius: 12px;
 
     button {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
         text-align: center;
-        width: 30%;
-        height: 40%;
+        width: 40%;
         margin: 0;
 
         a {
@@ -22,7 +22,7 @@
             justify-content: space-around;
             text-decoration: none;
             color: #333333;
-            font-size: clamp(6px, 1vw, 18px);
+            font-size: clamp(6px, 1vw, 16px);
 
             &.dark-mode {
                 color: #fffcf3;
@@ -37,6 +37,8 @@
 
 @media screen and (max-width: 530px) {
     button {
+        min-width: 40px!important;
+        padding: 3px !important;
         a {
             img {
                 height: 15px !important;

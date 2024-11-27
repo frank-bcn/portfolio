@@ -8,6 +8,11 @@ export class DarkModeService {
 
   constructor() {}
 
+  /*
+   * darkMode: Toggles the dark mode state of the application.
+   * This function flips the value of `isDark`, which controls whether dark mode is active or not.
+   * When called, it will switch between dark mode and light mode.
+   */
   darkMode() {
     this.isDark = !this.isDark;
   }

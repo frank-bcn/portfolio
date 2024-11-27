@@ -9,11 +9,9 @@ import { ScrollService } from '../../../services/scroll.service';
   styleUrl: './contakt-info.component.scss',
 })
 export class ContaktInfoComponent {
-
-
-  constructor(public dm: DarkModeService, public cm: ContextMenuService, public ss: ScrollService) {}
-
-  imprintOpen() {
-    this.ss.isActive = !this.ss.isActive;
-  }
+  constructor(
+    public dm: DarkModeService,
+    public cm: ContextMenuService,
+    public ss: ScrollService
+  ) {}
 }

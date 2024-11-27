@@ -21,6 +21,7 @@ import { ContaktInfoComponent } from './components/contact/contakt-info/contakt-
 import { SocialBtnComponent } from './components/contact/social-btn/social-btn.component';
 import { MessageFormComponent } from './components/contact/message-form/message-form.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
+import { FormsModule } from '@angular/forms';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -46,6 +47,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({

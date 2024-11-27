@@ -23,12 +23,13 @@
         </p>
         <p
           [ngClass]="{ 'dark-mode': dm.isDark }"
-          (click)="imprintOpen()"
+          (click)="ss.imprintOpen()"
           class="address imprint btn"
         >
           <b>{{ "imprint" | translate }}</b>
         </p>
       </address>
     </div>
+    <app-social-btn></app-social-btn>
   </div>
 </div>

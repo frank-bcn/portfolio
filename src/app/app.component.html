@@ -31,11 +31,7 @@
   </li>
   <li>
     <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('contacts')">{{ "contacts" | translate }}</span>
-  </li>
-
-  
-
-  
+  </li> 
 </nav>
 <!-- components -->
 <app-hero></app-hero>
@@ -45,57 +41,4 @@
 <app-certificate></app-certificate>
 <app-contact></app-contact>
 <app-imprint></app-imprint>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="a"></div>
-<div class="b">
-  <h1 data-aos="fade-down-right">hallo</h1>
-</div> -->
-
-<!-- <div class="menu-header">Menü</div> <!-- Der Text für das Menü -->
-<!-- <ul class="navbar">
-    <li><a href="#">{{ "start" | translate }}</a></li>
-    <li><a href="#">{{ "about" | translate }}</a></li>
-    <li class="drop-down">{{ "skills" | translate }}
-      <ul>
-        <li><a href="#">frontend</a></li>
-        <li><a href="#">backend</a></li>
-        <li><a href="#">Extra</a></li>
-        <li><a href="#">Deployment</a></li>
-        <li><a href="#">zertificate</a></li>
-      </ul>
-    </li>
-    <li class="drop-down">{{ "projects" | translate }}
-      <ul>
-        <li><a href="#">Pokedex</a></li>
-        <li><a href="#">El Pollo loco</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Streamify</a></li>
-        <li><a href="#">whatsappbot</a></li>
-      </ul>
-    </li>
-  </ul> -->
+<footer [ngClass]="{ 'dark-mode': dm.isDark }"></footer>

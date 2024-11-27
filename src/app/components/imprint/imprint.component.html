@@ -1,61 +1,61 @@
 <div
   class="container"
-  [ngClass]="{ active: ss.isActive }"
+  [ngClass]="{ active: ss.isActive, 'dark-mode': dm.isDark }"
 >
-    <div [ngClass]="{ 'dark-mode': dm.isDark}" class="containerImprint">
-      <span class="close" (click)="close()">&#10006;</span>
-      <div class="imprintContent">
-        <h1>{{ "imprint" | translate }}</h1>
-        <div class="containerProfile">
-          <div class="containerText">
-            <b>{{ "headlineName" | translate }}:</b>
-          </div>
-          <span class="text">Frank Sinnigen</span>
+  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="containerImprint">
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="close" (click)="ss.imprintOpen()">&#10006;</span>
+    <div class="imprintContent">
+      <h1>{{ "imprint" | translate }}</h1>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ "headlineName" | translate }}:</b>
         </div>
-        <div class="containerProfile">
-          <div class="containerText">
-            <b>{{ "headlineAddress" | translate }}:</b>
-          </div>
-          <span class="text">Federico Garcia Lorca 16,1-4</span>
+        <span class="text">Frank Sinnigen</span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ "headlineAddress" | translate }}:</b>
         </div>
-        <div class="containerProfile">
-          <div class="containerText"><b>E-Mail:</b></div>
-          <span class="text">info&#64;frank-sinnigen.de</span>
+        <span class="text">Federico Garcia Lorca 16,1-4</span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText"><b>E-Mail:</b></div>
+        <span class="text">info&#64;frank-sinnigen.de</span>
+      </div>
+      <div class="containerProfile">
+        <div class="containerText">
+          <b>{{ "headlineWeb" | translate }}:</b>
         </div>
-        <div class="containerProfile">
-          <div class="containerText">
-            <b>{{ "headlineWeb" | translate }}:</b>
-          </div>
-          <span class="text"
-            ><a
-              href="https://frank-sinnigen.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              >https://frank-sinnigen.de</a
-            ></span
-          >
-        </div>
-        <h1>{{ "headlineResponsible" | translate }}:</h1>
-        <div class="responsibility">
-          <span class="textImpressum">Frank Sinnigen</span><br />
-          <span class="textImpressum">Federico Garcia Lorca 16, 1-4</span><br />
-          <span class="textImpressum">08042 Barcelona</span><br />
-        </div>
-        <h1>{{ "headlineDisclaimer" | translate }}:</h1> 
-        <span class="textImpressum">{{ "disclaimerText" | translate }}</span>
-        <h1>{{ "headlineCopyright" | translate }}</h1>
-        <span class="textImpressum">{{ "copyrightText" | translate }}</span>
-        <h1>{{ "headlineSources" | translate }}</h1>
-        <span class="textImpressum"
-          >{{ "souresText" | translate }}
-          <a
-            draggable="false"
-            href="https://www.e-recht24.de"
+        <span class="text"
+          ><a
+            href="https://frank-sinnigen.de"
             target="_blank"
             rel="noopener noreferrer"
-            >www.e-recht24.de</a
-          >.</span
+            >https://frank-sinnigen.de</a
+          ></span
         >
       </div>
+      <h1>{{ "headlineResponsible" | translate }}:</h1>
+      <div class="responsibility">
+        <span class="textImpressum">Frank Sinnigen</span>
+        <span class="textImpressum">Federico Garcia Lorca 16, 1-4</span>
+        <span class="textImpressum">08042 Barcelona</span>
+      </div>
+      <h1>{{ "headlineDisclaimer" | translate }}:</h1>
+      <span class="textImpressum">{{ "disclaimerText" | translate }}</span>
+      <h1>{{ "headlineCopyright" | translate }}</h1>
+      <span class="textImpressum">{{ "copyrightText" | translate }}</span>
+      <h1>{{ "headlineSources" | translate }}</h1>
+      <span class="textImpressum"
+        >{{ "souresText" | translate }}
+        <a
+          draggable="false"
+          href="https://www.e-recht24.de"
+          target="_blank"
+          rel="noopener noreferrer"
+          >www.e-recht24.de</a
+        >.</span
+      >
     </div>
   </div>
+</div>

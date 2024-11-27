@@ -9,7 +9,7 @@
         {{ "professionalIntensiveText" | translate }}
       </span>
       <div [ngClass]="{ 'dark-mode': dm.isDark}" class="btnContainer">
-        <button [ngClass]="{ 'dark-mode': dm.isDark}" class="btn btnAbout">
+        <button [ngClass]="{ 'dark-mode': dm.isDark}" class="btn btnAbout" (click)="ss.scrollToElement('message')">>
           {{ "contact" | translate }}
         </button>
       </div>

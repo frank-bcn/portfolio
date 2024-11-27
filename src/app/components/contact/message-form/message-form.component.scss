@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .headlineText {
+        display: flex;
+        text-align: center;
+        padding: 0 3%;
+        color: #ff9900;
+        font-size: clamp(12px, 1.3vw, 38px);
+        font-weight: 700;
+    }
+    .headlineTwo {
+        display: flex;
+        text-align: center;
+        padding: 0 3%;
+        color: #333333;
+        font-size: clamp(8px, 1vw, 28px);
+        font-weight: 700;
+        margin: 0 0 24px 0;
+
+        &.dark-mode {
+            color: #fffcf3;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 6%);
+        color: #333333;
+
+        &.dark-mode {
+            color: #fffcf3;
+        }
+
+        .placeholder {
+            font-family: Overpass;
+            margin: 0 0 1% 0;
+            font-size: clamp(16px, 1.3vw, 38px);
+            color: #333333;
+            font-weight: 600;
+
+            &.dark-mode {
+                color: #fffcf3;
+            }
+        }
+
+        .errorMessage {
+            color: red;
+        }
+
+        textarea {
+            resize: none;
+            min-height: 100px;
+
+            &.dark-mode {
+                color: #fffcf3;
+            }
+        }
+
+        .fields {
+            margin: 0 0 3% 0;
+            padding: 10px;
+            font-size: clamp(16px, 1.3vw, 24px);
+            border-radius: 9px;
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+            background-color: transparent;
+            box-shadow:
+                inset 2px 2px 8px rgba(25, 25, 25, 0.6),
+                inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+        }
+
+        .btn {
+            align-self: center;
+
+            span {
+                display: flex;
+                color: #333333;
+
+                &.dark-mode {
+                    color: #fffcf3;
+                }
+            }
+        }
+    }
+
+    input:-webkit-autofill,
+    textarea:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #fffcf3 inset !important;
+        -webkit-text-fill-color: #333333 !important;
+
+        &.dark-mode {
+            -webkit-box-shadow: 0 0 0px 1000px #333333 inset !important;
+            -webkit-text-fill-color: #fffcf3 !important;
+        }
+    }
+}
+
+/*******************************************/
+/*********** Loading Animation *************/
+/*******************************************/
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff9900;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
