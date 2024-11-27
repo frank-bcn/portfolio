@@ -1,44 +1,10 @@
-<!-- header -->
-<header [ngClass]="{ 'dark-mode': dm.isDark }">
-  <p
-    *ngFor="let language of languages"
-    (click)="toggleChange(language.code)"
-    [class.selected]="selectedValue === language.code"
-  >
-    {{ language.name }}
-  </p>
-  <div class="toggleContainer" (click)="dm.darkMode()">
-    <div class="toggleKnob" [class.active]="dm.isDark"></div>
-  </div>
-</header>
-<!-- side-bar -->
-<nav [ngClass]="{ 'dark-mode': dm.isDark}" [class.open]="isMenuOpen" (click)="toggleMenu()">
-  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="text">Menu</div>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('start')">{{ "start" | translate }}</span>
-  </li>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('about')">{{ "about" | translate }}</span>
-  </li>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('skill')">{{ "skills" | translate }}</span>
-  </li>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('projects')">{{ "projects" | translate }}</span>
-  </li>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('certificate')">{{ "certificate" | translate }}</span>
-  </li>
-  <li>
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" (click)="ss.scrollToElement('contacts')">{{ "contacts" | translate }}</span>
-  </li> 
-</nav>
-<!-- components -->
+<app-header></app-header>
+<app-side-bar></app-side-bar>
 <app-hero></app-hero>
 <app-about></app-about>
-<app-skills></app-skills> 
+<app-skills></app-skills>
 <app-projects></app-projects>
 <app-certificate></app-certificate>
 <app-contact></app-contact>
 <app-imprint></app-imprint>
-<footer [ngClass]="{ 'dark-mode': dm.isDark }"></footer>
+<app-footer></app-footer>

@@ -1,0 +1,49 @@
+<nav
+  [ngClass]="{ 'dark-mode': dm.isDark }"
+  [class.open]="isMenuOpen"
+  (click)="toggleMenu()"
+>
+  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="text">Menu</div>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('start')"
+      >{{ "start" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('about')"
+      >{{ "about" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('skill')"
+      >{{ "skills" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('projects')"
+      >{{ "projects" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('certificate')"
+      >{{ "certificate" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('contacts')"
+      >{{ "contacts" | translate }}</span
+    >
+  </li>
+</nav>

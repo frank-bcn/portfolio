@@ -22,6 +22,9 @@ import { SocialBtnComponent } from './components/contact/social-btn/social-btn.c
 import { MessageFormComponent } from './components/contact/message-form/message-form.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -44,6 +47,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     SocialBtnComponent,
     MessageFormComponent,
     ImprintComponent,
+    FooterComponent,
+    HeaderComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,

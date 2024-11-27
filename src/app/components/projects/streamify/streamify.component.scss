@@ -72,17 +72,14 @@
         -4px -4px 12px rgba(255, 255, 255, 0.1);
     }
 
-    img {
-      display: flex;
-      aspect-ratio: 16 / 9;
-      height: 150px;
-    }
 
     .videoElement {
       width: 50%;
       height: 50%;
       border-radius: 12px;
       box-shadow: 2px 2px 8px rgba(25, 25, 25, 0.6);
+      background-image: url("/assets/ images/etc_images/streamify.png");
+      background-size: cover;
     }
 
     .description {

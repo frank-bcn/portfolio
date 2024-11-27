@@ -33,21 +33,17 @@
     </span>
   </div>
   <div [ngClass]="{ 'dark-mode': dm.isDark }" class="content">
-    <img
+    <video
       draggable="false"
       (contextmenu)="cm.preventContextMenu($event)"
-      src="/assets/ images/etc_images/streamify.png"/>
-    <!-- <video
-     draggable="false"
-          (contextmenu)="cm.preventContextMenu($event)"
-        id="streamify"
-        #videoElement
-        src=""
-        loop
-        muted
-        playsinline
-        class="videoElement"
-      ></video> -->
+      id="streamify"
+      #videoElement
+      src=""
+      loop
+      muted
+      playsinline
+      class="videoElement"
+    ></video>
     <span class="description">{{ "descriptionProject4" | translate }}</span>
 
     <div class="btnContainer">
