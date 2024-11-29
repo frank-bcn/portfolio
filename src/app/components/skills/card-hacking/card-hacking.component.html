@@ -1,0 +1,25 @@
+<div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="1000">
+    <div [ngClass]="{ 'dark-mode': dm.isDark }" class="card">
+      <p [ngClass]="{ 'dark-mode': dm.isDark }">
+        {{ "headlineHacking" | translate }}
+      </p>
+      <span class="headlineIcon">
+        <img
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/kali.png"
+          alt=""
+        />
+      </span>
+      <span>{{ "hackingDescription" | translate }}</span>
+
+      <span class="otherIcon">
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/python.png"
+        />
+      </span>
+    </div>
+  </div>

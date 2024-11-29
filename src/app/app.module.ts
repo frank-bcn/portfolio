@@ -25,6 +25,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { SocialComponent } from './components/footer/social/social.component';
+import { CardFrontendComponent } from './components/skills/card-frontend/card-frontend.component';
+import { CardBackendComponent } from './components/skills/card-backend/card-backend.component';
+import { CardExtraComponent } from './components/skills/card-extra/card-extra.component';
+import { CardDeploymentComponent } from './components/skills/card-deployment/card-deployment.component';
+import { CardHackingComponent } from './components/skills/card-hacking/card-hacking.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -50,6 +55,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     SideBarComponent,
     SocialComponent,
+    CardFrontendComponent,
+    CardBackendComponent,
+    CardExtraComponent,
+    CardDeploymentComponent,
+    CardHackingComponent,
   ],
   imports: [
     BrowserModule,

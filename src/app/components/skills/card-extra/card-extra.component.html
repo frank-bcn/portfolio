@@ -1,0 +1,35 @@
+<div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="1000">
+    <div [ngClass]="{ 'dark-mode': dm.isDark }" class="card">
+      <p [ngClass]="{ 'dark-mode': dm.isDark }">
+        {{ "headlineExtra" | translate }}
+      </p>
+      <span class="headlineIcon">
+        <img
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/git.png"
+          alt=""
+        />
+      </span>
+      <span>{{ "extraDescription" | translate }}</span>
+
+      <span class="otherIcon">
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/api.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/github.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/scrum.png"
+        />
+      </span>
+    </div>
+  </div>

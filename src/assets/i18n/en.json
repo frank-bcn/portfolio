@@ -27,6 +27,8 @@
     "extraDescription": "I have also gained skills in Scrum, Git/Github, and APIs. I applied Scrum and Git/Github in group projects and privately to plan and execute projects effectively, using Git/Github to manage and track code. Through a small project (Pokedex), I also gained initial experience with APIs and retrieving data from interfaces." ,
     "headlineDeployment": "Deployment",
     "deploymentDescription": "With my knowledge of cloud technologies like Google Cloud, Microsoft Azure, and AWS, I can deploy flexible, scalable infrastructures. I use Docker for containerization and CI/CD to automate the development process, which boosts the efficiency and quality of my projects.",
+    "headlineHacking": "Ethical Hacking",
+    "hackingDescription": "In cybersecurity, knowledge is power. To effectively protect a system, one must understand how a potential attacker operates. This principle forms the foundation of ethical hacking. I have deliberately chosen Python because it is versatile, efficient, and ideal for developing security tools.",
 
     "commentProjects": "projects-page",
     "headlineProject": "Projects",
