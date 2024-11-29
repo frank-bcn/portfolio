@@ -1,11 +1,16 @@
-<div data-aos="fade-up-right" data-aos-duration="1000" class="btnContainer">
+<div class="socialContainer">
+  <button class="btn">
+    <a href="mailto:info@frank-sinnigen.de" target="_blank"
+      ><img src="/assets/ images/etc_images/mail.png" alt="" />
+    </a>
+  </button>
   <button class="btn">
     <a
       [ngClass]="{ 'dark-mode': dm.isDark }"
       draggable="false"
       href="https://www.linkedin.com/in/frank-sinnigen/"
       target="_blank"
-      >
+    >
       <img
         draggable="false"
         (contextmenu)="cm.preventContextMenu($event)"

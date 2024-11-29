@@ -9,7 +9,7 @@ import { VideoPlayService } from './services/video-play.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'portfolio_aos';
+  title = 'portfolio';
 
 
   constructor(

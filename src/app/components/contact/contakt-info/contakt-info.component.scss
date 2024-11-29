@@ -63,6 +63,7 @@
 
         .contactInformation {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             padding: 3%;
             width: calc(100% - 6%);

@@ -1,15 +1,17 @@
 <footer [ngClass]="{ 'dark-mode': dm.isDark }">
-    <div class="footerContainer">
+  <div [ngClass]="{ 'dark-mode': dm.isDark }" class="footerContainer">
+    <div class="footerSection">
       <div class="arrowContainer" (click)="ss.scrollToElement('start')">
-        <span [ngClass]="{ 'dark-mode': dm.isDark }">&#11014;</span>
+        <div [ngClass]="{ 'dark-mode': dm.isDark }" class="arrow"></div>
+        <div [ngClass]="{ 'dark-mode': dm.isDark }" class="arrow"></div>
       </div>
       <div [ngClass]="{ 'dark-mode': dm.isDark }" class="copyright">
         © 2024 Frank Sinnigen
-        <p>
-          <a href="mailto:info@frank-sinnigen.de" target="_blank"
-            ><img src="/assets/ images/etc_images/mail.png" alt=""
-          /></a>
-        </p>
       </div>
     </div>
-  </footer>
+
+    <div class="social">
+      <app-social></app-social>
+    </div>
+  </div>
+</footer>

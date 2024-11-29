@@ -18,13 +18,13 @@ import { BotComponent } from './components/projects/bot/bot.component';
 import { StreamifyComponent } from './components/projects/streamify/streamify.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContaktInfoComponent } from './components/contact/contakt-info/contakt-info.component';
-import { SocialBtnComponent } from './components/contact/social-btn/social-btn.component';
 import { MessageFormComponent } from './components/contact/message-form/message-form.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { SocialComponent } from './components/footer/social/social.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -44,12 +44,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     StreamifyComponent,
     ContactComponent,
     ContaktInfoComponent,
-    SocialBtnComponent,
     MessageFormComponent,
     ImprintComponent,
     FooterComponent,
     HeaderComponent,
     SideBarComponent,
+    SocialComponent,
   ],
   imports: [
     BrowserModule,

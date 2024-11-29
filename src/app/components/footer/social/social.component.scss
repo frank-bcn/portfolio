@@ -1,0 +1,37 @@
+:host {
+    width: 100%;
+}
+.socialContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0;
+
+    button {
+        margin: 0 0 0 24px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    img {
+        width: 25px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    button {
+        margin: 0 0 0 12px !important;
+    }
+    .btn {
+        padding: 6px !important;
+    }
+}

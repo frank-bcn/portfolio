@@ -1,6 +1,6 @@
 @keyframes slideIn {
   from {
-    transform: translateX(100%);
+    transform: translateX(100vw);
     opacity: 0;
   }
   to {
@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: start;
   background-color: #fffcf3;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   opacity: 0;
   transition:
     transform 0.8s ease,

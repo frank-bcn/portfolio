@@ -21,15 +21,14 @@
         <p [ngClass]="{ 'dark-mode': dm.isDark }" class="address">
           {{ "email" | translate }}
         </p>
-        <p
-          [ngClass]="{ 'dark-mode': dm.isDark }"
-          (click)="ss.imprintOpen()"
-          class="address imprint btn"
-        >
-          <b>{{ "imprint" | translate }}</b>
-        </p>
       </address>
+      <p
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.imprintOpen()"
+      class="address imprint btn"
+    >
+      <b>{{ "imprint" | translate }}</b>
+    </p>
     </div>
-    <app-social-btn></app-social-btn>
   </div>
 </div>
