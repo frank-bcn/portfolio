@@ -1,0 +1,22 @@
+<div class="cardWrapper" data-aos="fade-up-right" data-aos-duration="2000">
+    <div [ngClass]="{ 'dark-mode': dm.isDark }" class="card">
+      <p [ngClass]="{ 'dark-mode': dm.isDark }">
+        {{ "keyloggerHeadline" | translate }}
+      </p>
+      <span class="headlineIcon">
+        <img
+          [ngClass]="{ 'dark-mode': dm.isDark }"
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/python.png"
+          alt=""
+        />
+      </span>
+      <span>{{ "descriptionKeylogger" | translate }}</span>
+  
+      <p [ngClass]="{ 'dark-mode': dm.isDark }" class="secruityHeadline">
+        {{ "secruityHeadline" | translate }}
+      </p>
+      <span [innerHTML]="'secruityKeylogger' | translate"></span>
+    </div>
+  </div>

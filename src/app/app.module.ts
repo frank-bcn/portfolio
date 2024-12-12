@@ -33,6 +33,7 @@ import { CardHackingComponent } from './components/skills/card-hacking/card-hack
 import { CyberToolKitsComponent } from './components/cyber-tool-kits/cyber-tool-kits.component';
 import { CardMetadataComponent } from './components/cyber-tool-kits/card-metadata/card-metadata.component';
 import { CardPasswordComponent } from './components/cyber-tool-kits/card-password/card-password.component';
+import { CardKeyloggerComponent } from './components/cyber-tool-kits/card-keylogger/card-keylogger.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -66,6 +67,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CyberToolKitsComponent,
     CardMetadataComponent,
     CardPasswordComponent,
+    CardKeyloggerComponent,
   ],
   imports: [
     BrowserModule,

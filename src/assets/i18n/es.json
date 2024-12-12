@@ -61,6 +61,10 @@
     "descriptionPassword": "Una herramienta que verifica la seguridad de las contraseñas aplicando varios métodos de descifrado. El objetivo es identificar contraseñas débiles. ¡Los hashes MD5 son inseguros y deben evitarse! En esta herramienta, utilicé la biblioteca hashlib y verifiqué las contraseñas utilizando un diccionario.",
     "secruityPassword": "-Elige contraseñas de al menos 12 caracteres, que contengan una combinación aleatoria de letras, números y caracteres especiales.<br>-Evita palabras simples como fechas de nacimiento o nombres de niños.<br>-Usa autenticación de dos factores (2FA) para una protección adicional.<br>-Utiliza algoritmos de hash seguros como SHA-512.",
 
+    "keyloggerHeadline": "Keylogger",
+    "descriptionKeylogger": "Una herramienta que registra las pulsaciones de teclas para supervisar qué teclas se presionan en un teclado. Utiliza la biblioteca 'keyboard' para capturar y registrar eventos del teclado en tiempo real. Esta herramienta puede usarse para análisis de seguridad y verificar las entradas del usuario.",
+    "secruityKeylogger": "-Se deben implementar restricciones de acceso físico para evitar el acceso no autorizado al sistema.<br>-Mantén el sistema actualizado con protección contra spyware y antivirus actuales.<br>-Instala un detector de keyloggers para detectar y prevenir actividades sospechosas de manera temprana.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificados",
     "btnprev": "atrás",

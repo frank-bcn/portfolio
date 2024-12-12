@@ -61,6 +61,10 @@
     "descriptionPassword": "A tool that checks the security of passwords by applying various decryption methods. The goal is to identify weak passwords. MD5 hashes are insecure and should be avoided! In this tool, I used the hashlib library and checked passwords using a dictionary.",
     "secruityPassword": "-Choose passwords with at least 12 characters, containing a random combination of letters, numbers, and special characters.<br>-Avoid simple words like birthdates or names of children.<br>-Use two-factor authentication (2FA) for additional protection.<br>-Use secure hash algorithms like SHA-512.",
 
+    "keyloggerHeadline": "Keylogger",
+    "descriptionKeylogger": "A tool that logs keystrokes to monitor which keys are pressed on a keyboard. It uses the 'keyboard' library to capture and record keyboard events in real-time. This tool can be used for security analysis and verifying user inputs.",
+    "secruityKeylogger": "-Physical access restrictions should be implemented to prevent unauthorized access to the system.<br>-Keep the system up to date with current anti-spyware and antivirus protection.<br>-Install a keylogger detector to detect and prevent suspicious activities early.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificates",
     "btnprev": "prev",

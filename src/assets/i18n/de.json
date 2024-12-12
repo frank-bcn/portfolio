@@ -61,6 +61,10 @@
     "descriptionPassword": "Ein Tool, das die Sicherheit von Passwörtern prüft, indem es verschiedene Entschlüsselungsmethoden anwendet. Das Ziel ist es, schwache Passwörter zu identifizieren. MD5-Hashes sind unsicher und sollten vermieden werden! In diesem Tool habe ich die hashlib-Bibliothek verwendet und mithilfe eines Dictionaries Passwörter überprüft.",
     "secruityPassword": "-Wähle Passwörter mit mindestens 12 Zeichen, die eine zufällige Kombination aus Buchstaben, Zahlen und Sonderzeichen enthalten.<br>-Vermeide einfache Wörter wie Geburtsdaten oder Kindernamen.<br>- Nutze Zwei-Faktor-Authentifizierung (2FA) für zusätzlichen Schutz.<br>-Setze auf sichere Hash-Algorithmen wie SHA-512.",
 
+    "keyloggerHeadline": "Keylogger",
+    "descriptionKeylogger": "Ein Tool, das Tastatureingaben protokolliert, um zu überwachen, welche Tasten auf einer Tastatur gedrückt werden. Es verwendet die 'keyboard'-Bibliothek, um Tastaturereignisse in Echtzeit zu erfassen und aufzuzeichnen. Dieses Tool kann für Sicherheitsanalysen und die Überprüfung von Benutzereingaben verwendet werden.",
+    "secruityKeylogger": "-Es sollten physische Zutrittsbeschränkungen implementiert werden, um unbefugten Zugriff auf das System zu verhindern.<br>-Halte das System mit aktuellen Anti-Spyware- und Antivirus-Schutzmaßnahmen auf dem neuesten Stand.<br>-Installiere einen Keylogger-Detektor, um verdächtige Aktivitäten frühzeitig zu erkennen und zu verhindern.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Zertifikate",
     "btnprev": "zurück",
