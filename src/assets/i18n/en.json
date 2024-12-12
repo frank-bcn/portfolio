@@ -4,6 +4,7 @@
     "about":"About me",
     "skills":"Skills",
     "projects":"Projects",
+    "cyber":"Cybersecurity tools",
     "certificate":"Certificates",
     "contacts":"Contact",
     "footer":"",
@@ -48,6 +49,18 @@
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "In this project, I developed a WhatsApp bot that can send automated messages via WhatsApp. The bot was programmed in Python and uses the pywhatkit library to control the WhatsApp web interface and send messages to contacts or groups.",
 
+    "commenttools": "tools-page",
+    "headlineTools": "Cybersecurity tools",
+    "Hackerparagraf":"For legal reasons (§ 202c of the German Criminal Code), I do not provide code that could be used for unauthorized access to dat",
+    "metadataHeadline": "Metadata loader",
+    "descriptionMetadata": "A tool that reveals hidden information in files, such as GPS coordinates or device information. I used the tool ExifRead for this.",
+    "secruityHeadline": "Protective measures:",
+    "secruityMetadata": "-Remove metadata before publishing files.<br>-Check documents and images for hidden information.",
+
+    "passwordHeadline": "Password cracker",
+    "descriptionPassword": "A tool that checks the security of passwords by applying various decryption methods. The goal is to identify weak passwords. MD5 hashes are insecure and should be avoided! In this tool, I used the hashlib library and checked passwords using a dictionary.",
+    "secruityPassword": "-Choose passwords with at least 12 characters, containing a random combination of letters, numbers, and special characters.<br>-Avoid simple words like birthdates or names of children.<br>-Use two-factor authentication (2FA) for additional protection.<br>-Use secure hash algorithms like SHA-512.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificates",
     "btnprev": "prev",
@@ -79,14 +92,5 @@
     "headlineCopyright": "Copyright",
     "copyrightText": "© 2024 Frank Sinnigen. All content on this website, including text, images, graphics, and layout, is protected by copyright. Use, reproduction, or distribution without explicit permission is not allowed.",
     "headlineSources": "Sources",
-    "souresText": "This imprint was created with the help of.",
-
-
-
-    
-    "commentFooter": "footer",
-    "btnAbout": "About",
-    "btnSkills": "Skills",
-    "btnProjects": "Projects",
-    "btnConatct": "Contact"
+    "souresText": "This imprint was created with the help of."
 }

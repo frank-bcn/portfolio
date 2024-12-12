@@ -4,6 +4,7 @@
     "about":"Über mich",
     "skills":"Fähigkeiten",
     "projects":"Projekte",
+    "cyber":"Cybersicherheits-Tools",
     "certificate":"Zertifikate",
     "contacts":"Kontakt",
     "footer":"",
@@ -48,6 +49,18 @@
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "In diesem Projekt habe ich einen WhatsApp-Bot entwickelt, der automatisierte Nachrichten über WhatsApp senden kann. Der Bot wurde in Python programmiert und nutzt die Bibliothek pywhatkit, um die WhatsApp-Web-Oberfläche zu steuern und Nachrichten an Kontakte oder Gruppen zu versenden.",
 
+    "commenttools": "tools-page",
+    "headlineTools": "Cybersicherheits-Tools",
+    "Hackerparagraf":"Aus rechtlichen Gründen (§ 202c StGB) stelle ich keinen Code zur Verfügung, der für unbefugten Zugriff auf Daten genutzt werden könnte.",
+    "metadataHeadline": "Metadaten-Loader",
+    "descriptionMetadata": "Ein Tool, das verborgene Informationen in Dateien sichtbar macht, wie z. B. GPS-Koordinaten oder Geräteinformationen. Dabei habe ich das Tool ExifRead verwendet.",
+    "secruityHeadline": "Schutzmaßnahmen:",
+    "secruityMetadata": "-Entferne Metadaten vor der Veröffentlichung von Dateien.<br>-Überprüfe Dokumente und Bilder auf verborgene Informationen.",
+
+    "passwordHeadline": "Passwort-Cracker",
+    "descriptionPassword": "Ein Tool, das die Sicherheit von Passwörtern prüft, indem es verschiedene Entschlüsselungsmethoden anwendet. Das Ziel ist es, schwache Passwörter zu identifizieren. MD5-Hashes sind unsicher und sollten vermieden werden! In diesem Tool habe ich die hashlib-Bibliothek verwendet und mithilfe eines Dictionaries Passwörter überprüft.",
+    "secruityPassword": "-Wähle Passwörter mit mindestens 12 Zeichen, die eine zufällige Kombination aus Buchstaben, Zahlen und Sonderzeichen enthalten.<br>-Vermeide einfache Wörter wie Geburtsdaten oder Kindernamen.<br>- Nutze Zwei-Faktor-Authentifizierung (2FA) für zusätzlichen Schutz.<br>-Setze auf sichere Hash-Algorithmen wie SHA-512.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Zertifikate",
     "btnprev": "zurück",
@@ -79,15 +92,5 @@
     "headlineCopyright": "Urheberrecht",
     "copyrightText": "© 2024 Frank Sinnigen. Alle Inhalte dieser Website, insbesondere Texte, Bilder, Grafiken und Layout,sind urheberrechtlich geschützt. Die Verwendung, Vervielfältigung oder Verbreitung ohne ausdrückliche Zustimmung ist nicht gestattet.",
     "headlineSources": "Quellen",
-    "souresText": "Dieses Impressum wurde erstellt mit Hilfe von",
-
-
-
-
-    
-    "commentFooter": "footer",
-    "btnAbout": "Über",
-    "btnSkills": "Fähigkeiten",
-    "btnProjects": "Projekte",
-    "btnConatct": "Kontakt"
+    "souresText": "Dieses Impressum wurde erstellt mit Hilfe von"
 }

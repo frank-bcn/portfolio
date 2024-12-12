@@ -30,6 +30,9 @@ import { CardBackendComponent } from './components/skills/card-backend/card-back
 import { CardExtraComponent } from './components/skills/card-extra/card-extra.component';
 import { CardDeploymentComponent } from './components/skills/card-deployment/card-deployment.component';
 import { CardHackingComponent } from './components/skills/card-hacking/card-hacking.component';
+import { CyberToolKitsComponent } from './components/cyber-tool-kits/cyber-tool-kits.component';
+import { CardMetadataComponent } from './components/cyber-tool-kits/card-metadata/card-metadata.component';
+import { CardPasswordComponent } from './components/cyber-tool-kits/card-password/card-password.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -60,6 +63,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardExtraComponent,
     CardDeploymentComponent,
     CardHackingComponent,
+    CyberToolKitsComponent,
+    CardMetadataComponent,
+    CardPasswordComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,11 +76,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

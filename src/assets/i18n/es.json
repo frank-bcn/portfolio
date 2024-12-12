@@ -4,6 +4,7 @@
     "about":"Sobre mí",
     "skills":"Habilidades",
     "projects":"Proyectos",
+    "cyber":"Herramientas de ciberseguridad",
     "certificate":"Certificados",
     "contacts":"Contacto",
     "footer":"",
@@ -48,6 +49,18 @@
     "headlineProject5": "WhatsApp Bot",
     "descriptionProject5": "En este proyecto, desarrollé un bot de WhatsApp que puede enviar mensajes automatizados a través de WhatsApp. El bot fue programado en Python y utiliza la biblioteca pywhatkit para controlar la interfaz web de WhatsApp y enviar mensajes a contactos o grupos.",
 
+    "commenttools": "tools-page",
+    "headlineTools": "Herramientas de ciberseguridad",
+    "Hackerparagraf":"Por razones legales (§ 202c del Código Penal Alemán), no proporciono código que pueda ser utilizado para acceder a datos de manera no autorizada.",
+    "metadataHeadline": "Cargador de metadatos",
+    "descriptionMetadata": "Una herramienta que muestra información oculta en archivos, como coordenadas GPS o información del dispositivo. Utilicé la herramienta ExifRead para esto.",
+    "secruityHeadline": "Medidas de protección:",
+    "secruityMetadata": "-Elimina los metadatos antes de publicar archivos.<br>-Revisa documentos e imágenes en busca de información oculta.",
+
+    "passwordHeadline": "Descifrador de contraseñas",
+    "descriptionPassword": "Una herramienta que verifica la seguridad de las contraseñas aplicando varios métodos de descifrado. El objetivo es identificar contraseñas débiles. ¡Los hashes MD5 son inseguros y deben evitarse! En esta herramienta, utilicé la biblioteca hashlib y verifiqué las contraseñas utilizando un diccionario.",
+    "secruityPassword": "-Elige contraseñas de al menos 12 caracteres, que contengan una combinación aleatoria de letras, números y caracteres especiales.<br>-Evita palabras simples como fechas de nacimiento o nombres de niños.<br>-Usa autenticación de dos factores (2FA) para una protección adicional.<br>-Utiliza algoritmos de hash seguros como SHA-512.",
+
     "commentCertificate": "certificate-page",
     "headlineCertificate": "Certificados",
     "btnprev": "atrás",
@@ -79,15 +92,5 @@
     "headlineCopyright": "Derechos de autor",
     "copyrightText": "© 2024 Frank Sinnigen. Todos los contenidos de esta página web, en particular textos, imágenes, gráficos y diseño, están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir sin la autorización expresa.",
     "headlineSources": "Fuentes",
-    "souresText": "Este aviso legal fue creado con la ayuda de",
-
-
-
-
-    
-    "commentFooter": "footer",
-    "btnAbout": "Sobre",
-    "btnSkills": "Habilidades",
-    "btnProjects": "Proyectos",
-    "btnConatct": "Contacto"
+    "souresText": "Este aviso legal fue creado con la ayuda de"
 }

@@ -35,6 +35,13 @@
   <li>
     <span
       [ngClass]="{ 'dark-mode': dm.isDark }"
+      (click)="ss.scrollToElement('cyber')"
+      >{{ "cyber" | translate }}</span
+    >
+  </li>
+  <li>
+    <span
+      [ngClass]="{ 'dark-mode': dm.isDark }"
       (click)="ss.scrollToElement('certificate')"
       >{{ "certificate" | translate }}</span
     >

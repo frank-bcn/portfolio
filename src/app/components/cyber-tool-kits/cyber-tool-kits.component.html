@@ -1,0 +1,16 @@
+<div [ngClass]="{ 'dark-mode': dm.isDark }" id="cyber" class="container">
+  <span
+    [ngClass]="{ 'dark-mode': dm.isDark }"
+    class="headlineText headlineCyber"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+    >{{ "headlineTools" | translate }}</span
+  >
+  <span data-aos="fade-down" data-aos-duration="1500" class="hackerparagraf">{{
+    "Hackerparagraf" | translate
+  }}</span>
+  <div class="containerCards">
+    <app-card-metadata></app-card-metadata>
+    <app-card-password></app-card-password>
+  </div>
+</div>
