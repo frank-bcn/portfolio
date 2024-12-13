@@ -6,7 +6,7 @@
     data-aos-duration="1500"
     >{{ "headlineTools" | translate }}</span
   >
-  <span data-aos="fade-down" data-aos-duration="1500" class="hackerparagraf">{{
+  <span [ngClass]="{ 'dark-mode': dm.isDark }" data-aos="fade-down" data-aos-duration="1500" class="hackerparagraf">{{
     "Hackerparagraf" | translate
   }}</span>
   <div class="containerCards">
