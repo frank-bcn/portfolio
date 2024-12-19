@@ -12,13 +12,29 @@
           alt=""
         />
       </span>
-      <span>{{ "hackingDescription" | translate }}</span>
+      
+      <span [innerHTML]="'hackingDescription' | translate"></span>
 
       <span class="otherIcon">
         <img
           draggable="false"
           (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/burp-suite.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/metasploit.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
           src="/assets/ images/skills_images/python.png"
+        />
+        <img
+          draggable="false"
+          (contextmenu)="cm.preventContextMenu($event)"
+          src="/assets/ images/skills_images/nmap.png"
         />
       </span>
     </div>

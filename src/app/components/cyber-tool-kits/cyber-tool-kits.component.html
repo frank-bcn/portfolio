@@ -4,8 +4,7 @@
     class="headlineText headlineCyber"
     data-aos="fade-down"
     data-aos-duration="1500"
-    >{{ "headlineTools" | translate }}</span
-  >
+    [innerHTML]="'headlineTools' | translate"></span>
   <span [ngClass]="{ 'dark-mode': dm.isDark }" data-aos="fade-down" data-aos-duration="1500" class="hackerparagraf">{{
     "Hackerparagraf" | translate
   }}</span>

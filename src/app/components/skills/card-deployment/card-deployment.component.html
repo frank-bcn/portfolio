@@ -12,7 +12,9 @@
           alt=""
         />
       </span>
-      <span>{{ "deploymentDescription" | translate }}</span>
+      
+      <span [innerHTML]="'deploymentDescription' | translate"></span>
+
       <span class="otherIcon">
         <img
           draggable="false"

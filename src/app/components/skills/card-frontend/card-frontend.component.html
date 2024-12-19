@@ -12,7 +12,9 @@
           alt=""
         />
       </span>
-      <span>{{ "frontendDescription" | translate }}</span>
+
+      <span [innerHTML]="'frontendDescription' | translate"></span>
+
       <span class="otherIcon">
         <img
           draggable="false"

@@ -12,7 +12,8 @@
           alt=""
         />
       </span>
-      <span>{{ "extraDescription" | translate }}</span>
+      
+      <span [innerHTML]="'extraDescription' | translate"></span>
 
       <span class="otherIcon">
         <img
