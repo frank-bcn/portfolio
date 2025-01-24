@@ -1,12 +1,12 @@
 <header [ngClass]="{ 'dark-mode': dm.isDark }">
-    <p
-      *ngFor="let language of ls.languages"
-      (click)="ls.toggleChange(language.code)"
-      [class.selected]="ls.selectedValue === language.code"
-    >
-      {{ language.name }}
-    </p>
-    <div class="toggleContainer" (click)="dm.darkMode()">
-      <div class="toggleKnob" [class.active]="dm.isDark"></div>
-    </div>
-  </header>
+  <p
+    *ngFor="let language of ls.languages"
+    (click)="ls.toggleChange(language.code)"
+    [class.selected]="ls.selectedValue === language.code"
+  >
+    {{ language.name }}
+  </p>
+  <div class="toggleContainer" (click)="dm.darkMode()">
+    <div class="toggleKnob" [class.active]="dm.isDark"></div>
+  </div>
+</header>

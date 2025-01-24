@@ -6,7 +6,11 @@ import { Injectable } from '@angular/core';
 export class DarkModeService {
   isDark = false;
 
-  constructor() {}
+  constructor() {
+
+    const savedDarkMode = localStorage.getItem('darkMode');
+    this.isDark = savedDarkMode === 'true';
+  }
 
   /*
    * darkMode: Toggles the dark mode state of the application.
@@ -15,5 +19,6 @@ export class DarkModeService {
    */
   darkMode() {
     this.isDark = !this.isDark;
+    localStorage.setItem('darkMode', String(this.isDark));
   }
 }

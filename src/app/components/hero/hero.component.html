@@ -8,12 +8,12 @@
       <div
         class="coverImg" data-aos="zoom-in" data-aos-duration="1000"
         draggable="false"
-        (contextmenu)="cm.preventContextMenu($event)"
-      ></div>
+        (contextmenu)="cm.preventContextMenu($event)">
+      <img src="/assets/ images/etc_images/background.png"></div>
     </div>
     <div class="sectionContainer">
       <div [ngClass]="{ 'dark-mode': dm.isDark}" class="textbar" data-aos="zoom-in" data-aos-duration="1500">Frank Sinnigen</div>
-      <p [ngClass]="{ 'dark-mode': dm.isDark}" data-aos="zoom-in" data-aos-duration="2000">&lt;p&gt;{{ "slogan" | translate }}&lt;/p&gt;</p>
+      <p [ngClass]="{ 'dark-mode': dm.isDark}" data-aos="zoom-in" data-aos-duration="2000">{{ "jobTitle1" | translate }}<span class="separator">|</span>{{ "jobTitle2" | translate }}</p>
     </div>
   </div>
 </div>

@@ -115,17 +115,18 @@
 
             .coverImg {
                 display: flex;
-                border-radius: 50%;
-                height: 300px;
-                width: 300px;
-                background-image: url("/assets/ images/etc_images/background.png");
-                background-position: center 100%;
-                background-repeat: no-repeat;
-                background-size: 90%;
-                filter: grayscale(100%) drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
-                box-shadow:
-                    inset 2px 2px 8px rgba(25, 25, 25, 0.6),
-                    inset -2px -2px 8px rgba(245, 245, 245, 0.1);
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                max-width: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                    object-fit: cover;
+                    filter: grayscale(100%) drop-shadow(15px 5px 5px rgba(25, 25, 25, 0.6));
+                }
             }
         }
 
@@ -169,14 +170,15 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+.separator {
+    display: flex;
+    align-items: center;
+    color: #ff9900;
+    margin: 0 5px;
+  }
 
+@media screen and (max-width: 530px) {
     .cover {
-        margin: 0 0 24px 0!important;
-    }
-    
-    .coverImg {
-        height: 200px!important;
-        width: 200px!important;
+        margin: 0 0 24px 0 !important;
     }
 }

@@ -15,10 +15,6 @@
         margin: 0 12% 0 12%;
         width: calc(100% - 24%);
 
-        .about {
-            margin: 0 0 6% 0 !important;
-        }
-
         .section {
             display: flex;
             align-items: center;
@@ -28,7 +24,7 @@
             color: #333333;
             font-weight: 500;
             border-radius: 12px;
-            margin: 12% 0 12% 0;
+            margin: 6% 0 12% 0;
             width: 100%;
             box-shadow:
                 inset 0px 0px 0px rgba(25, 25, 25, 0.6),
@@ -43,21 +39,25 @@
                     -4px -4px 12px rgba(255, 255, 255, 0.1);
             }
 
-            p {
-                font-family: poppins;
-                font-size: clamp(18px, 3vw, 32px);
-                font-weight: 700;
-                color: #333333;
-                border-bottom: 2px solid #ff9900;
+            span {
+                padding: 0 6% 24px 6%;
                 margin: 24px 0 24px 0;
-
-                &.dark-mode {
-                    color: #fffcf3;
-                }
             }
 
-            span {
-                padding: 0 50px 24px 50px;
+            .containerKnowledgeLearning {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 50px 6%;
+            }
+
+            .text {
+                margin: 0;
+                padding: 0 6% 0 6%;
+            }
+
+            .icon {
+                height: 50px;
             }
         }
 
