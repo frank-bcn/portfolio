@@ -12,6 +12,9 @@ export class CertificateComponent {
     '/assets/ images/certificates/THM-ECM9Q6VRUU.png',
     '/assets/ images/certificates/THM-MZN8NL33N1.png',
     '/assets/ images/certificates/THM-TJI8C28XQG.png',
+    '/assets/ images/certificates/Ethical Hacking mit Python.png',
+    '/assets/ images/certificates/Docker komplett.png',
+    '/assets/ images/certificates/AZ 900.png'
   ];
   currentSlide: number = 0;
 

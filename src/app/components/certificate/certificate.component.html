@@ -18,15 +18,16 @@
     </div>
     <div class="controls">
       <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn prev" (click)="prevSlide()">&lt;</button>
-      <div class="dots">
-        <span
-          *ngFor="let certificate of certificates; let i = index"
-          class="dot"
-          [class.active]="i === currentSlide"
-          (click)="goToSlide(i)"
-        ></span>
-      </div>
+     
       <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn next" (click)="nextSlide()">&gt;</button>
+    </div>
+    <div class="dots">
+      <span
+        *ngFor="let certificate of certificates; let i = index"
+        class="dot"
+        [class.active]="i === currentSlide"
+        (click)="goToSlide(i)"
+      ></span>
     </div>
   </div>
 </div>
