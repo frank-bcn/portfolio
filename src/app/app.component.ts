@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LanguageService } from './services/language.service';
 import * as AOS from 'aos';
 import { VideoPlayService } from './services/video-play.service';
+import { RotateWarningService } from './services/rotate-warning.service';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ export class AppComponent {
 
   constructor(
     public vp: VideoPlayService,
-    public ls: LanguageService
+    public ls: LanguageService,
+    public rw: RotateWarningService,
   ) {}
 
   /*
@@ -36,5 +38,6 @@ export class AppComponent {
     this.vp.startVideo('#join');
     // this.vp.startVideo('#streamify');
     this.vp.startVideo('#bot');
+    this.rw.checkWarning();
   }
 }

@@ -177,6 +177,20 @@
     margin: 0 5px;
   }
 
+  @media screen and (min-width: 600px) and (max-width: 1280px) {
+
+    .textbar {
+        font-size: clamp(14px, 5vw, 100px) !important;
+    }
+    .coverImg {
+
+        img {
+            width: 40% !important;
+            height: 30% !important;
+        }
+    }   
+}
+
 @media screen and (max-width: 530px) {
     .cover {
         margin: 0 0 24px 0 !important;

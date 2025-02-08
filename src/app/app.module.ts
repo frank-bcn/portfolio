@@ -34,6 +34,7 @@ import { CyberToolKitsComponent } from './components/cyber-tool-kits/cyber-tool-
 import { CardMetadataComponent } from './components/cyber-tool-kits/card-metadata/card-metadata.component';
 import { CardPasswordComponent } from './components/cyber-tool-kits/card-password/card-password.component';
 import { CardKeyloggerComponent } from './components/cyber-tool-kits/card-keylogger/card-keylogger.component';
+import { RotateWarningComponent } from './components/rotate-warning/rotate-warning.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -68,6 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardMetadataComponent,
     CardPasswordComponent,
     CardKeyloggerComponent,
+    RotateWarningComponent,
   ],
   imports: [
     BrowserModule,

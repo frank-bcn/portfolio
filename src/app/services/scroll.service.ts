@@ -9,28 +9,60 @@ export class ScrollService {
   constructor() {}
 
   /*
-   * scrollToElement: Scrolls the page smoothly to a specified element with a dynamic offset.
-   * The offset varies based on the viewport width to ensure proper visibility of the element.
-   *
-   * @param elementId - The ID of the HTML element to scroll to.
+   * screenWidth: Returns an offset value based on the screen width.
+   * - If the screen width is less than or equal to 768px, returns an offset of 50.
+   * - If the screen width is between 769px and 1024px, returns an offset of 75.
+   * - For screens wider than 1024px, returns an offset of 100.
    */
-  scrollToElement(elementId: string): void {
+  screenWidth(): number {
+    if (window.innerWidth <= 768) {
+      return 50;
+    } else if (window.innerWidth <= 1024) {
+      return 75;
+    }
+    return 100;
+  }
+
+  /*
+   * elementPosition: Calculates the position of an element on the page.
+   * - Takes the element ID as a parameter and retrieves the element.
+   * - If the element is found, returns its position relative to the top of the document,
+   *   considering any page scroll offset.
+   * - If the element is not found, returns null.
+   */
+  elementPosition(elementId: string): number | null {
     const element = document.getElementById(elementId);
     if (element) {
-      let offset = 100;
+      return element.getBoundingClientRect().top + window.pageYOffset;
+    }
+    return null;
+  }
 
-      if (window.innerWidth <= 768) {
-        offset = 50;
-      } else if (window.innerWidth <= 1024) {
-        offset = 75;
-      }
+  /*
+   * scrollToPosition: Scrolls the window to a specific position with a smooth scrolling effect.
+   * - Takes two parameters: position (the target scroll position) and offset (an adjustment to the position).
+   * - Scrolls the window to the calculated position, adjusting for the given offset.
+   * - Uses the 'smooth' behavior to animate the scroll.
+   */
+  scrollToPosition(position: number, offset: number): void {
+    window.scrollTo({
+      top: position - offset,
+      behavior: 'smooth',
+    });
+  }
 
-      const elementPosition =
-        element.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({
-        top: elementPosition - offset,
-        behavior: 'smooth',
-      });
+  /*
+   * scrollToElement: Scrolls the window to a specific element on the page.
+   * - Takes the element's ID as a parameter and calculates its position.
+   * - Retrieves the appropriate offset based on the screen width.
+   * - If the element is found, scrolls the window to the element's position with the calculated offset.
+   */
+  scrollToElement(elementId: string): void {
+    const offset = this.screenWidth();
+    const position = this.elementPosition(elementId);
+
+    if (position !== null) {
+      this.scrollToPosition(position, offset);
     }
   }
 
