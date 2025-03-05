@@ -19,7 +19,7 @@
     "professionalIntensiveHeadline": "Desarrollo Profesional",
     "professionalIntensiveText": "Mi trayectoria profesional comenzó con el desarrollo de software. Desde el principio, me di cuenta de lo importante que es la seguridad en el proceso de desarrollo. Este interés me llevó a profundizar en Ethical Hacking & Penetration Testing. A través de formación y proyectos, pude adquirir sólidos conocimientos en seguridad de redes y análisis de vulnerabilidades.<br><br>Uno de mis principios rectores es: „¡Quedarse quieto es retroceder!“ – enfatiza lo importante que es para mí estar siempre al día.",
     "professionalIntensiveText1": "Poseo amplios conocimientos en desarrollo frontend, backend y seguridad de redes. Mi enfoque está en desarrollar soluciones de software seguras, escalables y preparadas para el futuro.",
-    "professionalIntensiveText2": "Tengo experiencia en aprender nuevas tecnologías y puedo adaptarme eficientemente a entornos en constante cambio. Soy un aprendiz curioso que disfruta resolviendo problemas y enfrentando desafíos con éxito.<br><br>Una persona importante una vez me dijo: „Lo quieres, lo logras.“ – esta frase sigue motivándome a asumir desafíos y expandir continuamente mis habilidades.",
+    "professionalIntensiveText2": "Tengo experiencia en aprender nuevas tecnologías y puedo adaptarme eficientemente a entornos en constante cambio. Soy un aprendiz curioso que disfruta resolviendo problemas y enfrentando desafíos con éxito.",
 
     "commentSkill": "skill-page",
     "headlineSkill": "Habilidades",
@@ -32,9 +32,11 @@
     "headlineDeployment": "Deployment",
     "deploymentDescription": "Con mis conocimientos en <strong>tecnologías en la nube</strong> como <strong>Google Cloud</strong>, <strong>Microsoft Azure</strong> y <strong>AWS</strong>, puedo proporcionar <strong>infraestructuras</strong> flexibles y escalables. Utilizo <strong>Docker</strong> para la <strong>contenedorización</strong> y <strong>CI/CD</strong> para automatizar el <strong>proceso de desarrollo</strong>, lo que mejora la <strong>eficiencia</strong> y la <strong>calidad</strong> de mis <strong>proyectos</strong>.",
     "headlineHacking": "Ethical Hacking",
-    "hackingDescription": "En <strong>ciberseguridad</strong>, el conocimiento es poder. Para proteger un sistema de manera efectiva, es necesario entender cómo opera un posible atacante. Este principio forma la base del <strong>hacking ético</strong>. He elegido deliberadamente <strong>Python</strong> porque es un lenguaje versátil, eficiente e ideal para desarrollar herramientas de seguridad. Además, utilizo herramientas como <strong>Metasploit</strong>, <strong>Nmap</strong> y <strong>Burp Suite</strong>, que, junto con Python, ofrecen una base poderosa para el <strong>análisis de vulnerabilidades</strong> y <strong>pruebas de seguridad</strong>.",
+    "hackingDescription": "En <strong>ciberseguridad</strong>, el conocimiento es poder. Para proteger un sistema de manera efectiva, es necesario entender cómo opera un posible atacante. Este principio forma la base del <strong>hacking ético</strong>. He elegido deliberadamente <strong>Python</strong> porque es un lenguaje versátil, eficiente e ideal para desarrollar herramientas de seguridad. Además, utilizo herramientas como <strong>Metasploit</strong>, <strong>Nmap</strong> y <strong>Burp Suite</strong>, que, junto con Python, ofrecen una base poderosa para el <strong>análisis de vulnerabilidades</strong> y <strong>pruebas de seguridad</strong>.",   
 
     "commentProjects": "projects-page",
+    "moreProjects": "Mostrar más proyectos",
+    "lessProjects": "Mostrar menos",
     "headlineProject": "Projectos",
 
     "headlineProject1": "Pokedex",
@@ -87,6 +89,15 @@
     "messageSend": "enviado...",
     "changeInfoBtn": "Volver a la información de contacto",
     "changeSendBtn": "Ir al formulario de contacto",
+    "nameRequired": "El nombre es requerido.",
+    "invalidNameFormat": "Formato de nombre inválido.",
+    "emailRequired": "El correo electrónico es requerido.",
+    "invalidEmailFormat": "Formato de correo electrónico inválido.",
+    "messageRequired": "El mensaje es requerido.",
+    "invalidMessageFormat": "Formato de mensaje inválido.",
+    "pleaseEnterOnlyLetters": "Por favor ingrese solo letras",
+    "pleaseEnterAValidEmail": "Por favor ingrese una dirección de correo electrónico válida",
+    "pleaseEnterAMessage": "Por favor ingrese un mensaje",
 
     "commentImprint": "imprint-page",
     "headlineImprint": "Aviso legal & Protección de datos",

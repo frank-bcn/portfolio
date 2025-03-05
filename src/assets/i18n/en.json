@@ -19,7 +19,7 @@
     "professionalIntensiveHeadline": "Professional Development",
     "professionalIntensiveText": "My professional journey began with software development. Early on, I recognized how important security is in the development process. This interest led me to delve deeply into Ethical Hacking & Penetration Testing. Through further education and projects, I was able to build solid knowledge in network security and vulnerability analysis.<br><br>One of my guiding principles is: „Standing still means falling behind!“ – it highlights how important it is for me to always stay up to date.",
     "professionalIntensiveText1": "I have extensive knowledge in frontend, backend and network security. My focus is on developing secure, scalable and future-proof software solutions.",
-    "professionalIntensiveText2": "I am skilled at learning new technologies and can efficiently adapt to ever-changing environments. I am a curious learner who enjoys solving problems and successfully tackling challenges.<br><br>An important person once told me: „You want it, you can achieve it.“ – this sentence continues to motivate me to take on challenges and continuously expand my skills.",
+    "professionalIntensiveText2": "I am skilled at learning new technologies and can efficiently adapt to ever-changing environments. I am a curious learner who enjoys solving problems and successfully tackling challenges.",
 
     "commentSkill": "skill-page",
     "headlineSkill": "Skills",
@@ -35,6 +35,8 @@
     "hackingDescription": "In <strong>cybersecurity</strong>, knowledge is power. To effectively protect a system, one must understand how a potential attacker operates. This principle forms the foundation of <strong>ethical hacking</strong>. I have deliberately chosen <strong>Python</strong> because the language is versatile, efficient, and ideal for developing security tools. Additionally, I use tools such as <strong>Metasploit</strong>, <strong>Nmap</strong>, and <strong>Burp Suite</strong>, which, together with Python, provide a powerful foundation for <strong>vulnerability analysis</strong> and <strong>security testing</strong>.",
 
     "commentProjects": "projects-page",
+    "moreProjects": "Show more projects",
+    "lessProjects": "Show less",
     "headlineProject": "Projects",
 
     "headlineProject1": "Pokedex",
@@ -87,6 +89,15 @@
     "messageSend": "Sent...",
     "changeInfoBtn": "back to contact info",
     "changeSendBtn": "to the contact form",
+    "nameRequired": "Name is required.",
+    "invalidNameFormat": "Invalid name format.",
+    "emailRequired": "Email is required.",
+    "invalidEmailFormat": "Invalid email format.",
+    "messageRequired": "Message is required.",
+    "invalidMessageFormat": "Invalid message format.",
+    "pleaseEnterOnlyLetters": "Please enter only letters",
+    "pleaseEnterAValidEmail": "Please enter a valid email address",
+    "pleaseEnterAMessage": "Please enter a message",
 
     "commentImprint": "imprint-page",
     "headlineImprint": "Imprint & Data Protection",

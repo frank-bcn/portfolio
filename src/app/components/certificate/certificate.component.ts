@@ -10,12 +10,13 @@ import { ContextMenuService } from '../../services/context-menu.service';
 export class CertificateComponent {
   certificates: string[] = [
     '/assets/ images/certificates/THM-ECM9Q6VRUU.png',
-    '/assets/ images/certificates/THM-MZN8NL33N1.png',
     '/assets/ images/certificates/THM-TJI8C28XQG.png',
+    '/assets/ images/certificates/THM-MZN8NL33N1.png',
     '/assets/ images/certificates/Ethical Hacking mit Python.png',
     '/assets/ images/certificates/Docker komplett.png',
     '/assets/ images/certificates/AZ 900.png',
-    '/assets/ images/certificates/GCP Associate Cloud.png'
+    '/assets/ images/certificates/GCP Associate Cloud.png',
+    '/assets/ images/certificates/Aws Solution Architect Associate.png'
   ];
   currentSlide: number = 0;
 

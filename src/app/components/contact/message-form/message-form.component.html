@@ -1,13 +1,32 @@
 <div class="container" id="message">
-  <span data-aos="zoom-in" data-aos-duration="1500"class="headlineText">{{ "headlineText" | translate }}</span>
-  <span [ngClass]="{ 'dark-mode': dm.isDark }" data-aos="zoom-in" data-aos-duration="1500"class="headlineTwo">{{ "headlineTwo" | translate }}</span>
-  <form #form="ngForm" (ngSubmit)="sendMail(form)" data-aos="fade-down" data-aos-duration="1500">
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{ "placeholderName" | translate }}</span>
+  <span data-aos="zoom-in" data-aos-duration="1500" class="headlineText">{{
+    "headlineText" | translate
+  }}</span>
+  <span
+    [ngClass]="{ 'dark-mode': dm.isDark }"
+    data-aos="zoom-in"
+    data-aos-duration="1500"
+    class="headlineTwo"
+    >{{ "headlineTwo" | translate }}</span
+  >
+  <form
+    #form="ngForm"
+    (ngSubmit)="sendMail(form)"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{
+      "placeholderName" | translate
+    }}</span>
     <div
       *ngIf="nameField.touched && (name.trim() === '' || !nameValid())"
       class="errorMessage"
     >
-      {{ name.trim() === "" ? "Name is required." : "Invalid name format." }}
+      {{
+        name.trim() === ""
+          ? ("nameRequired" | translate)
+          : ("invalidNameFormat" | translate)
+      }}
     </div>
     <input
       required
@@ -23,15 +42,21 @@
         'dark-mode': dm.isDark
       }"
       pattern="[A-Za-z\s]+"
-      title="Please enter only letters"
+      [title]="'pleaseEnterOnlyLetters' | translate"
     />
 
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{ "placeholderEmail" | translate }}</span>
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{
+      "placeholderEmail" | translate
+    }}</span>
     <div
       *ngIf="emailField.touched && (email.trim() === '' || !emailValid())"
       class="errorMessage"
     >
-      {{ email.trim() === "" ? "Email is required." : "Invalid email format." }}
+      {{
+        email.trim() === ""
+          ? ("emailRequired" | translate)
+          : ("invalidEmailFormat" | translate)
+      }}
     </div>
     <input
       required
@@ -47,18 +72,20 @@
         'dark-mode': dm.isDark
       }"
       pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-      title="Please enter a valid email address"
+      [title]="'pleaseEnterAValidEmail' | translate"
     />
 
-    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{ "placeholderMessage" | translate }}</span>
+    <span [ngClass]="{ 'dark-mode': dm.isDark }" class="placeholder">{{
+      "placeholderMessage" | translate
+    }}</span>
     <div
       *ngIf="messageField.touched && (message.trim() === '' || !messageValid())"
       class="errorMessage"
     >
       {{
         message.trim() === ""
-          ? "Message is required."
-          : "Invalid message format."
+          ? ("messageRequired" | translate)
+          : ("invalidMessageFormat" | translate)
       }}
     </div>
     <textarea
@@ -74,7 +101,7 @@
         'dark-mode': dm.isDark
       }"
       pattern=".*\S+.*"
-      title="Please enter a message"
+      [title]="'pleaseEnterAMessage' | translate"
     ></textarea>
 
     <button
@@ -84,11 +111,15 @@
         cursor: !formValid() || loading ? 'not-allowed' : 'pointer'
       }"
     >
-      <span [ngClass]="{ 'dark-mode': dm.isDark }" *ngIf="!loading && !showSentMessage">{{
-        "btnSend" | translate
-      }}</span>
+      <span
+        [ngClass]="{ 'dark-mode': dm.isDark }"
+        *ngIf="!loading && !showSentMessage"
+        >{{ "btnSend" | translate }}</span
+      >
       <span *ngIf="loading"><div class="spinner"></div></span>
-      <span [ngClass]="{ 'dark-mode': dm.isDark }" *ngIf="showSentMessage">{{ "messageSend" | translate }}</span>
+      <span [ngClass]="{ 'dark-mode': dm.isDark }" *ngIf="showSentMessage">{{
+        "messageSend" | translate
+      }}</span>
     </button>
   </form>
 </div>

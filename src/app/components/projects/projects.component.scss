@@ -8,4 +8,47 @@
     &.dark-mode {
         background-color: #333333;
     }
+
+    .projectActive {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btnMore {
+        width: 100%;
+        margin: 3% 0;
+        font-size: clamp(8px, 1vw, 24px);
+
+        .arrow {
+            display: inline-block;
+            transition: transform 0.5s ease-in-out;
+            animation: moveArrows 1.5s infinite ease-in-out;
+            color: #ff9900;
+        }
+
+        @keyframes moveArrows {
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-8px);
+            }
+        }
+
+        .right-arrow {
+            animation: moveArrowsRight 1.5s infinite ease-in-out;
+        }
+
+        @keyframes moveArrowsRight {
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(8px);
+            }
+        }
+    }
 }

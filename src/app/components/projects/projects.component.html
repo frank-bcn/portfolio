@@ -1,10 +1,30 @@
-<div [ngClass]="{ 'dark-mode': dm.isDark}" id="projects" class="container">
-    <span [ngClass]="{ 'dark-mode': dm.isDark}" class="headlineText about" data-aos="fade-down" data-aos-duration="1500">{{
-        "headlineProject" | translate
-      }}</span>
-    <app-pokedex data-aos="fade-up-right" data-aos-duration="2000"></app-pokedex>
-    <app-pollo-loco data-aos="fade-up-left" data-aos-duration="2000"></app-pollo-loco>
-    <app-join data-aos="fade-up-right" data-aos-duration="2000"></app-join>
-    <app-streamify data-aos="fade-up-left" data-aos-duration="2000"></app-streamify>
+<div [ngClass]="{ 'dark-mode': dm.isDark }" id="projects" class="container">
+  <span
+    [ngClass]="{ 'dark-mode': dm.isDark }"
+    class="headlineText about"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
+    {{ "headlineProject" | translate }}
+  </span>
+  <app-pokedex data-aos="fade-up-right" data-aos-duration="2000"></app-pokedex>
+  <app-pollo-loco
+    data-aos="fade-up-left"
+    data-aos-duration="2000"
+  ></app-pollo-loco>
+  <app-join data-aos="fade-up-right" data-aos-duration="2000"></app-join>
+  <div class="projectActive" *ngIf="showMore">
+    <app-streamify
+      data-aos="fade-up-left"
+      data-aos-duration="2000"
+    ></app-streamify>
     <app-bot data-aos="fade-up-right" data-aos-duration="2000"></app-bot>
+  </div>
+  <button [ngClass]="{ 'dark-mode': dm.isDark }" (click)="toggleProjects()" class="btn btnMore">
+    <span class="arrow left-arrow">&laquo;</span>
+    <span>{{
+      showMore ? ("lessProjects" | translate) : ("moreProjects" | translate)
+    }}</span>
+    <span class="arrow right-arrow">&raquo;</span>
+  </button>
 </div>

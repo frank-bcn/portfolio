@@ -19,7 +19,7 @@
     "professionalIntensiveHeadline": "Berufliche Weiterentwicklung",
     "professionalIntensiveText": "Meine berufliche Reise begann mit der Softwareentwicklung. Schon früh erkannte ich, wie wichtig Sicherheit im Entwicklungsprozess ist. Dieses Interesse führte mich dazu, mich intensiv mit Ethical Hacking & Penetration Testing zu beschäftigen. Dabei konnte ich durch Weiterbildungen und Projekte fundierte Kenntnisse in Netzwerksicherheit und Schwachstellenanalyse aufbauen.<br> <br>Einer meiner Leitsätze lautet: „Alter Stand ist Rückstand!“ – er verdeutlicht, wie sehr es mir am Herzen liegt, stets am Puls der Zeit zu bleiben.",
     "professionalIntensiveText1":"Ich verfüge über fundierte Kenntnisse in Frontend, Backend und Netzwerksicherheit. Mein Fokus liegt darauf, sichere, skalierbare und zukunftsfähige Softwarelösungen zu entwickeln.",
-    "professionalIntensiveText2":"Ich bin erfahren im Erlernen neuer Technologien und kann mich effizient an eine sich ständig ändernde Umgebung anpassen. Dabei bin ich ein neugieriger Lerner, der Freude daran hat, Probleme zu lösen und anstehende Aufgaben erfolgreich zu meistern.<br><br>Eine wichtige Person sagte einmal zu mir: „Du willst das, du schaffst das.“ – dieser Satz motiviert mich bis heute, Herausforderungen anzunehmen und meine Fähigkeiten kontinuierlich zu erweitern.",
+    "professionalIntensiveText2":"Ich bin erfahren im Erlernen neuer Technologien und kann mich effizient an eine sich ständig ändernde Umgebung anpassen. Dabei bin ich ein neugieriger Lerner, der Freude daran hat, Probleme zu lösen und anstehende Aufgaben erfolgreich zu meistern.",
 
     "commentSkill": "skill-page",
     "headlineSkill": "Fähigkeiten",
@@ -33,8 +33,10 @@
     "deploymentDescription": "Mit meinen Kenntnissen in <strong>Cloud-Technologien</strong> wie <strong>Google Cloud</strong>, <strong>Microsoft Azure</strong> und <strong>AWS</strong> kann ich flexible, skalierbare <strong>Infrastrukturen</strong> bereitstellen. Ich setze <strong>Docker</strong> zur <strong>Containerisierung</strong> und <strong>CI/CD</strong> zur Automatisierung des <strong>Entwicklungsprozesses</strong> ein, was die <strong>Effizienz</strong> und <strong>Qualität</strong> meiner <strong>Projekte</strong> steigert.",
     "headlineHacking": "Ethical Hacking",
     "hackingDescription": "In der <strong>Cybersicherheit</strong> ist Wissen Macht. Um ein System effektiv zu schützen, muss man verstehen, wie ein potenzieller Angreifer vorgeht. Dieses Prinzip bildet die Grundlage des <strong>Ethical Hackings</strong>. Dabei habe ich mich bewusst für <strong>Python</strong> entschieden, da die Sprache vielseitig, effizient und ideal für die Entwicklung von Sicherheitstools ist. Ergänzend nutze ich Tools wie <strong>Metasploit Nmap</strong> und <strong>Burp Suite</strong>, die gemeinsam mit Python eine leistungsstarke Basis für <strong>Schwachstellenanalysen</strong> und <strong>Sicherheitsprüfungen</strong> bieten.",
-
+  
     "commentProjects": "projects-page",
+    "moreProjects": "Mehr Projekte anzeigen",
+    "lessProjects": "Weniger anzeigen",
     "headlineProject": "Projekte",
 
     "headlineProject1": "Pokedex",
@@ -87,6 +89,15 @@
     "messageSend": "Gesendet...",
     "changeInfoBtn": "zurück zu Kontakinfos",
     "changeSendBtn": "zum kontaktformular",
+    "nameRequired": "Name ist erforderlich.",
+    "invalidNameFormat": "Ungültiges Namensformat.",
+    "emailRequired": "E-Mail ist erforderlich.",
+    "invalidEmailFormat": "Ungültiges E-Mail-Format.",
+    "messageRequired": "Nachricht ist erforderlich.",
+    "invalidMessageFormat": "Ungültiges Nachrichtenformat.",
+    "pleaseEnterOnlyLetters": "Bitte geben Sie nur Buchstaben ein",
+    "pleaseEnterAValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "pleaseEnterAMessage": "Bitte geben Sie eine Nachricht ein",
 
     "commentImprint": "imprint-page",
     "headlineImprint": "Impressum & Datenschutz",

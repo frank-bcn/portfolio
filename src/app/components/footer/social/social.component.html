@@ -22,6 +22,20 @@
     <a
       [ngClass]="{ 'dark-mode': dm.isDark }"
       draggable="false"
+      href="https://tryhackme.com/p/RootGuardian"
+      target="_blank"
+    >
+      <img
+        draggable="false"
+        (contextmenu)="cm.preventContextMenu($event)"
+        src="/assets/ images/skills_images/tryhackme.png"
+      />
+    </a>
+  </button>
+  <button class="btn">
+    <a
+      [ngClass]="{ 'dark-mode': dm.isDark }"
+      draggable="false"
       href="https://github.com/frank-bcn"
       target="_blank"
     >
