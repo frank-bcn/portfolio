@@ -1,33 +1,30 @@
 <div [ngClass]="{ 'dark-mode': dm.isDark }" id="certificate" class="container">
-  <span
-    [ngClass]="{ 'dark-mode': dm.isDark }"
-    class="headlineText about"
-    data-aos="fade-down"
-    data-aos-duration="1500"
-    >{{ 'headlineCertificate' | translate }}</span
-  >
+  <span [ngClass]="{ 'dark-mode': dm.isDark }" class="headlineText about" data-aos="fade-down" data-aos-duration="1500">
+    {{ 'headlineCertificate' | translate }}
+  </span>
+  
   <div data-aos="zoom-in" data-aos-duration="1500" class="sliderContainer">
     <div class="slider">
-      <div
-        *ngFor="let certificate of certificates; let i = index"
-        class="slide"
-        [class.active]="i === currentSlide"
-      >
+      <div *ngFor="let certificate of certificates; let i = index" class="slide" [class.active]="i === currentSlide">
         <img [src]="certificate" alt="Certificate {{ i + 1 }}" />
       </div>
     </div>
-    <div class="controls">
-      <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn prev" (click)="prevSlide()">&lt;</button>
-     
-      <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn next" (click)="nextSlide()">&gt;</button>
-    </div>
-    <div class="dots">
-      <span
-        *ngFor="let certificate of certificates; let i = index"
-        class="dot"
-        [class.active]="i === currentSlide"
-        (click)="goToSlide(i)"
-      ></span>
+
+    <div class="controlsWrapper">
+      <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn btnCertificate" (click)="prevSlide()">&lt;</button>
+
+      <div class="dotsWrapper">
+        <div class="dots">
+          <span
+            *ngFor="let certificate of certificates; let i = index"
+            class="dot"
+            [class.active]="i === currentSlide"
+            (click)="goToSlide(i)"
+          ></span>
+        </div>
+      </div>
+
+      <button [ngClass]="{ 'dark-mode': dm.isDark }" class="btn btnCertificate" (click)="nextSlide()">&gt;</button>
     </div>
   </div>
 </div>

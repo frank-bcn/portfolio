@@ -35,8 +35,8 @@
     "hackingDescription": "In der <strong>Cybersicherheit</strong> ist Wissen Macht. Um ein System effektiv zu schützen, muss man verstehen, wie ein potenzieller Angreifer vorgeht. Dieses Prinzip bildet die Grundlage des <strong>Ethical Hackings</strong>. Dabei habe ich mich bewusst für <strong>Python</strong> entschieden, da die Sprache vielseitig, effizient und ideal für die Entwicklung von Sicherheitstools ist. Ergänzend nutze ich Tools wie <strong>Metasploit Nmap</strong> und <strong>Burp Suite</strong>, die gemeinsam mit Python eine leistungsstarke Basis für <strong>Schwachstellenanalysen</strong> und <strong>Sicherheitsprüfungen</strong> bieten.",
   
     "commentProjects": "projects-page",
-    "moreProjects": "Mehr Projekte anzeigen",
-    "lessProjects": "Weniger anzeigen",
+    "moreProjects": "Weitere Projekte anzeigen",
+    "lessProjects": "Weniger Projekte anzeigen",
     "headlineProject": "Projekte",
 
     "headlineProject1": "Pokedex",

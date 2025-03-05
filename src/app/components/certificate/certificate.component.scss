@@ -3,20 +3,18 @@
   justify-content: center;
   flex-direction: column;
   background-color: #fffcf3;
-  padding: 0 12% 0 12%;
+  padding: 0 12%;
 
   &.dark-mode {
     background-color: #333333;
   }
 
   .sliderContainer {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 6% 0 12% 0;
+    margin: 6% 0 12%;
   }
 
   .slider {
@@ -26,113 +24,87 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
 
-  .slide {
-    position: absolute;
-    transition:
-      transform 0.5s ease-in-out,
-      opacity 0.5s ease-in-out;
-    opacity: 0;
-    transform: translateX(100%);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 16 / 9;
-
-    &.active {
-      opacity: 1;
-      transform: translateX(0);
-      position: relative;
-    }
-
-    img {
+    .slide {
+      position: absolute;
+      transition:
+        transform 0.5s ease-in-out,
+        opacity 0.5s ease-in-out;
+      opacity: 0;
+      transform: translateX(100%);
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      max-height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       aspect-ratio: 16 / 9;
-    }
-  }
 
-  .controls {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transform: translateY(-50%);
+      &.active {
+        opacity: 1;
+        transform: translateX(0);
+        position: relative;
+      }
 
-    .prev,
-    .next {
-      color: #333333;
-      background: transparent;
-      border: none;
-      padding: 5px !important;
-      font-size: 30px;
-      height: 50px;
-      margin: 0;
-      min-width: 80px;
-      cursor: pointer;
-      transition:
-        color 0.5s,
-        background-color 0.5s;
-
-      &.dark-mode {
-        color: #fffcf3;
-        background-color: #333333;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-height: 400px;
+        aspect-ratio: 16 / 9;
       }
     }
   }
 
-  .dots {
+  .controlsWrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 32px 0 0 0;
-    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
 
-    .dot {
-      width: 12px;
-      height: 12px;
-      background-color: #ccc;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    .btnCertificate {
+      color: #ff9900;
+      font-size: 24px;
+      height: 60px;
+      width: 80px;
+    }
+  }
 
-      &.active {
-        background-color: #ff9900;
+  .dotsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    .dots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 80%;
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+          background-color: #ff9900;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .slide {
-    aspect-ratio: unset !important;
-  }
-
-  .controls {
-    width: 100% !important;
-    margin: 24px 0 0 0;
-  }
-
-  .prev,
-  .next {
-    padding: 10px !important;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .prev,
-  .next {
-    min-width: 24px !important;
-    padding: 5px !important;
+  .btnCertificate {
+    font-size: 20px;
+    width: 40px!important;
+    height: 40px!important;
   }
 }

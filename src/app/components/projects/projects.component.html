@@ -21,10 +21,12 @@
     <app-bot data-aos="fade-up-right" data-aos-duration="2000"></app-bot>
   </div>
   <button [ngClass]="{ 'dark-mode': dm.isDark }" (click)="toggleProjects()" class="btn btnMore">
-    <span class="arrow left-arrow">&laquo;</span>
+    <span class="arrow left-arrow">&#x2039;</span> 
+    <span class="arrow left-arrow">&#x2039;</span> 
     <span>{{
       showMore ? ("lessProjects" | translate) : ("moreProjects" | translate)
     }}</span>
-    <span class="arrow right-arrow">&raquo;</span>
+    <span class="arrow right-arrow">&#x203A;</span>
+    <span class="arrow right-arrow">&#x203A;</span>
   </button>
 </div>
