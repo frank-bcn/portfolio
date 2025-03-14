@@ -17,9 +17,9 @@
     "commentAbout": "about-page",
     "headlineAbout": "About me",
     "professionalIntensiveHeadline": "Professional Development",
-    "professionalIntensiveText": "My professional journey began with software development. Early on, I recognized how important security is in the development process. This interest led me to delve deeply into Ethical Hacking & Penetration Testing. Through further education and projects, I was able to build solid knowledge in network security and vulnerability analysis.<br><br>One of my guiding principles is: „Standing still means falling behind!“ – it highlights how important it is for me to always stay up to date.",
-    "professionalIntensiveText1": "I have extensive knowledge in frontend, backend and network security. My focus is on developing secure, scalable and future-proof software solutions.",
-    "professionalIntensiveText2": "I am skilled at learning new technologies and can efficiently adapt to ever-changing environments. I am a curious learner who enjoys solving problems and successfully tackling challenges.",
+    "professionalIntensiveText": "My professional journey began in <strong>software development</strong>. Early on, I recognized how crucial <strong>security</strong> is in the development process. This interest led me to delve deep into <strong>Ethical Hacking</strong> and <strong>Penetration Testing</strong>. Through further training and projects, I built solid expertise in <strong>network security</strong> and <strong>vulnerability analysis</strong>.",
+    "professionalIntensiveText1": "I have strong expertise in <strong>frontend</strong>, <strong>backend</strong>, and <strong>network security</strong>. My focus is on developing <strong>secure</strong>, <strong>scalable</strong>, and <strong>future-proof</strong> software solutions. I highly value <strong>long-term collaboration</strong> and the <strong>sustainable success</strong> of projects. <strong>Reliability</strong> and <strong>commitment</strong> are essential to me in creating <strong>innovative</strong> and <strong>secure</strong> solutions together.",
+    "professionalIntensiveText2": "“<strong>Standing still means falling behind!</strong>” – This principle has guided me to this day, as I am experienced in <strong>learning new technologies</strong> and efficiently adapting to constantly changing environments. For me, <strong>continuous learning</strong> is essential to developing <strong>innovative</strong> and <strong>secure</strong> solutions.",
 
     "commentSkill": "skill-page",
     "headlineSkill": "Skills",

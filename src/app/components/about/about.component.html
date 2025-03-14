@@ -13,18 +13,16 @@
       data-aos="fade-down"
       data-aos-duration="1500"
     >
-      <span [innerHTML]="'professionalIntensiveText' | translate">
-        
-      </span>
+      <span [innerHTML]="'professionalIntensiveText' | translate"></span>
 
       <div class="containerKnowledgeLearning">
         <img src="/assets/ images/etc_images/light.png" alt="" class="icon" />
-        <span class="text">{{ "professionalIntensiveText1" | translate }}</span>
+        <span class="text" [innerHTML]="'professionalIntensiveText1' | translate"></span>
       </div>
 
       <div class="containerKnowledgeLearning">
         <img src="/assets/ images/etc_images/puzzle.png" alt="" class="icon" />
-        <span class="text"[innerHTML]="'professionalIntensiveText2' | translate"></span>
+        <span class="text" [innerHTML]="'professionalIntensiveText2' | translate"></span>
       </div>
 
       <div [ngClass]="{ 'dark-mode': dm.isDark }" class="btnContainer">
